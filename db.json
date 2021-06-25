@@ -1,0 +1,133 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Avocado",
+        "image": "/img/shop/bo.jpg",
+        "originalPrice": "$7.0",
+        "salePrice": "$5.0",
+        "description": "Quả bơ ngon",
+        "category": "fruit",
+        "sku": "745652"
+      }, 
+      {
+        "id": 2,
+        "title": "Apple",
+        "image": "/img/shop/tao.jpg",
+        "originalPrice": "$4.0",
+        "salePrice": "$3.0",
+        "description": "Quả bơ ngon",
+        "category": "fruit",
+        "sku": "745652"
+      }, 
+      {
+        "id": 3,
+        "title": "Grape",
+        "image": "img/shop/quanho.jpg",
+        "originalPrice": "$10.0",
+        "salePrice": "",
+        "description": "Quả nho ngon",
+        "category": "fruit",
+        "sku": "745652"
+      },
+      {
+        "id": 4,
+        "title": "Pomegranate",
+        "image": "img/shop/luu.jpg",
+        "originalPrice": "$7.0",
+        "salePrice": "$6.0",
+        "description": "Quả lựu ngon",
+        "category": "fruit",
+        "sku": "745652"
+      },
+      {
+        "id": 5,
+        "title": "Turkish Figs",
+        "image": "img/shop/sung.jpg",
+        "originalPrice": "$20.0",
+        "salePrice": "",
+        "description": "Quả lựu ngon",
+        "category": "fruit",
+        "sku": "745652"
+      }, 
+      {
+        "id": 6,
+        "title": "Sweet Pears",
+        "image": "img/shop/le.jpg",
+        "originalPrice": "$20",
+        "salePrice": "",
+        "description": "Quả lê",
+        "category": "fruit",
+        "sku": "745652"
+      },
+      {
+        "id": 7,
+        "title": "Óc chó",
+        "image": "img/shop/ocCho.jpg",
+        "originalPrice": "$18.0",
+        "salePrice": "",
+        "description": "Quả óc chó",
+        "category": "dried food",
+        "sku": "745652"
+      },
+      {
+        "id": 8,
+        "title":"Tomato",
+        "image": "img/shop/caChua.jpg",
+        "originalPrice": "$5.0",
+        "salePrice": "",
+        "description": "Cà chua",
+        "category": "vegetables",
+        "sku": "745652"
+      },
+      {
+        "id": 9,
+        "title":"Green Peas",
+        "image": "img/shop/do.jpg",
+        "originalPrice": "'$9.0",
+        "salePrice": "",
+        "description": "Cà chua",
+        "category": "vegetables",
+        "sku": "745652"
+      },
+      {
+        "id": 10,
+        "title":"Asparagus",
+        "image": "img/shop/mangtay.jpg",
+        "originalPrice":"$20.0",
+        "salePrice": "",
+        "description": "Cà chua",
+        "category": "vegetables",
+        "sku": "745652"
+      },
+      {
+        "id": 11,
+        "title":"Orange",
+        "image": "img/shop/quacam.jpg",
+        "originalPrice": "$25.0",
+        "salePrice": "",
+        "description": "Cà chua",
+        "sku": "745652"
+      },
+      {
+        "id": 12,
+        "title":"Mango",
+        "image": "img/shop/quaxoai.jpg",
+        "originalPrice": "$10.0",
+        "salePrice": "",
+        "description": "Cà chua",
+        "category": "fruit",
+        "sku": "745652"
+      },
+      {
+        "id": 13,
+        "title":"Kiwi",
+        "image": "img/shop/kiwi.jpg",
+        "originalPrice": "$30",
+        "salePrice": "",
+        "description": "Cà chua",
+        "category": "fruit",
+        "sku": "745652"
+      }
+    ]
+  }
