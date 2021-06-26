@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/shop.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Livvic:wght@700&family=Nunito+Sans&display=swap&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" id="elementor-icons-shared-0-css"
+        href="http://wgl-demo.net/nativefarm/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.1"
+        type="text/css" media="all">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container-fluid">
+            <div class="top-header d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 nav-left">
+                            <div class="header-contact">
+                                <ul>
+                                    <li style="padding-right: 25px;"><a href="tel:0987734671">
+                                            <i class="bi bi-telephone-fill"></i><span
+                                                class="header-phone-number">0987734671</span>
+                                        </a></li>
+                                    <li><a href="https://goo.gl/maps/GtsBVx58qbjPb4dw7" style="border: none;">
+                                            <i class="bi bi-geo-alt-fill"></i><span class="header_address">123 Nguyễn
+                                                Trãi,
+                                                Thanh Xuân, Hà Nội</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 nav-right text-end">
+                            <div class="header-dropdown">
+                                <ul>
+                                    <!-- language-select -->
+                                    <li>
+                                        <div class="dropdown lang-dropdown">
+                                            <a class=" btn p-0 dropdown-toggle align-items-center" id="lang-dropdown"
+                                                type="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                            <ul class="dropdown-menu lang-menu" aria-labelledby="lang-dropdown">
+                                                <li value="el">
+                                                    <a class="dropdown-item">
+                                                        <img src="img/header/en.jpg" alt="" class="lang-icon" />EN
+                                                    </a>
+                                                </li>
+                                                <li value="vn">
+                                                    <a class="dropdown-item">
+                                                        <img src="img/header/vn-flag.jpg" alt="" class="lang-icon" />VN
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- user account -->
+                                    <li>
+                                        <div class="user-account">
+                                            <a type="button" class="btn btn-primary p-0" data-bs-toggle="modal"
+                                                data-bs-target="#userModal">
+                                                <i class="bi bi-person-fill"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- nav header-menu -->
+            <div class="main-menu ">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand order-2 order-lg-1" href="index.html"><img
+                                    src="img/header/logo-footer.png" style="height: 67px;"></a>
+                            <button class="navbar-toggler order-1 order-lg-none" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse order-4 order-lg-2 lateral-left"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="" class="icon order-3 d-lg-none d-block  ms-lg-auto"><i
+                                    class="bi bi-search"></i></a>
+                        </nav>
+                        <ul class="icon-nav d-lg-flex align-items-center justify-content-end d-none">
+                            <li><a href="" class="basket-icon icon"><i class="bi bi-basket"></i><span
+                                        class="basket-amount">1</span></a></li>
+                            <li><a href="" class="icon"><i class="bi bi-search"></i></a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="banner d-flex align-items-center justify-content-center">
+        <div class="page-header-content">
+            <div class="page-header-title">Shop</div>
+        </div>
+    </div>
+    <!-- catalog -->
+    <div class="main-shop">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <aside class="slider-content">
+                        <div class="product-search">
+                            <form role="search" class="product-search-form d-flex">
+                                <input type="search" />
+                                <button type="submit">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="categories">
+                            <span class="title text-center d-block">Categories</span>
+                            <ul class="product-categories p-0">
+                                <li class="cat-item">
+                                    <a href="">Bread<span>2</span></a>
+                                </li>
+                                <li class="cat-item">
+                                    <a href="">Cereals<span>3</span></a>
+                                </li>
+                                <li class="cat-item">
+                                    <a href="">Fruits<span>4</span></a>
+                                </li>
+                                <li class="cat-item">
+                                    <a href="">Milk & Cream<span>5</span></a>
+                                </li>
+                                <li class="cat-item">
+                                    <a href="">Nuts<span>6</span></a>
+                                </li>
+                                <li class="cat-item">
+                                    <a href="">Vegetables<span>7</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="price-filter">
+                            <span class="title text-center d-block">Filter by price</span>
+                            <div id="slider-range"></div>
+                            <div class="
+                  price-label
+                  d-flex
+                  justify-content-between
+                  mt-4
+                  align-item-center
+                ">
+                                <span class="price"></span>
+                                <button type="submit" class="submit">Filter</button>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-9">
+                    <div class="main-content">
+                        <div class="product-catalog">
+                            <div class="row">
+
+                            </div>
+                            <nav class="nav  justify-content-center mt-5"></nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <img src="img/header/logo.jpg" style="width: 120px;">
+                    <p class="section-about">We connect buyers and sellers of natural, organic, environmentally sound
+                        products..</p>
+                </div>
+                <div class="col-12 col-lg-4 d-lg-flex align-items-center flex-column">
+                    <h4 class="social-us">Social follow us</h4>
+                    <ul class="social-contact p-0 m-0 d-flex ">
+                        <li>
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="call-us d-flex">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div class="header-phone-number">
+                            <div>
+                                <h3><a href="tel:0987734671">0987734671</a></h3>
+                            </div>
+                            <div>
+                                <p>Contact us for question</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-address">
+                        <div>
+                            <h4><span>Our address</span></h4>
+                            <div>
+                                <p>123 Nguyễn Trãi, Thanh Xuân, Hà Nội</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- user-modal -->
+    <div class="modal user-modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content user-modal-content">
+
+                <div class="modal-header justify-content-center">
+                    <h5 class="modal-title" id="userModalLabel"><img src="img/header/logo.jpg" alt=""></h5>
+                </div>
+                <div class="modal-body">
+                    <!-- form sign up -->
+                    <form class="row g-3 needs-validation sign-up-form" novalidate>
+                        <div class="col-md-12 ">
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="name" placeholder="Họ tên" name="name"
+                                    required />
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="email" placeholder="Email" name="email"
+                                    required />
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="phone" required placeholder="Điện thoại"
+                                    name="phone" />
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="password" required placeholder="Mật khẩu"
+                                    name="password" />
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" required placeholder="Nhập lại mật khẩu"
+                                    name="conPassword" />
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <input type="submit" id="submitBtn" value="Sign up" class="btn btn-primary" />
+                        </div>
+                        <div class="col-12 text-start">
+                            <a href="" class="back-to-login" id="back-to-login">Back
+                                to login</a>
+                        </div>
+                    </form>
+                    <!-- login form -->
+                    <form class="row g-3 needs-validation login-form" novalidate>
+
+                        <div class="col-12 has-validation">
+                            <input type="text" class="form-control" id="email" placeholder="Email" name="email"
+                                required />
+                            <div class="invalid-feedback"></div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="password" required placeholder="Mật khẩu"
+                                    name="password" />
+                                <div class="invalid-feedback"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-start ">
+                            <a href="" class="forgot-pass" id="forgot-pass">Forgot
+                                your password?</a>
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" id="login-btn" value="Login" class="btn btn-primary" />
+                        </div>
+                        <div class="col-12 text-start">
+                            <div class="register-box"><span>Do you have an
+                                    account?</span> <a href="#" id="register">Register now</a></div>
+                        </div>
+                    </form>
+                    <!-- forget password form -->
+
+                    <form class="row g-3 needs-validation recover-pass-form" novalidate>
+                        <div class="col-12 has-validation">
+                            <input type="text" class="form-control" id="email" placeholder="Email" name="email"
+                                required />
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="col-12">
+                            <input type="submit" id="recover-pass-btn" value="Submit" class="btn btn-primary" />
+                        </div>
+                        <div class="col-12 text-start">
+                            <a href="" class="back-to-login" id="cancel-recover-pass">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="scripts/shopajax.js" type="module"></script>
+    <script src="scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="scripts/validate.js"></script>
+
+
+</body>
+
+</html>
