@@ -316,7 +316,7 @@ a:hover{
   transition: 0.4s;
   z-index: 1;
 }
-.sub-banner-item .sub-item-info .shop-now-link{
+.more-btn{
   z-index: 1;
   font-size: 16px;
   font-weight: 700;
@@ -385,6 +385,59 @@ div.img-layer-item.fadeRightAn img{
 .suggestion-header .section-about{
   width: 60%;
   text-align: center;
+}
+/* new */
+.news{
+  margin-top: 100px;
+}
+.blog-post{
+  transition: 0.3s;
+  box-shadow: 2px 1px 1px 2px #f0f3f4;
+}
+.blog-post-content{
+  position: relative;
+  padding: 40px 40px 33px;
+}
+.blog-category{
+  position: absolute;
+    top: -17px;
+}
+.blog-category a{
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.post-meta-wrap{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 700;
+  color: #878b8e;
+}
+.post-meta-wrap .post-date::after{
+  content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 10px 2px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+}
+h4{
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: var(--title-font-family);
+}
+.blog-post-content .blog-title:hover{
+  color:#96B416;
+}
+.news-content .row{
+  --bs-gutter-y: 30px;
 }
 @media (min-width: 1200px) {
   .main-menu .navbar {
@@ -524,6 +577,74 @@ text-align: right;
   margin-right: auto;
   text-align: left;
   }
+  /* subcribe */
+  .subcribe{
+    background-image: url("../img/getintouch/our-team_form-bg.png");
+    margin-top: 100px;
+    background-position: center;
+  }
+  .subcribe-form{
+    margin-bottom: 18px;
+  }
+  .subcribe input{
+    height: 70px;
+  }
+  .subcribe #submit-btn{
+    padding: 6px 24px;
+    background-color:var(--primary-color);
+    font-weight: 700;
+    color: #ffff;
+    font-size: 16px;
+    font-family: var(--title-font-family);
+  }
+  /* footer */
+  .footer{
+    background-image: url("../img/footer/image-bg.jpg");
+    padding: 100px 0px;
+    margin-top: 100px;
+  }
+  .footer .section-about{
+    color: white;
+    margin-top: 30px;
+  }
+  .footer .social-us{
+    margin-bottom: 30px;
+    color: white;
+  }
+  ul.social-contact li a{
+    display: inline-block;
+    text-align: center;
+
+    margin-right: 10px;
+    transition: all .3s;
+    width: 29px;
+    height: 29px;
+
+    color: var(--accent-color);
+}
+.call-us i{
+  font-size: 60px;
+  color: orange;
+  margin-right: 25px;
+}
+.call-us h3 a{
+  color: white;
+  font-size: 30px!important;
+  font-family: var(--content-font-family);
+}
+.call-us p, .our-address p{
+  color: #eee1e1;
+}
+.our-address{
+  margin-top: 30px;
+}
+.our-address h4{
+  font-family: "Nunito Sans", Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
 /* animation */
 @keyframes fadeInDown {
   from {

@@ -12,7 +12,7 @@ function checkName() {
     let error = $(username).next();
     let value = $(username).val().trim();
     if (value === "") {
-        error.text("Ho tên không được để trống");
+        error.text("Username is required.");
         $(username).addClass("is-invalid");
         return false;
     } else {
@@ -30,11 +30,11 @@ function checkEmail(email) {
     let value = $(email).val().trim();
     let validRegex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
     if (value.length == "") {
-        error.text("Vui lòng điền email");
+        error.text("Email  is required.");
         $(email).addClass("is-invalid");
         return false;
     } else if (!value.match(validRegex)) {
-        error.text("Email không hợp lệ");
+        error.text("Email is invalid");
         $(email).addClass("is-invalid");
         return false;
     } else {
@@ -53,11 +53,11 @@ function checkPhone() {
     let value = $(phone).val().trim();
     let validRegex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
     if (value.length == "") {
-        error.text("Vui lòng điền số điện thoại");
+        error.text("Phone is required.");
         $(phone).addClass("is-invalid");
         return false;
     } else if (!value.match(validRegex)) {
-        error.text("Số điện thoại sai định dạng");
+        error.text("Phone is invalid");
         $(phone).addClass("is-invalid");
         return false;
     } else {
@@ -77,12 +77,12 @@ function checkPassword(password) {
     let validRegex =
         /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
     if (value.length == "") {
-        error.text("Vui lòng điền mật khẩu");
+        error.text("Password is required.");
         $(password).addClass("is-invalid");
         return false;
     } else
         if (!value.match(validRegex)) {
-            error.text("Mật khẩu phải từ 8 ký tự trở lên chứa ít nhất 1 chữ hoa, 1 chữ thường, 1 chữ số,  1 ký tự đặc biệt");
+            error.text("Password must be 8 characters or more and contain at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.");
             $(password).addClass("is-invalid");
             return false;
         } else {
@@ -102,7 +102,7 @@ function checkConPassword() {
     let passwordValue = $(password).val().trim();
     let conPasswordValue = $(conPassword).val().trim();
     if (passwordValue !== conPasswordValue) {
-        error.text("Nhập lại mật khẩu chưa đúng");
+        error.text("Re-enter password does not match");
         $(conPassword).addClass("is-invalid");
         return false;
     } else {
@@ -162,3 +162,15 @@ $('#recover-pass-btn').click(function (event) {
 
     }
 });
+$('.subcribe #submit-btn').click(function(event){
+    let email = $('.subcribe input[name=email]');
+    checkEmail($(email));
+    if (
+        !checkEmail($(email))
+    ) {
+        event.preventDefault();
+    }
+    else {
+
+    }
+})
