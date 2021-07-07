@@ -18,27 +18,29 @@ let parseLink = (link) => {
   return { [rel]: href };
 };
 
- let xhr = $.ajax({
-    url: `/products?_page=${page}&_limit=${productPerPage}`,
-    type: "GET",
-    dataType : "json",
+let xhr = $.ajax({
+  url: `/products?_page=${page}&_limit=${productPerPage}`,
+  type: "GET",
+  dataType: "json",
 })
   .done(
-    function(json){
-    let delay = 0;
+    function (json) {
+      let delay = 0;
 
-    json = json.
-    map((p) => {  
-    
-      delay+= 0.16;
-      return `
+      json = json.
+        map((p) => {
+
+          delay += 0.16;
+          return `
       <div class="col-12 col-md-6 col-xl-4" style="animation-delay:${delay}s">
     <div class="product-item"  >
-      <a href="">
+     
         <div class="product-img">
+        <a href="">
           <img src="${p.image}" alt="quả bơ" />
+          </a>
         </div>
-      </a>
+     
       <div class="product-content">
       <h2 class="product-title"><a href="">${p.title}</a></h2>
          ${p.salePrice == "" ? `<span class ="original-price real-price">${p.originalPrice}</span>` : `<span class ="original-price"><strike>${p.originalPrice}</strike></span>`} 
@@ -47,20 +49,20 @@ let parseLink = (link) => {
       <a href="" class="basket-icon icon"><i class="bi bi-basket"></i></span></a>
     </div>
   </div>`}
-    ).join("");
-    console.log(json);
-    $(".product-catalog .row").html(json);
+        ).join("");
+      console.log(json);
+      $(".product-catalog .row").html(json);
 
-    let total = xhr.getResponseHeader("x-total-count");
-    let link = xhr.getResponseHeader("link");
-   
-        if (link) {
-            link = link.split(", ").map((l) => parseLink(l));
-            link = Object.assign({}, ...link);
-    }
+      let total = xhr.getResponseHeader("x-total-count");
+      let link = xhr.getResponseHeader("link");
 
-   
-    let totalPage = Math.ceil(total / productPerPage);
-    let pg = pagination(link, page, totalPage);
-    $(".nav").html(pg);
-  })
+      if (link) {
+        link = link.split(", ").map((l) => parseLink(l));
+        link = Object.assign({}, ...link);
+      }
+
+
+      let totalPage = Math.ceil(total / productPerPage);
+      let pg = pagination(link, page, totalPage);
+      $(".nav").html(pg);
+    })

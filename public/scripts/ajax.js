@@ -11,11 +11,13 @@ let xhr = $.ajax({
         map((p) => {
           return `
     <div class="product-item">
-      <a href="">
+      
         <div class="product-img">
+        <a href="">
           <img src="${p.image}" alt="${p.title}" />
+          </a>
         </div>
-      </a>
+     
       <div class="product-content">
         <h2 class="product-title"><a href="">${p.title}</a></h2>
          ${p.salePrice == "" ? `<span class ="original-price real-price">${p.originalPrice}</span>` : `<span class ="original-price"><strike>${p.originalPrice}</strike></span>`} 
