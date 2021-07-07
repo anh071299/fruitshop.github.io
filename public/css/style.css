@@ -20,7 +20,6 @@ img {
   height: auto;
 }
 
-
 ul {
   margin-bottom: 0 !important;
   padding-left: 0 !important;
@@ -516,7 +515,11 @@ h4 {
 .product-item:hover .basket-icon {
   display: inline-block;
 }
-
+.product-item {
+  position: relative;
+  overflow: visible;
+  z-index: 2;
+}
 .product-slider .slick-list{
   overflow: visible;
 }
@@ -528,7 +531,7 @@ h4 {
   background-color: var(--primary-color);
   color: #fff;
   border: none;
-
+  z-index: 5;
 }
 .product-item .basket-icon:hover {
   background-color: var(--secondary-color);
