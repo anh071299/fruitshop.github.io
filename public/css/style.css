@@ -520,7 +520,8 @@ h4 {
 }
 .product-item {
   position: relative;
-  overflow: unset;
+  overflow: visible;
+  z-index: 2;
 }
 .product-item .basket-icon {
   display: none;
@@ -530,6 +531,7 @@ h4 {
   background-color: var(--primary-color);
   color: #fff;
   border: none;
+  z-index: 5;
 }
 .product-item .basket-icon:hover {
   background-color: var(--secondary-color);
