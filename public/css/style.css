@@ -487,7 +487,9 @@ margin-top: 45px;
 .product-slider .slick-prev::before {
   color: var(--primary-color);
 }
-
+.product-slider .slick-next, .product-slider .slick-prev{
+  z-index: 10;
+}
 .product-content {
   padding: 20px 10px 25px 25px;
 }
