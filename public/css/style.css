@@ -471,6 +471,11 @@ h4 {
 .main-img {
   transform: translateY(100%);
 }
+
+/* best-product */
+.product-slider .slick-track{
+  display: flex;
+}
 .product-slider .product-item {
   padding-right: 15px;
   padding-left: 15px;
