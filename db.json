@@ -118,16 +118,6 @@
         "description": "Cà chua",
         "category": "fruit",
         "sku": "745652"
-      },
-      {
-        "id": 13,
-        "title":"Kiwi",
-        "image": "img/shop/kiwi.jpg",
-        "originalPrice": "$30",
-        "salePrice": "",
-        "description": "Cà chua",
-        "category": "fruit",
-        "sku": "745652"
       }
     ]
   }
