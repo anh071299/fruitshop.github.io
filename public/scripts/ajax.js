@@ -30,7 +30,7 @@ let xhr = $.ajax({
 
       $(".product-slider").html(json);
       $('.product-slider').slick({
-        infinite: false,
+        infinite: true,
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
