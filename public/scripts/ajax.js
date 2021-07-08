@@ -30,8 +30,7 @@ let xhr = $.ajax({
 
       $(".product-slider").html(json);
       $('.product-slider').slick({
-        infinite: true,
-        speed: 300,
+        infinite: false,
         slidesToShow: 4,
         slidesToScroll: 4,
         responsive: [
@@ -40,7 +39,6 @@ let xhr = $.ajax({
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
-              infinite: true,
               dots: true
             }
           },
