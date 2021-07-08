@@ -50,18 +50,9 @@
         "category": "fruit",
         "sku": "745652"
       }, 
+      
       {
         "id": 6,
-        "title": "Sweet Pears",
-        "image": "img/shop/le.jpg",
-        "originalPrice": "$20",
-        "salePrice": "",
-        "description": "Quả lê",
-        "category": "fruit",
-        "sku": "745652"
-      },
-      {
-        "id": 7,
         "title": "Óc chó",
         "image": "img/shop/ocCho.jpg",
         "originalPrice": "$18.0",
@@ -71,7 +62,7 @@
         "sku": "745652"
       },
       {
-        "id": 8,
+        "id": 7,
         "title":"Tomato",
         "image": "img/shop/caChua.jpg",
         "originalPrice": "$5.0",
@@ -81,7 +72,7 @@
         "sku": "745652"
       },
       {
-        "id": 9,
+        "id": 8,
         "title":"Green Peas",
         "image": "img/shop/do.jpg",
         "originalPrice": "'$9.0",
@@ -91,7 +82,7 @@
         "sku": "745652"
       },
       {
-        "id": 10,
+        "id": 9,
         "title":"Asparagus",
         "image": "img/shop/mangtay.jpg",
         "originalPrice":"$20.0",
@@ -101,7 +92,7 @@
         "sku": "745652"
       },
       {
-        "id": 11,
+        "id": 10,
         "title":"Orange",
         "image": "img/shop/quacam.jpg",
         "originalPrice": "$25.0",
@@ -110,10 +101,20 @@
         "sku": "745652"
       },
       {
-        "id": 12,
+        "id": 11,
         "title":"Mango",
         "image": "img/shop/quaxoai.jpg",
         "originalPrice": "$10.0",
+        "salePrice": "",
+        "description": "Cà chua",
+        "category": "fruit",
+        "sku": "745652"
+      },
+      {
+        "id": 12,
+        "title":"Kiwi",
+        "image": "img/shop/kiwi.jpg",
+        "originalPrice": "$30",
         "salePrice": "",
         "description": "Cà chua",
         "category": "fruit",
