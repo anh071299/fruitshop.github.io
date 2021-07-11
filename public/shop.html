@@ -155,7 +155,10 @@
                         </div>
 
                         <div class="categories">
-                            <span class="title text-center d-block">Categories</span>
+                            <div class="title">
+                                <img src="img/shop/leaf.png" alt="">
+                                <span class="title text-center d-block">Categories</span>
+                            </div>
                             <ul class="product-categories p-0">
                                 <li class="cat-item">
                                     <a href="">Bread<span>2</span></a>
@@ -179,7 +182,10 @@
                         </div>
 
                         <div class="price-filter">
-                            <span class="title text-center d-block">Filter by price</span>
+                            <div class="title">
+                                <img src="img/shop/leaf.png" alt="">
+                                <span class="title text-center d-block">Filter</span>
+                            </div>
                             <div id="slider-range"></div>
                             <div class="
                   price-label
@@ -188,7 +194,7 @@
                   mt-4
                   align-item-center
                 ">
-                                <span class="price"></span>
+                                <span id="price"></span>
                                 <button type="submit" class="submit">Filter</button>
                             </div>
                         </div>
@@ -196,6 +202,14 @@
                 </div>
                 <div class="col-9">
                     <div class="main-content">
+                        <div class="select-field">
+                            <select class="form-select">
+                                <option selected>Default sort</option>
+                                <option value="1">Sort by price: low to high</option>
+                                <option value="2">Sort by price: high to low</option>
+                                <option value="3">Sort by latest</option>
+                              </select>
+                        </div>
                         <div class="product-catalog">
                             <div class="row">
 
@@ -373,6 +387,7 @@
         crossorigin="anonymous"></script>
     <script src="scripts/validate.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
 
 </body>
 

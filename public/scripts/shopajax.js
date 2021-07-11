@@ -1,4 +1,12 @@
-// import render from "./render.js";
+$("#slider-range").slider({
+  range: true,
+  min: 0,
+  max: 500,
+  values: [0, 500],
+  slide: function(event, ui) {$("#price").html("$" + ui.values[0] + " - $" + ui.values[1]);}
+  
+});
+$("#price").html("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
 import pagination from "./pagination.js";
 
 let url = new URL(window.location.href);
@@ -50,7 +58,7 @@ let xhr = $.ajax({
     </div>
   </div>`}
         ).join("");
-      console.log(json);
+
       $(".product-catalog .row").html(json);
 
       let total = xhr.getResponseHeader("x-total-count");
