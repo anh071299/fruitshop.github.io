@@ -1,25 +1,21 @@
-// check username
-// let signupForm = $(".sign-up-form");
-let username = $('input[name=name]');
 
-username.keyup(function () {
-    checkName();
+const name = $('input[name=name]');
+name.blur(function () {
+    checkName(this);
 });
-
-
-function checkName() {
-
-    let error = $(username).next();
-    let value = $(username).val().trim();
-    if (value === "") {
-        error.text("Username is required.");
-        $(username).addClass("is-invalid");
+function checkName(name) {
+    let error = $(name).next();
+    let value = $(name).val().trim();
+    if (value.length == "") {
+        error.text("Name  is required.");
+        $(name).addClass("is-invalid");
         return false;
     } else {
-        $(username).removeClass("is-invalid");
+        $(name).removeClass("is-invalid");
         return true;
     }
 }
+
 // check email
 const email = $('input[name=email]');
 email.blur(function () {
@@ -44,7 +40,7 @@ function checkEmail(email) {
 }
 //check phone
 let phone = $('input[name=phone]');;
-phone.keyup(function () {
+phone.blur(function () {
     checkPhone();
 });
 
@@ -67,7 +63,7 @@ function checkPhone() {
 }
 //check Password
 let password = $('input[name=password]');
-password.keyup(function () {
+password.blur(function () {
     checkPassword(this);
 });
 
@@ -114,13 +110,14 @@ function checkConPassword() {
 
 $('.sign-up-form #submitBtn').click(function (event) {
     let signupEmail = $('.sign-up-form input[name=email]');
-    let signupPass =$('.sign-up-form input[name=password]')
-    checkName();
+    let signupPass =$('.sign-up-form input[name=password]');
+    let signupName = $('.sign-up-form input[name=name]');
+    checkName($(signupName));
     checkEmail($(signupEmail));
     checkPhone();
     checkPassword($(signupPass)); checkConPassword();
     if (
-        !checkName() ||
+        !checkName($(signupName)) ||
         !checkPassword($(signupPass)) ||
         !checkPhone() ||
         !checkEmail($(signupEmail)) || !checkConPassword()
@@ -136,7 +133,7 @@ $('.sign-up-form #submitBtn').click(function (event) {
 
 $('#login-btn').click(function (event) {
     let loginEmail = $('.login-form input[name=email]');
-    let loginPass =$('.login-form input[name=password]')
+    let loginPass =$('.login-form input[name=password]');
     checkEmail($(loginEmail));
     checkPassword($(loginPass)); 
     if (
@@ -167,6 +164,20 @@ $('.subcribe #submit-btn').click(function(event){
     checkEmail($(email));
     if (
         !checkEmail($(email))
+    ) {
+        event.preventDefault();
+    }
+    else {
+
+    }
+})
+$('.contact-form #submit-btn').click(function(event){
+    let email = $('.contact-form input[name=email]');
+    let name = $('.contact-form input[name=name]');
+    checkEmail($(email));
+    checkName($(name))
+    if (
+        !checkEmail($(email))||!checkName(name)
     ) {
         event.preventDefault();
     }

@@ -1,0 +1,35 @@
+.form-contact{
+  background-color: #F8F7F1;
+  padding: 34px 40px 40px 40px;
+  border-radius: 20px;
+}
+.social-contact li a.social-icon {
+  border: none;
+  background-color: var(--primary-color);
+}
+.social-contact li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  color: black;
+}
+.social-contact .contact-info{
+    margin-left: 23px;
+}
+.social-contact .contact-info .info-title {
+  font-family: var(--title-font-family);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+.form-contact .row{
+    --bs-gutter-y: 30px;
+}
+.map iframe{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 0;
+}
+.map{
+  margin-top: 100px;
+}

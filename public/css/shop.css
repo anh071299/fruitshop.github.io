@@ -1,15 +1,3 @@
-:root {
-  --primary-color: #f69946;
-  --secondary-color: #96b416;
-  --text-color: #4f555a;
-  --accent-color: #f69946;
-  --head-font-color: #232323;
-  --title-font-family: "Livvic", sans-serif;
-  --title-font-weight: 700;
-  --content-font-family: "Nunito Sans", sans-serif;
-  --content-font-weight: 400;
-  --add-font-family: "Shadows Into Light", cursive;
-}
 .categories {
   padding-top: 40px;
 }
