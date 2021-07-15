@@ -1,4 +1,3 @@
-
 let xhr = $.ajax({
   url: `/products`,
   type: "GET",

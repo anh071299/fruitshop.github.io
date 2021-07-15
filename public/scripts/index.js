@@ -78,7 +78,7 @@ $('.banner-slide').slick({
     swipeToSlide: true,
     adaptiveHeight: true
 });
-$('.certification-slick').slick({
+$('.partner-slick').slick({
     infinite: true,
     slidesToShow: 6,
     slidesToScroll: 1,
