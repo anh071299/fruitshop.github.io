@@ -228,17 +228,15 @@ a {
   animation: fadeInDown 0.5s ease-in both;
   animation-delay: 2s;
 }
-.slide-content{
-  color: var(--primary-color);
-}
+
 .slide-content h2 {
   font-family: var(--add-font-family);
   text-transform: uppercase;
-
+  color:var(--accent-color);
   line-height: 72px;
   font-weight: 400;
   font-size: 36px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 .slick-current .slide-content img {
   animation: fadeInDown 0.5s ease-in both;
@@ -253,7 +251,7 @@ a {
 }
 .slide-content h1 {
   font-family: var(--title-font-family);
-
+  color: var(--text-color);
   text-align: center;
   line-height: 72px;
   letter-spacing: 0px;
@@ -273,7 +271,6 @@ a {
   font-weight: var(--content-font-weight);
   font-size: 18px;
   margin-bottom: 30px;
-
   max-width: 100%;
 }
 .slick-current .slide-content .shop-now {
@@ -339,7 +336,9 @@ a {
 .small-story {
   margin-top: 100px;
 }
-
+.title {
+  margin-bottom: 20px;
+}
 .sub-title {
   font-family: var(--add-font-family);
   color: var(--accent-color);
@@ -349,15 +348,16 @@ a {
 
   margin-bottom: 8px;
 }
-.title {
-  margin-bottom: 20px;
-}
+
 .section-about {
   color: var(--text-color);
   font-size: 16px;
   font-family: var(--content-font-family);
   line-height: 30px;
   text-align: justify;
+}
+.about-farm .section-about{
+  text-align: right;
 }
 .small-story-content .author .img-signature img {
   max-width: 100%;
