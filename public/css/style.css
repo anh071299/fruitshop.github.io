@@ -149,6 +149,9 @@ a {
 .main-menu .navbar-collapse {
   justify-content: center !important;
 }
+.main-menu a:hover{
+  color: var(--primary-color)!important;
+}
 .main-menu .navbar-collapse .navbar-nav .nav-link {
   padding-left: 20px;
   padding-right: 20px;
@@ -195,6 +198,9 @@ a {
 .banner-slide {
   padding-top: 80px;
   color: white;
+}
+.banner-slide a:hover{
+  color: var(--primary-color);
 }
 .banner-slide .slide1 {
   background-image: url("../img/banner/slider-img-2.jpg");
@@ -289,6 +295,9 @@ a {
 /*sub-banner */
 .sub-banner {
   margin-top: 30px;
+}
+.sub-banner a:hover{
+  color: var(--primary-color)!important;
 }
 .sub-banner .row {
   --bs-gutter-y: 30px;
@@ -403,6 +412,9 @@ div.img-layer-item.fadeRightAn img {
   color: var(--text-color);
 }
 .news a.more-btn:hover{
+  color: var(--primary-color);
+}
+.news .h4-title a:hover{
   color: var(--primary-color);
 }
 .blog-post {

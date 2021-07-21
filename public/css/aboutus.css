@@ -1,0 +1,30 @@
+.history-wrap .slick-dots{
+    text-align: left;
+    border-bottom: 4px solid var(--primary-color);
+    width: unset;
+    position: static;
+}
+.history-wrap .history-dots{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.history-wrap .slick-dots li{
+    display: inline-block;
+    width: unset;
+    height: unset;
+    margin: 0;
+}
+.history-wrap .slick-dots li.slick-active a{
+    background-color: var(--primary-color);
+    color: white;
+}
+.history-wrap .slick-dots li a{
+    padding: 8px 20px;
+    display: inline-block;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 16px;
+}
+.history-wrap .history-about .slick-prev,.history-wrap .history-about .slick-next {
+    display: none!important;
+}
