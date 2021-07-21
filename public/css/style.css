@@ -200,7 +200,7 @@ a {
   padding-top: 80px;
   color: white;
 }
-.banner-slide a:hover{
+.banner-slide a:hover {
   color: white;
 }
 .banner-slide .slide1 {
@@ -291,10 +291,10 @@ a {
   position: relative;
 
   display: block;
-    border: 2px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   padding: 17px 37px;
   border-radius: 3px;
-  
+
   text-align: center;
   line-height: 22px;
   font-weight: 700;
@@ -304,21 +304,40 @@ a {
   overflow: hidden;
   transition: 1s all ease;
 }
-a.shop-now::before{
-  background: var(--primary-color);
+.btn-bg-fill {
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: 700;
+  overflow: hidden;
+
+  transition: 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition-delay: 0.2s;
+  position: relative;
+
+  border: unset;
+  background-color: var(--primary-color);
+  margin-left: 10px;
+}
+.btn-ef::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  transition: all 0.6s ease;
-  width: 100%;
-  height: 0%;
-  transform: translate(-50%,-50%) rotate(-45deg);
+  left: 100%;
+  top: 0;
+
+  width: 150%;
+  height: 100%;
+
+  transition: 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transform: translateX(-17px) skewX(-45deg);
+  transform-origin: bottom;
   z-index: -1;
+
+  background-color: #d97319;
 }
-a.shop-now:hover::before{
-   height: 380%;
+.btn-ef:hover::before {
+  background-color: var(--primary-color);
+  animation-play-state: running;
+  transform: translateX(calc(-100% - 17px)) skewX(-45deg);
 }
 /*sub-banner */
 .sub-banner {
@@ -464,6 +483,21 @@ div.img-layer-item.fadeRightAn img {
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
+  background-size: 300%;
+  background-position: 0 0;
+  transition: background-position 0.7s;
+}
+.blog-category a:hover {
+  background-image: linear-gradient(
+    135deg,
+    #f69946 0%,
+    #f69946 50%,
+    #d97319 50%,
+    #d97319 100%
+  );
+  background-position: 100% 100%;
+  color: #ffffff;
+  transition: 0.4s;
 }
 .post-meta-wrap {
   display: flex;
@@ -673,15 +707,27 @@ h4.h4-title {
   margin-bottom: 18px;
 }
 .subcribe input {
-  height: 70px;
+  height: 50px;
 }
 #submit-btn {
-  padding: 6px 24px;
-  background-color: var(--primary-color);
-  font-weight: 700;
-  color: #ffff;
+  position: relative;
+
+  display: inline-block;
+  border-radius: 3px;
+  min-width: 145px;
+  outline: none;
+  padding: 6px 26px;
+
   font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  cursor: pointer;
   font-family: var(--title-font-family);
+  transition: 0.1s;
+  color: #ffffff;
+}
+.subcribe .btn-ef::before {
+  z-index: unset;
 }
 /* footer */
 .footer {
