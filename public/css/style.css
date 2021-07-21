@@ -333,7 +333,7 @@ a {
 
   background-color: #d97319;
 }
-.banner .btn-ef::before {
+.banner-slide .btn-ef::before {
   z-index: -1;
 }
 .btn-ef:hover::before {
