@@ -3,10 +3,8 @@
   padding: 34px 40px 40px 40px;
   border-radius: 20px;
 }
-.social-contact li a.social-icon {
-  border: none;
-  background-color: var(--primary-color);
-}
+
+
 .social-contact li {
   display: flex;
   align-items: center;
