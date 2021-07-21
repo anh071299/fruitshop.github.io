@@ -131,34 +131,7 @@
 .product-item {
   background-color: #fef7ef;
 }
-.product-content {
-  padding: 20px 10px 25px 25px;
-}
-.product-item .product-title a {
-  font-size: 22px;
-  color: var(--text-color);
-  font-weight: 600;
-  font-family: var(--title-font-family);
-}
-.product-title a:hover {
-  color: var(--primary-color);
-}
-.original-price {
-  color: var(--text-color);
-}
-.product-img {
-  transition: inherit;
-}
-.product-img img {
-  border-radius: 5px 5px 0 0;
-}
-.product-content {
-  transition: 0.3s;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
-  transition-delay: 0s;
-}
+
 a.page-link {
   border: none;
   color: var(--text-color);
