@@ -48,7 +48,7 @@
     margin-left: 10px;
 }
 .exp-info .exp-num{
-    font-size: 48px;
+    font-size: 45px;
     font-weight: 700;
     font-family: var(--title-font-family);
     line-height: 60px;
@@ -58,6 +58,64 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
+}
+/* feedback */
+.feedback{
+    margin-top: 100px;
+}
+.feedback-slide{
+    position: relative;
+    background-color: antiquewhite;
+    padding: 60px 30px 30px 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.feedback-slides .slick-dots li button::before{
+    color: var(--primary-color);
+    font-size: 12px;
+}
+.feedback-slide::before{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 700; 
+    font-size: 25px;
+    color: white;
+    background-color: var(--primary-color);
+    content:"\f10d";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    top: -30px;
+    left: calc(50% - 30px);
+}
+.feedback-slide .feedback-user{
+    margin-top: 30px;
+}
+.feedback-user .user-img{
+    height: 80px;
+    width: 80px;
+}
+.feedback-user .user-img img{
+    height: auto;
+    border-radius: 50%;
+}
+.feedback-user .user-info{
+ margin-left: 10px;
+ font-family: var(--title-font-family) ;
+}
+.feedback-user .user-info .user-name{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.feedback-user .user-info .user-type{
+    font-size: 14px;
+    color: #C4C4C4;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 @media(max-width: 768px){
     .history-wrap .history-dots{
