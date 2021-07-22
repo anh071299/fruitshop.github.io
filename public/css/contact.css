@@ -31,3 +31,11 @@
 .map{
   margin-top: 100px;
 }
+@media(max-width: 768px){
+  .form-contact{
+    padding: 20px;
+  }
+  .form-contact .row{
+    --bs-gutter-y: 15px;
+}
+}

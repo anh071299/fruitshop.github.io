@@ -1,6 +1,5 @@
 .history-wrap .slick-dots{
     text-align: left;
-    border-bottom: 4px solid var(--primary-color);
     width: unset;
     position: static;
 }
@@ -24,7 +23,51 @@
     color: var(--text-color);
     font-weight: bold;
     font-size: 16px;
+    border-bottom: 4px solid var(--primary-color);
+    text-align: center;
 }
 .history-wrap .history-about .slick-prev,.history-wrap .history-about .slick-next {
     display: none!important;
 }
+.experience{
+    margin-top: 100px;
+    background-color: var(--primary-color);
+    padding: 40px 0px;
+    color: white;
+    background-image: url(../img/banner/bg_leaf.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.experience .row{
+    --bs-gutter-y:30px;
+}
+.exp-icon{
+    font-size: 50px;
+}
+.exp-item .exp-info{
+    margin-left: 10px;
+}
+.exp-info .exp-num{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: var(--title-font-family);
+    line-height: 60px;
+}
+.exp-info .exp-name{
+    font-family: var(--content-font-family);
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+@media(max-width: 768px){
+    .history-wrap .history-dots{
+        display: block;
+    }
+    .history-wrap .history-dots ul.slick-dots{
+        display: flex;
+        flex-direction: column;
+    }
+    .history-wrap .slick-dots li a{
+        display: block;
+    }
+  }

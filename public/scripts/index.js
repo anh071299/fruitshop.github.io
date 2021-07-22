@@ -121,7 +121,7 @@ $('.counter').each(function () {
         countNum: countTo
     },
         {
-            duration: 2500,
+            duration: 1000,
             easing: 'swing',
             step: function () {
                 $this.text(Math.floor(this.countNum));
