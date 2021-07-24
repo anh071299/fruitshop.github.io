@@ -4,7 +4,6 @@ $("#slider-range").slider({
   max: 500,
   values: [0, 500],
   slide: function(event, ui) {$("#price").html("$" + ui.values[0] + " - $" + ui.values[1]);}
-  
 });
 $("#price").html("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
 import pagination from "./pagination.js";
@@ -45,12 +44,12 @@ let xhr = $.ajax({
      
         <div class="product-container">
           <div class="product-img">
-          <a href="">
+          <a href="product.html?productId=${p.id}">
             <img src="${p.image}" alt="quả bơ" />
             </a>
           </div>
                 <div class="product-content">
-                <h2 class="product-title"><a href="">${p.title}</a></h2>
+                <h2 class="product-title"><a href="product.html?productId=${p.id}">${p.title}</a></h2>
            ${p.salePrice == "" ? `<span class ="original-price real-price">${p.originalPrice}</span>` : `<span class ="original-price"><strike>${p.originalPrice}</strike></span>`}
           <span  ${p.salePrice == "" ? `style ="display:none"` : `style = "display:inline" class="sale-price real-price"`}  >${p.salePrice}</span>
                 </div>
@@ -69,9 +68,9 @@ let xhr = $.ajax({
         link = link.split(", ").map((l) => parseLink(l));
         link = Object.assign({}, ...link);
       }
-
-
       let totalPage = Math.ceil(total / productPerPage);
       let pg = pagination(link, page, totalPage);
       $(".nav").html(pg);
     })
+
+   

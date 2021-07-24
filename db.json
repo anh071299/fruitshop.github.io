@@ -3,112 +3,167 @@
       {
         "id": 1,
         "title": "Avocado",
-        "image": "/img/shop/bo.jpg",
+        "image": "./img/shop/bo.jpg",
         "originalPrice": "$7.0",
         "salePrice": "$5.0",
-        "description": "Quả bơ ngon",
+        "summary": "Avocados have a round shape, but most of them look like a gourd, when ripe, some remain the same color as when they are still green, but some change to black purple, the inside is soft, yellow pale or light green, with a sweet, fatty taste.",
+        "description": "Raw avocado flesh is 73% water, 15% fat, 9% carbohydrates, and 2% protein (table). In a 100 gram reference amount, avocado supplies 160 calories, and is a rich source (20% or more of the Daily Value, DV) of several B vitamins (such as 28% DV in pantothenic acid) and vitamin K (20% DV), with moderate contents (10-19% DV) of vitamin C, vitamin E, and potassium. Avocados also contain phytosterols and carotenoids, such as lutein and zeaxanthin.",
+        "unit": "1 kg",
         "category": "fruit",
-        "sku": "745652"
+        "sku": "F0001",
+        "component": [{
+          "protein": 12
+        }]
       }, 
       {
         "id": 2,
         "title": "Apple",
-        "image": "/img/shop/tao.jpg",
+        "image": "./img/shop/tao.jpg",
         "originalPrice": "$4.0",
         "salePrice": "$3.0",
-        "description": "Quả bơ ngon",
+        "summary":"Koru apple: a new apple variety bred by the person who successfully bred Envy apples. If Envy is sweet, then Koru apples will be suitable for those who like a sweet, crisp taste. The apple's appearance has many beautiful, dark red stripes.",
+        "description": "Apples provide very good fiber, which helps to stabilize blood sugar levels, helping the digestive system to work properly. The natural sugar in apples does not affect diabetics.<br>The American Koru apple has a low acid content, making it a good choice for children and the elderly because it is easy to digest.<br>Like many other apples, Koru apples contain a lot of pectin, and are also high in cholesterol-lowering soluble fiber and antioxidants. These are two very good substances for the prevention of cardiovascular disease. The high content of vitamins C and A supports the body's immune system, stimulates appetite, and at the same time destroys free radicals that cause senile disease or aging.",
+        "unit": "1 kg",
         "category": "fruit",
-        "sku": "745652"
+        "sku": "745652",
+        "component": [{
+          "protein": 12
+        }]
       }, 
       {
         "id": 3,
-        "title": "Grape",
-        "image": "img/shop/quanho.jpg",
+        "title": "Seedless black grapes",
+        "image": "./img/shop/quanho.jpg",
         "originalPrice": "$10.0",
         "salePrice": "",
-        "description": "Quả nho ngon",
+        "summary": "Black grapes are an old, popular and popular crop around the world with more than 8,000 grape varieties. They are suitable for areas with warm and dry climates.<br> American Summer Royal seedless black grapes, round fruit, medium cluster. Dark black grapes, crispy flesh, sweet and cool, eating will have a light acrid taste, hard fruit and succulent.",
+        "description": "Black currant is a very nutritious fruit, which has the effect of tonic, beneficial gas, healthy body, good immunity and slows down the aging process.<br>Calcium, potassium, phosphorus, iron, vitamins B1, B2, B6, C and essential amino acids are good for people with neurasthenia and beneficial for digestion.<br> Resveratrol compound in seedless black grapes, especially the skin, helps to detoxify toxins, reduce fatty blood, fight blood clots, prevent atherosclerosis and strengthen the body's immune system.",
+        "unit": "1 kg",
         "category": "fruit",
-        "sku": "745652"
+        "sku": "745652",
+        "component": [{
+          "protein": 12
+        }]
       },
       {
         "id": 4,
         "title": "Pomegranate",
-        "image": "img/shop/luu.jpg",
+        "image": "./img/shop/luu.jpg",
         "originalPrice": "$7.0",
         "salePrice": "$6.0",
-        "description": "Quả lựu ngon",
+        "summary": "Pomegranate is an imported fruit with yellow skin, relatively large fruit (about 2 fruits/kg), dark red seeds, lots of water, especially sweet and juicy.",
+        "description": "Pomegranate juice is rich in polyphenol antioxidants, which help protect the body from free radicals that cause aging, cardiovascular diseases, Alzheimer's disease and even cancer.<br> Pomegranate juice contains many components of sodium, vitamin B2, vitamin B, niacin, vitamin C, calcium and phosphorus, which reduce the formation of plaque in the arteries.<br> Pomegranate seed oil has the ability to prevent the formation of skin cancer cells thanks to its ability to heal quickly with skin lesions.<br> Pomegranate juice also helps women cope with the symptoms of menopause.>br> The benefits of drinking pomegranate juice are being confirmed in the treatment of heart diseases, premature aging and cancer.<br>Pomegranate juice helps maintain heart health and prevent cardiovascular diseases.",
+        "unit": "1 kg",
         "category": "fruit",
-        "sku": "745652"
+        "sku": "745652",
+        "component": [{
+          "protein": 12
+        }]
       },
       {
         "id": 5,
-        "title": "Turkish Figs",
-        "image": "img/shop/sung.jpg",
+        "title": " American Figs",
+        "image": "./img/shop/sung.jpg",
         "originalPrice": "$20.0",
         "salePrice": "",
-        "description": "Quả lựu ngon",
+        "summary": "American figs are flexible, sweet, have nectar and a very pleasant aroma. American figs are currently hunted by many families because of the great nutritional value of this high-class fruit.",
+        "description": " American figs have high nutritional value, many health benefits such as fighting constipation, preventing coronary artery disease, supporting the treatment of colon cancer and treating bronchitis, increasing calcium, preventing vision degeneration...",
         "category": "fruit",
-        "sku": "745652"
+        "unit": "1 kg",
+        "sku": "745652",
+        "component": [{
+          "protein": 12
+        }]
       }, 
       
       {
         "id": 6,
-        "title": "Óc chó",
-        "image": "img/shop/ocCho.jpg",
+        "title": "Walnuts",
+        "image": "./img/shop/ocCho.jpg",
         "originalPrice": "$18.0",
-        "salePrice": "",
-        "description": "Quả óc chó",
+        "salePrice":"",
+        "summary": " Walnuts kernels are the kernels inside shelled walnuts. Currently, walnuts are worshiped King of nuts for their health benefits that surpass pecans, hazelnuts, pistachios and many other nutritious nuts.",
+        "description": "Walnuts contain very high levels of nutrients: omega 3 fatty acids, antioxidants, ellagic acid, hydrocarbonate, protein, lactoflavin, vitamins A, B, E, K, ZinC, carotene, calcium, iron, phosphorus , magnesium, copper, cobalt, thiamine, nicotinic acid, selenium and iodine 3 are good for the brain, enhancing concentration.",
         "category": "dried food",
-        "sku": "745652"
+        "unit": "1 kg",
+        "sku": "745652",
+        "component": [{
+          "protein": 12
+        }]
       },
       {
         "id": 7,
         "title":"Tomato",
-        "image": "img/shop/caChua.jpg",
+        "image": "./img/shop/caChua.jpg",
         "originalPrice": "$5.0",
         "salePrice": "",
-        "description": "Cà chua",
+        "summary":"Tomato is a vegetable as a food. The fruit is initially green, turning yellow to red when ripe. Tomatoes have a slightly sour taste and are a nutritious food, rich in vitamins C and A, especially rich in healthy lycopeme.",
+        "description": "Tomatoes have many uses both in terms of healing and beauty. Beauty uses of tomatoes such as: anti-aging, smooth and bright skin, protect the skin surface .... <br>The therapeutic uses of tomatoes are many, such as: cancer prevention. , cure chronic hepatitis, support people with nephritis, treat heart disease, treat bowel obstruction, anemia, cure boils, boils, treat high fever with thirst or treat hypertension, bleeding root...",
         "category": "vegetables",
-        "sku": "745652"
+        "unit": "1 kg",
+        "sku": "745652",
+        "component": [{
+          "protein": 12
+        }]
       },
       {
         "id": 8,
-        "title":"Green Peas",
-        "image": "img/shop/do.jpg",
-        "originalPrice": "'$9.0",
+        "title":"Cove Peas",
+        "image": "./img/shop/do.jpg",
+        "originalPrice": "$9.0",
         "salePrice": "",
-        "description": "Cà chua",
+        "summary":"Cove beans have a small round and long stem like a chopstick, the beans are light green when young and green when ripe",
+        "description": "Cove bean is temperate, has a laxative effect, and nourishes the original gas. Chickpeas not only contain many trace elements such as protein, calcium, iron, but also high in potassium, magnesium, and low in sodium.<br> Chickpeas are very suitable for people with heart disease, kidney disease, high blood pressure. pressure. When eating, pay attention to cooking, otherwise it is easy to be poisoned.",
         "category": "vegetables",
-        "sku": "745652"
+        "unit": "1 kg",
+        "sku": "745652",
+        "component": [{
+          "protein": 12
+        }]
       },
       {
         "id": 9,
         "title":"Asparagus",
-        "image": "img/shop/mangtay.jpg",
+        "image": "./img/shop/mangtay.jpg",
         "originalPrice":"$20.0",
-        "salePrice": "",
-        "description": "Cà chua",
+        "salePrice":"",
+        "summary": "Asparagus is a herbaceous plant in the lily family, scientifically known as Asparagus officinalis. The young shoots are harvested and used as food. Asparagus is a vegetable that is loved by many people thanks to its crispy, naturally sweet flavor",
+        "description": "Water makes up 93% of asparagus's composition. Asparagus is low in food energy and very low in sodium. <br>It is a good source of vitamin B6, calcium, magnesium, and zinc, and a very good source of dietary fibre, protein, beta-carotene, vitamin C, vitamin E, vitamin K, thiamin, riboflavin, rutin, niacin, folic acid, iron, phosphorus, potassium, copper, manganese, and selenium, as well as chromium, a trace mineral that regulates the ability of insulin to transport glucose from the bloodstream into cells",
         "category": "vegetables",
-        "sku": "745652"
+        "unit": "250 g",
+        "sku": "745652",
+        "component": [{
+          "protein": 12
+        }]
       },
       {
         "id": 10,
         "title":"Orange",
-        "image": "img/shop/quacam.jpg",
+        "image": "./img/shop/quacam.jpg",
         "originalPrice": "$25.0",
         "salePrice": "",
-        "description": "Cà chua",
-        "sku": "745652"
+        "summary":"The vitamin C content in 100g of American yellow oranges is about 40mg, which meets almost the daily vitamin C needs of a normal person.<br>Vitamin C is a necessary component for the process of creating connective tissue, strengthening the immune system. Anti-inflammatory and anti-inflammatory.<br>Yellow orange also helps to improve skin youthfulness, anti-aging, lowers cholesterol, has a quick recovery effect, enhances red blood cell production, and reduces mental stress. menstruation.>br>Eating oranges regularly will help the body avoid viral diseases, significantly reduce the risk of kidney stones.<br>American yellow orange peel contains a lot of cellulose which has a laxative effect, stimulates contractions. In addition, this orange is also known as a type of diet high in fiber but very low in calories and sugar. Oranges are also an additional source of vitamins A, B, Calcium, Magnesium, Iron, Copper, Iodine, etc. for body.",
+        "description": "Oranges contain a lot of Vitamin C, which has a quick recovery effect, good for the skin, anti-aging, good for sick people.Eating oranges regularly will help protect you from viral infections, significantly reducing the risk of kidney stones. If you want to avoid excess calories, add American Navel oranges to your family's daily diet.",
+        "unit": "1 kg",
+        "sku": "745652",
+         "component": [{
+          "protein": 12
+        }]
       },
       {
         "id": 11,
-        "title":"Mango",
-        "image": "img/shop/quaxoai.jpg",
+        "title":"Australia Mango",
+        "image": "./img/shop/quaxoai.jpg",
         "originalPrice": "$10.0",
         "salePrice": "",
-        "description": "Cà chua",
+        "summary":"The Australia Mango is a late-season, semi-dwarf variety with large, highly colored fruit. This variety of the Mango is called Calypso. Calypso mango is vibrant in color, containing a large amount of flesh and having a long shelf life. The ripe flesh is firm, has a smooth texture with low fiber and is pale yellow in color.",
+        "description": "Australian mangoes are high in energy, low in fat and a great source of calcium and vitamins essential for good health.<br>200g of ripe mangoes (equivalent to less than one mango) gives you up to three times intake of vitamin A and vitamin C. Vitamin C, an antioxidant important in protecting the body from infection, is used to form collagen – a protein that provides structure to bones, cartilage, muscles, and blood vessels . Vitamin C also aids in the absorption of iron, which is needed to transport oxygen from the lungs to the body's cells.<br>Our Australian mangoes also provide more beta-carotene than any other fruit. other plants and is a rich source of dietary fiber and potassium. Beta-carotene is a powerful antioxidant that can help protect against disease and also fight the signs of aging by supporting growth and regeneration of cells, tissues and skin.<br>Mango nutrients to health benefits, such as improved immunity, digestive health and eyesight, as well as a lower risk of certain cancers.",
         "category": "fruit",
-        "sku": "745652"
+        "unit": "1 kg",
+        "sku": "745652",
+        "component": [{
+          "protein": 12
+        }]
       },
       {
         "id": 12,
@@ -116,9 +171,33 @@
         "image": "img/shop/kiwi.jpg",
         "originalPrice": "$30",
         "salePrice": "",
-        "description": "Cà chua",
+        "summary":"Kiwi provides abundant Vitamin C, E, potassium and fiber, iron, magnesium, ... good for the immune system, prevent hepatitis, improve immunity, fight impotence. <br>Contains many powerful antioxidants, low in calories and does not contain cholesterol, prevents cancer and heart disease, is favorable for digestion, controls blood pressure,... <br>Golden kiwi is rich in nutrients and vitamin E. <br> One kiwi provides 1/3 of the energy needed for a day.",
+        "description": "Green kiwi when ripe is very sweet, dubbed the champion of Vitamin C. Kiwi is very suitable for babies and the elderly.Green kiwifruit has high trace minerals and vitamins, low salt content, low fat content. One serving of green kiwifruit contains the potassium of one banana, the vitamin C of two oranges and the fiber of many whole grains.You can cut a green kiwi in half, scoop it up with a spoon, or mix it with your favorite drink, serve it on desserts, add it to a salad, or use both green and yellow kiwis for a colorful party. color and flavor.",
         "category": "fruit",
-        "sku": "745652"
+        "unit": "1 kg",
+        "sku": "745652",
+        "component": [{
+          "protein": 12
+        }]
+      },
+      {
+        "id": 13,
+        "title":"Shiitake mushrooms",
+        "image": "img/shop/nam.jpg",
+        "originalPrice": "$9",
+        "salePrice": "$8",
+        "summary":"Shiitake are edible mushrooms native to East Asia. They’re tan to dark brown, with caps that grow between 2 and 4 inches (5 and 10 cm). While typically eaten like vegetables, shiitake are fungi that grow naturally on decaying hardwood trees.",
+        "description": "Shiitake mushrooms have one of the highest amounts of natural copper, a mineral that supports healthy blood vessels, bones, and immune support. In fact, 1/2 cup of shiitake mushrooms gives you 72 percent of your daily recommended intake (DRI) of this mineral. The mushrooms are also a rich source of selenium, providing 33 percent of your DRI.",
+        "unit": "250 g",
+        "category": "dried",
+        "sku": "745652",
+        "component": [{
+          "fat": "0.5 g",
+          "sodium": "9 mg",
+          "potassium": "304 mg",
+          "carbohydrate": "7 g",
+          "protein": "2.2 g"
+        }]
       }
     ]
   }

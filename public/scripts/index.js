@@ -139,3 +139,32 @@ $('.feedback-slides').slick({
     autoplaySpeed: 2000,
 }
 )
+
+ // 
+ $('.q-icon').off('click').on('click', function () {
+    var min =  $('.quanity input').attr('min');
+    var max =  $('.quanity input').attr('max');
+    if ($(this).hasClass('q-inc')) {
+    
+      var addValue = parseInt($(this).parent().find('input').val()) + 1;
+      if(addValue > max){
+        addValue = max;
+      }
+          $(this).parent().find('input').val(addValue).trigger('change');
+      }
+  
+      if ($(this).hasClass('q-des')) {
+      var removeValue = parseInt($(this).parent().find('input').val()) - 1;
+          if( removeValue < min) {
+        removeValue = 1;
+          }
+          $(this).parent().find('input').val(removeValue).trigger('change');
+      }
+  
+  });
+  
+  
+  $('.quanity input').off('change').on('change', function() {
+    console.log($(this).val());
+  });
+  

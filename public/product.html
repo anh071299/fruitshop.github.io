@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Document</title>
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- css -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font  -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Livvic:wght@700&family=Nunito+Sans&display=swap&family=Zen+Loop&display=swap&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -133,164 +131,59 @@
     </div>
     <!-- banner -->
     <div class="banner d-flex align-items-center justify-content-center">
-        <div class="page-header-content">
+        <div class="page-header-content d-flex align-items-center justify-content-center flex-column">
             <div class="page-header-title">Shop</div>
             <div class="page-header-breadcumbs">
-                <a href="index.html" class="home">Home</a>
+                <a href="index.html">Home</a>
                 <span class="devide"></span>
-                <a href="contact.html" class="current">Shop</a>
+                <a href="shop.html">Shop</a>
+                <span class="devide"></span>
+                <span class="current">Fruit</span>
             </div>
         </div>
     </div>
-    <!-- catalog -->
-    <div class="main-shop">
+    <!-- product-detail -->
+    <div class="product-detail">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-12">
-                    <aside class="slider-content">
-                        <div class="product-search">
-                            <form role="search" class="product-search-form d-flex">
-                                <input type="search" />
-                                <button type="submit">
-                                    <i class="bi bi-search"></i>
-                                </button>
-                            </form>
-                        </div>
-
-                        <div class="categories">
-                            <div class="title">
-                                <img src="img/shop/leaf.png" alt="">
-                                <span class="title text-center d-block">Categories</span>
-                            </div>
-                            <ul class="product-categories p-0">
-                                <li class="cat-item">
-                                    <a href="">Fruits<span>2</span></a>
-                                </li>
-                                <li class="cat-item">
-                                    <a href="">Vegetables<span>3</span></a>
-                                </li>
-                                <li class="cat-item">
-                                    <a href="">Dried<span>4</span></a>
-                                </li>
-                                <li class="cat-item">
-                                    <a href="">Milk, Cream<span>5</span></a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="price-filter">
-                            <div class="title">
-                                <img src="img/shop/leaf.png" alt="">
-                                <span class="title text-center d-block">Filter</span>
-                            </div>
-                            <div id="slider-range"></div>
-                            <div class="
-                  price-label
-                  d-flex
-                  justify-content-between
-                  mt-4
-                  align-item-center
-                ">
-                                <span id="price"></span>
-                                <button type="submit" class="submit">Filter</button>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
-                <div class="col-12 col-lg-9">
-                    <div class="main-content">
-                        <div class="select-field">
-                            <select class="form-select">
-                                <option selected>Default sort</option>
-                                <option value="1">Sort by price: low to high</option>
-                                <option value="2">Sort by price: high to low</option>
-                                <option value="3">Sort by latest</option>
-                            </select>
-                        </div>
-                        <div class="product-catalog">
-                            <div class="row">
-
-                            </div>
-                            <nav class="nav  justify-content-center mt-5"></nav>
-                        </div>
+                <div class="col-12 col-lg-5">
+                    <div class="product-image">
+                        <img src="./img/shop/caChua.jpg" alt="">
                     </div>
                 </div>
+                <div class="col-12 col-lg-7">
+                   
+                    <div class="product-info">
+                        
+                    </div>
+                    <form action="" class="d-flex" class="quanity-form">
+                        <div class="quanity">
+                            <input type="number" step="1" min="1" value="1" max="9" class="product-quanity">
+                            <span class="q-inc q-icon"></span>
+                            <span class="q-des q-icon"></span>
+                        </div>
+                        <div class="btn-ef btn-bg-fill "><input type="submit" id="submit-btn" value="Shop now" class="btn" /></div>
+                    </form>
+                  
+                </div>
             </div>
         </div>
     </div>
-    <!-- footer -->
-    <div class="footer">
+    <!-- product-tabs-wrap -->
+    <div class="product-tabs-wrap">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <img src="img/header/logo.jpg" style="width: 120px;">
-                    <p class="section-about">We connect buyers and sellers of natural, organic, environmentally sound
-                        products..</p>
-                </div>
-                <div class="col-12 col-md-6 col-lg-2">
-                    <h4 class="h4-title">Menu</h4>
-                    <ul class="menu-footer">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="aboutus.html">About us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6 col-lg-2">
-                    <h4 class="h4-title">Help</h4>
-                    <ul class="menu-footer">
-                        <li><a href="#">Help & Customer Service</a></li>
-                        <li><a href="#">Delivery</a></li>
-                        <li><a href="#">Payment</a></li>
-                        <li><a href="#">Returns and Refunds</a></li>
-                        <li><a href="#">Promotions</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <h4 class="h4-title">Contact us</h4>
-                    <ul class="footer-contact-list">
-                        <li>
-                            <a href="https://goo.gl/maps/GtsBVx58qbjPb4dw7" class="d-flex" target="_blank"
-                                style="border: none;">
-                                <i class="bi bi-geo-alt-fill"></i>
-                                <span>123 Nguyễn Trãi,Thanh Xuân, Hà Nội</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:fresh_farm@mail.com" class="d-flex" target="_blank" style="border: none;">
-                                <i class="bi bi-envelope-fill"></i>
-                                <span>fresh_farm@gmail.com</span>
-                            </a>
-                        </li>
-                        <li style="padding-right: 25px;">
-                            <a href="tel:0987734671" class="d-flex" target="_blank" style="border: none;">
-                                <i class="bi bi-telephone-fill"></i>
-                                <span>0987734671</span>
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul class=" footer-social social-list">
-                        <li>
-                            <a href="https://twitter.com/" class="social-icon" target="_blank"><i
-                                    class="bi bi-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://facebook.com/" class="social-icon" target="_blank"><i
-                                    class="bi bi-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://instagram.com/" class="social-icon" target="_blank"><i
-                                    class="bi bi-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://youtube.com/" class="social-icon" target="_blank"><i
-                                    class="bi bi-youtube"></i></a>
-                        </li>
-                    </ul>
-                </div>
+            <ul class="product-tabs">
+                <li class="des-tab"><a href="#des-tab-content">Description</a></li>
+                <li class="nutrition-tab"><a href="#nutrition-tab-content">Nutrition</a></li>
+                <li class="review-tab"><a href="#review-tab-content">Review</a></li>
+            </ul>
+            <div id="des-tab-content">
+                aaaaaaaaa
             </div>
+            <div id="nutrition-tab-content">
+                aaaaaaaaaa
+            </div>
+            <div id="review-tab-content">aaaa</div>
         </div>
     </div>
     <!-- user-modal -->
@@ -314,7 +207,7 @@
                         </div>
                         <div class="col-12 ">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="emailsu" placeholder="Email" name="email"
+                                <input type="text" class="form-control" id="email" placeholder="Email" name="email"
                                     required />
                                 <div class="invalid-feedback"></div>
                             </div>
@@ -328,7 +221,7 @@
                         </div>
                         <div class="col-12">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="passwordsu" required placeholder="Password"
+                                <input type="text" class="form-control" id="password" required placeholder="Password"
                                     name="password" />
                                 <div class="invalid-feedback"></div>
                             </div>
@@ -360,7 +253,7 @@
 
                         <div class="col-12">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="passwordlg" required placeholder="Password"
+                                <input type="text" class="form-control" id="password" required placeholder="Password"
                                     name="password" />
                                 <div class="invalid-feedback"></div>
                             </div>
@@ -381,7 +274,7 @@
 
                     <form class="row g-3 needs-validation recover-pass-form" novalidate>
                         <div class="col-12 has-validation">
-                            <input type="text" class="form-control" id="emailfg" placeholder="Email" name="email"
+                            <input type="text" class="form-control" id="email" placeholder="Email" name="email"
                                 required />
                             <div class="invalid-feedback"></div>
                         </div>
@@ -397,21 +290,16 @@
             </div>
         </div>
     </div>
-    <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="scripts/shopajax.js" type="module"></script>
-    <script src="scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="scripts/validate.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-
+    <script src="scripts/detailPro.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
