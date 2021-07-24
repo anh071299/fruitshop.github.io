@@ -258,6 +258,7 @@ ul.product-tabs{
   z-index: -1;
   background-color: var(--primary-color);
 }
+
 @keyframes slide_top {
   100% {
     opacity: 1;
