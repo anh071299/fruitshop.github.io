@@ -12,7 +12,11 @@
         "category": "fruit",
         "sku": "F0001",
         "component": [{
-          "protein": 12
+          "fat": "15 g",
+          "sodium": "7 mg",
+          "potassium": "485 mg",
+          "carbohydrate": "9 g",
+          "protein": "2 g"
         }]
       }, 
       {
@@ -27,7 +31,11 @@
         "category": "fruit",
         "sku": "745652",
         "component": [{
-          "protein": 12
+          "fat": "0.2 g",
+          "sodium": "1 mg",
+          "potassium": "107 mg",
+          "carbohydrate": "14 g",
+          "protein": "0.3 g"
         }]
       }, 
       {
@@ -42,7 +50,11 @@
         "category": "fruit",
         "sku": "745652",
         "component": [{
-          "protein": 12
+          "fat": "0.4 g",
+          "sodium": "2 mg",
+          "potassium": "191 mg",
+          "carbohydrate": "17 g",
+          "protein": "0.6 g"
         }]
       },
       {
@@ -57,7 +69,11 @@
         "category": "fruit",
         "sku": "745652",
         "component": [{
-          "protein": 12
+          "fat": "1.2 g",
+          "sodium": "3 mg",
+          "potassium": "236 mg",
+          "carbohydrate": "19 g",
+          "protein": "1.5 g"
         }]
       },
       {
@@ -72,7 +88,10 @@
         "unit": "1 kg",
         "sku": "745652",
         "component": [{
-          "protein": 12
+          "fat": "1 g",
+          "sodium": "10 mg",
+          "carbohydrate": "64 g",
+          "protein": "3 g"
         }]
       }, 
       
@@ -88,7 +107,11 @@
         "unit": "1 kg",
         "sku": "745652",
         "component": [{
-          "protein": 12
+          "fat": "65 g",
+          "sodium": "2 mg",
+          "potassium": "441 mg",
+          "carbohydrate": "14 g",
+          "protein": "15 g"
         }]
       },
       {
@@ -103,7 +126,11 @@
         "unit": "1 kg",
         "sku": "745652",
         "component": [{
-          "protein": 12
+          "fat": "0.2 g",
+          "sodium": "5 mg",
+          "potassium": "237 mg",
+          "carbohydrate": "3.9 g",
+          "protein": "0.9 g"
         }]
       },
       {
@@ -118,7 +145,11 @@
         "unit": "1 kg",
         "sku": "745652",
         "component": [{
-          "protein": 12
+          "fat": "0.4 g",
+          "sodium": "5 mg",
+          "potassium": "224 mg",
+          "carbohydrate": "14 g",
+          "protein": "5 g"
         }]
       },
       {
@@ -133,7 +164,11 @@
         "unit": "250 g",
         "sku": "745652",
         "component": [{
-          "protein": 12
+          "fat": "0.1 g",
+          "sodium": "2 mg",
+          "potassium": "202 mg",
+          "carbohydrate": "3.9 g",
+          "protein": "2.2 g"
         }]
       },
       {
@@ -146,8 +181,11 @@
         "description": "Oranges contain a lot of Vitamin C, which has a quick recovery effect, good for the skin, anti-aging, good for sick people.Eating oranges regularly will help protect you from viral infections, significantly reducing the risk of kidney stones. If you want to avoid excess calories, add American Navel oranges to your family's daily diet.",
         "unit": "1 kg",
         "sku": "745652",
-         "component": [{
-          "protein": 12
+        "component": [{
+          "fat": "0.1 g",
+          "potassium": "181 mg",
+          "carbohydrate": "12 g",
+          "protein": "0.9 g"
         }]
       },
       {
@@ -162,7 +200,11 @@
         "unit": "1 kg",
         "sku": "745652",
         "component": [{
-          "protein": 12
+          "fat": "0.5 g",
+          "sodium": "9 mg",
+          "potassium": "304 mg",
+          "carbohydrate": "7 g",
+          "protein": "2.2 g"
         }]
       },
       {
@@ -177,7 +219,11 @@
         "unit": "1 kg",
         "sku": "745652",
         "component": [{
-          "protein": 12
+          "fat": "0.4 g",
+          "sodium": "1 mg",
+          "potassium": "168 mg",
+          "carbohydrate": "15 g",
+          "protein": "0.8 g"
         }]
       },
       {

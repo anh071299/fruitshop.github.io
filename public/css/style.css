@@ -147,7 +147,9 @@ a {
   transition: 0.3s;
   background-color: #fff;
 }
-
+.main-menu a.nav-link.active{
+  color: var(--primary-color)!important;
+}
 .main-menu .navbar-collapse {
   justify-content: center !important;
 }

@@ -65,7 +65,9 @@ $(window).scroll(
         }
         this.previousTop = currentTop;
     });
-
+// add active on menu link
+$('.header .navbar-nav a[href^="' + location.pathname.split("/")[1] + '"]').addClass('active');
+// banner-slide 
 $('.banner-slide').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -174,7 +176,7 @@ $('ul.product-tabs li a').click(function(){
    
   
     $('.product-tab-content').hide();
-    $('ul.product-tabs').removeClass('active').addClass('inactive');
+    $('ul.product-tabs li a').removeClass('active');
     $this.addClass('active').blur();
     
     

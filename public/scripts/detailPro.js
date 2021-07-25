@@ -7,6 +7,7 @@ let xhr = $.ajax({
 }).done(
     function(json){
         let p = json;
+        
         let productInfo = ` 
         <h1 class="product-title">${p.title}</h1>
         <div class="price">
@@ -24,11 +25,23 @@ let xhr = $.ajax({
             <span class="sku-id"><b>SKU</b>: ${p.sku} </span> 
         </div>
         `
-        
-    //   json.component.forEach(function(c){
-    //       for(key in c){console.log(key + ":" + c[key])}
-    //   })
+    let nutrition = '';
+    json.component.forEach(function(c){
+        for(key in c){
+        nutrition +=  `
+        <tr>
+            <th>${key}</th>
+            <td>${c[key]}</td>
+        </tr>
+         `
+        }
+        // for(key in c){console.log(key + ":" + c[key])}
+    })
+    $('.current-fruit').html(`${p.title}`)
     $('.product-info').html(productInfo);
-    $('.product-image').html(` <img src="${p.image}" alt="fruit">`)
+    $('.product-image').html(`<img src="${p.image}" alt="fruit">`);
+    $('#des-tab-content').html(`${p.description}`);
+    $(".nutrition-table tbody").html(`${nutrition}`);
+    $("title").html(`${p.title} - Fresh Farm`);
     }
 )

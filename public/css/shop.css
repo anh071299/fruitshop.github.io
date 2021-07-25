@@ -147,8 +147,12 @@ a.page-link {
   font-weight: 500;
 }
 /* product detail */
+
 .product-info{
   margin-bottom: 30px;
+}
+.product-tabs{
+  margin-top: 30px;
 }
 .product-image img{
   width: 100%;
@@ -258,7 +262,54 @@ ul.product-tabs{
   z-index: -1;
   background-color: var(--primary-color);
 }
+.product-tabs a.active{
+  background-color: var(--primary-color);
+  color: white;
+}
+.nutrition-table{
+  width: 100%;
+}
+.nutrition-table tr{
+  width: 50%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.nutrition-table th{
+  display: flex;
+  flex: 1 1 auto;
+  align-items: baseline;
+  width: auto;
+  border: 0;
+  padding: 10px 0 10px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+}
+.nutrition-table th::after{
+  content: '';
+    flex: 1 1 auto;
+    border-top: 1px solid #e1e1e1;
+    margin-left: 30px;
 
+}
+@media(max-widTh:768px){
+  ul.product-tabs{
+    display: block;
+    width: 100%;
+  }
+  .product-tabs li{
+    display: block;
+    width: 100%;
+  }
+  .product-tabs li a{
+    display: block;
+    padding: 8px 33px 10px;
+  }
+  .nutrition-table tr{
+    width: 100%;
+  }
+}
 @keyframes slide_top {
   100% {
     opacity: 1;
