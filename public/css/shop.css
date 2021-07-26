@@ -293,6 +293,9 @@ ul.product-tabs{
     margin-left: 30px;
 
 }
+#review-tab-content .form-contact{
+  margin-top: 40px;
+}
 @media(max-widTh:768px){
   ul.product-tabs{
     display: block;

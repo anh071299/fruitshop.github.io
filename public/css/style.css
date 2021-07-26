@@ -15,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   font-size: 16px;
   font-family: var(--content-font-family);
@@ -55,7 +56,30 @@ a {
   text-decoration: none !important;
   transition: 0.4 all;
 }
-
+.form-contact{
+  background-color: #FEF7EF;
+  padding: 34px 40px 40px 40px;
+  border-radius: 20px;
+}
+.social-contact li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  color: black;
+}
+.social-contact .contact-info{
+    margin-left: 23px;
+}
+.social-contact .contact-info .info-title {
+  font-family: var(--title-font-family);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+.form-contact .row{
+    --bs-gutter-y: 30px;
+}
+/* header */
 .header .top-header {
   padding: 5px 0px;
   background-color: var(--primary-color);
