@@ -4,7 +4,9 @@
 .content{
     margin-top: 100px;
 }
-
+a.more-btn:hover{
+    color: var(--primary-color);
+}
 .pagination-container{
     display: flex;
     align-items: center;
