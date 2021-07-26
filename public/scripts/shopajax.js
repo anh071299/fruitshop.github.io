@@ -37,7 +37,7 @@ let xhr = $.ajax({
       json = json.
         map((p) => {
 
-          delay += 0.16;
+          delay += 0.05;
           return `
       <div class="col-12 col-md-6 col-xl-4" style="animation-delay:${delay}s">
     <div class="product-item"  >

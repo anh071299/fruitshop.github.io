@@ -340,7 +340,6 @@ a {
   z-index: -1;
 }
 .btn-ef:hover::before {
-  background-color: var(--primary-color);
   animation-play-state: running;
   transform: translateX(calc(-100% - 17px)) skewX(-45deg);
 }
@@ -614,6 +613,8 @@ h4.h4-title {
 }
 .product-item .product-container {
   border-radius: 5px;
+  position: relative;
+  border: 3px solid transparent;
 }
 .product-content {
   padding: 20px 10px 25px 25px;
@@ -651,6 +652,7 @@ h4.h4-title {
   transition-timing-function: ease;
   transition-delay: 0s;
 }
+
 .product-container:hover {
   border: 3px solid var(--primary-color);
 }
@@ -658,7 +660,6 @@ h4.h4-title {
   display: inline-block;
 }
 .product-item {
-  position: relative;
   overflow: visible;
   z-index: 2;
 }
