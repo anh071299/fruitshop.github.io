@@ -172,7 +172,7 @@ $('.quanity input').off('change').on('change', function () {
     console.log($(this).val());
 });
 
-
+// product-tabs productDetail
 $('ul.product-tabs li a').click(function(){
     $this = $(this);
    
@@ -190,7 +190,23 @@ $('ul.product-tabs li a').click(function(){
    
   });//end click
   
-   
-  
   $('ul.product-tabs li:first a').click();
-  
+//   blog list
+var items = $(".blog-list .blog-post");
+console.log(items);
+    var numItems = items.length;
+    var perPage = 3;
+
+    items.slice(perPage).hide();
+
+    $('.pagination-container').pagination({
+        items: numItems,
+        itemsOnPage: perPage,
+        prevText: "&laquo;",
+        nextText: "&raquo;",
+        onPageClick: function (pageNumber) {
+            var showFrom = perPage * (pageNumber - 1);
+            var showTo = showFrom + perPage;
+            items.hide().slice(showFrom, showTo).show();
+        }
+    });

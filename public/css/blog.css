@@ -1,0 +1,17 @@
+.blog-list .blog-post{
+    margin-bottom: 50px;
+}
+.content{
+    margin-top: 100px;
+}
+
+.pagination-container{
+    display: flex;
+    align-items: center;
+}
+
+.pagination-container  span {
+	padding: 6px 12px;
+}
+
+

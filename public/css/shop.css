@@ -132,15 +132,6 @@
   background-color: #fef7ef;
 }
 
-a.page-link {
-  border: none;
-  color: var(--text-color);
-}
-.page-item.active a.page-link {
-  background-color: unset;
-  color: black;
-  border-bottom: 3px solid var(--primary-color);
-}
 .price{
   margin-bottom: 12px;
   font-size: 22px;
