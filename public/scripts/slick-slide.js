@@ -4,7 +4,6 @@ $('.banner-slide').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     infinite: true,
-    speed: 1000,
     fade: true,
     cssEase: 'linear',
     swipeToSlide: true,
