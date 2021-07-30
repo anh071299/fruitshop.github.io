@@ -127,7 +127,7 @@ span.q-inc::before {
 }
 span.q-des::after {
   content: "\f078";
-  font-family: 700 15px/20px "Font Awesome 5 Free";
+  font: 700 15px/20px "Font Awesome 5 Free";
 }
 .product-info, .product-meta {
   margin-top: 30px;

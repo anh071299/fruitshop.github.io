@@ -1,9 +1,6 @@
 .blog-list .blog-post{
     margin-bottom: 50px;
 }
-.content{
-    margin-top: 100px;
-}
 a.more-btn:hover{
     color: var(--primary-color);
 }
@@ -14,5 +11,13 @@ a.more-btn:hover{
 .pagination-container  span {
 	padding: 6px 12px;
 }
-
-
+.blog-list-content .slider-content{
+    padding-left: 30px;
+}
+.related-post-title{
+    font: 400 16px/24px var(--title-font-family);
+    color: #232323;;
+}
+.related-post-title:hover{
+    color: var(--primary-color);
+}
