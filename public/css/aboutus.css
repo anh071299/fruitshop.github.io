@@ -95,9 +95,6 @@
   color: #c4c4c4;
   text-transform: uppercase;
 }
-.footer .section-about{
-  color: #ffffff;
-}
 @media (max-width: 768px) {
   .history-wrap .history-dots,  .history-wrap .slick-dots li a {
     display: block;
