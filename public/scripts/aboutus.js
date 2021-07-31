@@ -1,39 +1,3 @@
-$('.banner-slide').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    infinite: true,
-    fade: true,
-    cssEase: 'linear',
-    swipeToSlide: true,
-    adaptiveHeight: true
-});
-$('.partner-slick').slick({
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-            }
-        },
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                infinite: true,
-            }
-        }]
-});
-
 $('.history-about').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

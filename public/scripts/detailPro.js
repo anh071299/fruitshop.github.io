@@ -35,7 +35,6 @@ let xhr = $.ajax({
         </tr>
          `
         }
-        // for(key in c){console.log(key + ":" + c[key])}
     })
     $('.current-fruit').html(`${p.title}`)
     $('.product-info').html(productInfo);
@@ -45,3 +44,34 @@ let xhr = $.ajax({
     $("title").html(`${p.title} - Fresh Farm`);
     }
 )
+// product added info
+$('ul.product-tabs li a').click(function(){
+    $this = $(this);
+    $('.product-tab-content').hide();
+    $('ul.product-tabs li a').removeClass('active');
+    $this.addClass('active').blur();
+    var panel = $this.attr('href');
+    $(panel).fadeIn(350);
+    return false;
+  });//end click
+  $('ul.product-tabs li:first a').click();
+// quanity input 
+$('.q-icon').off('click').on('click', function () {
+    var min = $('.quanity input').attr('min');
+    var max = $('.quanity input').attr('max');
+    if ($(this).hasClass('q-inc')) {
+        var addValue = parseInt($(this).parent().find('input').val()) + 1;
+        if (addValue > max) {
+            addValue = max;
+        }
+        $(this).parent().find('input').val(addValue).trigger('change');
+    }
+    if ($(this).hasClass('q-des')) {
+        var removeValue = parseInt($(this).parent().find('input').val()) - 1;
+        if (removeValue < min) {
+            removeValue = 1;
+        }
+        $(this).parent().find('input').val(removeValue).trigger('change');
+    }
+
+});
