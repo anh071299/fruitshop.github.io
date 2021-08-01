@@ -53,13 +53,9 @@ function pagination ({ prev, next }, current, totalPage) {
   return `
       <ul class="pagination">
           ${toPrevPage(prev, current)}
-
           ${prevPage(current)}
-
           ${currentPage(current)}
-
           ${nextPage(current, totalPage)}
-
           ${toNextPage(next, current, totalPage)}
       </ul>
   `;
@@ -135,5 +131,3 @@ let xhr = $.ajax({
       let pg = pagination(link, page, totalPage);
       $(".nav").html(pg);
     })
-
-   

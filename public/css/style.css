@@ -64,6 +64,29 @@ a:hover {
 .mt-30 {
   margin-top: 30px;
 }
+.basket-icon {
+  width: 50px;
+  display: inline-block;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  margin-right: 21px;
+}
+.icon-nav .basket-icon .basket-amount {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  line-height: 15px;
+  text-align: center;
+  font-size: 14px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: absolute;
+}
 .social-contact li {
   display: flex;
   align-items: center;
@@ -118,56 +141,6 @@ span[class="current"] {
   background-color: unset;
   color: black;
   border-bottom: 3px solid var(--primary-color);
-}
-.aside-title {
-  font: 700 16px/30px var(--primary-font-family);
-  margin-bottom: 23px;
-  font-weight: 700;
-}
-.aside-search-form input {
-  width: 100%;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  height: 50px;
-}
-.aside-search-form button {
-  width: 58px;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-}
-.categories {
-  padding-top: 40px;
-}
-.categorie-list .cat-item a {
-  color: var(--head-font-color);
-  font-weight: 400;
-}
-.categorie-list .cat-item a::before {
-  content: "";
-  display: inline-block;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  margin-right: 7px;
-}
-.categorie-list .cat-item:hover a {
-  color: var(--primary-color);
-}
-.categorie-list .cat-item:hover a span {
-  background-color: var(--primary-color);
-  color: white;
-}
-.categorie-list .cat-item span {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  background-color: #f9f4ee;
-  line-height: 20px;
-  text-align: center;
-  font-size: 14px;
-  margin-left: 5px;
 }
 .btn-bg-fill {
   display: inline-block;
@@ -229,6 +202,24 @@ a.more-btn:hover {
   color: var(--text-color);
   font: 400 16px/30px  var(--content-font-family);
   text-align: justify;
+}
+.post-meta-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #878b8e;
+}
+.post-date::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 10px 2px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
 }
 .banner {
   background: url("../img/banner/title-11.jpg")  center center  scroll;
@@ -368,30 +359,6 @@ a.more-btn:hover {
 .icon-nav li {
   display: inline-block;
 }
-
-.basket-icon {
-  width: 50px;
-  display: inline-block;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid var(--primary-color);
-  line-height: 50px;
-  text-align: center;
-  position: relative;
-  margin-right: 21px;
-}
-.icon-nav .basket-icon .basket-amount {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  line-height: 15px;
-  text-align: center;
-  font-size: 14px;
-  background-color: var(--primary-color);
-  color: #fff;
-  position: absolute;
-}
 .footer {
   background-image: url("../img/footer/image-bg.jpg");
   background-size: contain;
@@ -416,135 +383,6 @@ a.more-btn:hover {
 .footer ul li {
   margin-bottom: 8px;
 }
-.about-farm .section-about {
-  text-align: right;
-}
-.small-story-content .author .img-signature img {
-  max-width: 100%;
-}
-.small-story .small-story-author-img {
-  position: relative;
-}
-.img-layer-item:not(:first-child) {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-div.img-layer-item.fadeAn img {
-  animation: fade 2s ease-in both;
-  animation-delay: 1s;
-}
-div.img-layer-item.fadeUpAn img {
-  animation: fadeInUp 0.5s ease-in both;
-  animation-delay: 1.5s;
-}
-div.img-layer-item.fadeRightAn img {
-  animation: fadeInRight 0.5s ease-in both;
-  animation-delay: 2s;
-}
-/* new */
-.h4-title a:hover {
-  color: var(--primary-color);
-}
-.h4-title a {
-  color: var(--text-color);
-}
-.blog-post {
-  transition: 0.3s;
-  position: relative;
-  border-radius: 5px;
-}
-.blog-post a {
-  display: inline-block;
-}
-.blog-post img {
-  width: 100%;
-  border-radius: 5px 5px 0px 0px;
-}
-.blog-post {
-  border-radius: 5px;
-}
-.blog-post::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  color: #d7d6d4;
-  background-image: linear-gradient(
-    -45deg,
-    currentColor 0%,
-    currentColor 15px,
-    transparent 15px,
-    transparent 100%
-  );
-  background-repeat: no-repeat;
-  z-index: 1;
-  pointer-events: none;
-  border-radius: 5px;
-  transition: all 0.4s;
-}
-.blog-post:hover::before {
-  box-shadow: inset 0 0 0 1px transparent, 0 3px 18px 0 rgb(0 0 0 / 12%);
-  color: var(--secondary-color);
-}
-.blog-post-content {
-  position: relative;
-  padding: 40px 40px 33px;
-}
-.blog-category {
-  position: absolute;
-  top: -17px;
-}
-.blog-category a {
-  padding: 5px 10px;
-  background-color: var(--primary-color);
-  border-radius: 2px;
-  font: 700 14px/20px var(--title-font-family);
-  color: #ffffff;
-  background-size: 300%;
-  background-position: 0 0;
-  transition: background-position 0.7s;
-}
-.blog-category a:hover {
-  background-image: linear-gradient(
-    135deg,
-    #f69946 0%,
-    #f69946 50%,
-    #d97319 50%,
-    #d97319 100%
-  );
-  background-position: 100% 100%;
-  color: #ffffff;
-  transition: 0.4s;
-}
-.post-meta-wrap {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  font-weight: 700;
-  color: #878b8e;
-}
-.post-date::after {
-  content: "";
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin: 0 10px 2px;
-  border-radius: 4px;
-  background-color: var(--primary-color);
-}
-h4.h4-title {
-  font: 700 24px/36px  var(--title-font-family);
-}
-.blog-post-content .blog-title:hover {
-  color: #96b416;
-}
-.news-content .row {
-  --bs-gutter-y: 30px;
-}
 @media (min-width: 1200px) {
   .main-menu .navbar {
     width: 80%;
@@ -555,94 +393,6 @@ h4.h4-title {
   .banner-slide {
     padding-top: 136px;
   }
-}
-.product-item .product-container {
-  border-radius: 5px;
-  position: relative;
-  border: 3px solid transparent;
-}
-.product-content {
-  padding: 20px 10px 25px 25px;
-  border-radius: 0px 0px 5px 5px;
-}
-.product-title a {
-  font-size: 22px;
-  color: var(--text-color);
-  font-weight: 600;
-}
-h1.product-title {
-  font-family: var(--title-font-family);
-}
-.product-title a:hover {
-  color: var(--primary-color);
-}
-.original-price {
-  color: var(--text-color);
-}
-.real-price {
-  color: var(--secondary-color);
-  font-weight: 500;
-}
-.product-img {
-  transition: inherit;
-}
-.product-img img {
-  border-radius: 5px 5px 0 0;
-}
-.product-content {
-  transition: 0.3s;
-  transition-property: all 0.3s ease 0s;
-}
-
-.product-container:hover {
-  border: 3px solid var(--primary-color);
-}
-.product-container:hover .basket-icon {
-  display: inline-block;
-}
-.product-item {
-  overflow: visible;
-  z-index: 2;
-}
-.product-item .basket-icon {
-  display: none;
-  position: absolute;
-  bottom: -25px;
-  right: 0px;
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  z-index: 5;
-}
-.product-item .basket-icon:hover {
-  background-color: var(--secondary-color);
-  color: #fff !important;
-}
-
-/* about farm */
-.about-farm .content-left {
-  background: url("../img/about-farm/bg1.png") no-repeat top left;
-  background-size: auto;
-}
-.about-farm .content-right {
-  background: url("../img/about-farm/bg2.png") no-repeat top right;
-  background-size: auto;
-}
-.about-farm .content-left .row {
-  justify-content: flex-end;
-}
-.content-item {
-  width: 76%;
-  max-width: 76%;
-  align-items: baseline;
-}
-.content-item img {
-  width: 64px;
-}
-.content-item h4 {
-  font-size: 22px;
-  color: var(--head-font-color);
-  font-family: var(--title-font-family);
 }
 @media (min-width: 1200px) {
   div.content-left > .row > div:nth-child(2) > .content-item {

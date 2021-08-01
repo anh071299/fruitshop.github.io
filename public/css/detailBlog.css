@@ -1,0 +1,25 @@
+h1.blog-single-title{
+    font: 700 35px/50px var(--title-font-family);
+}
+.blog-single-img img{
+    border-radius: 5px;
+    width: 100%;
+}
+.blog-single-content .post-meta-wrap{
+    margin: 15px 0px  40px 0px;
+}
+.blog-single-img{
+    margin-bottom: 40px;
+}
+h2.sub-section-title{
+    font: 700 30px/45px var(--title-font-family);
+}
+.text-emphasize{
+    color:var(--secondary-color);
+}
+.share-wrap .social-list{
+    margin-top: 7px;
+}
+.share-wrap .social-list li{
+    margin-bottom: 20px;
+}

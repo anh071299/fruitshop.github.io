@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Fresh farm</title>
+    <title>Fresh Farm - Organic Convennient Store</title>
     <link rel="shortcut icon" href="img/header/favicon.png" type="image/x-icon">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="css/detailBlog.css">
+    <link rel="stylesheet" href="css/page-aside.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" href="css/shop.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/page-aside.css">
-    <link rel="stylesheet" href="css/product-item.css">
+
+    <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -35,15 +38,19 @@
                         <div class="col-6 nav-left">
                             <div class="header-contact">
                                 <ul>
-                                    <li style="padding-right: 25px;"><a href="tel:0987734671">
+                                    <li style="padding-right: 25px;">
+                                        <a href="tel:0987734671">
                                             <i class="bi bi-telephone-fill"></i><span
                                                 class="header-phone-number">0987734671</span>
-                                        </a></li>
-                                    <li><a href="https://goo.gl/maps/GtsBVx58qbjPb4dw7" style="border: none;">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://goo.gl/maps/GtsBVx58qbjPb4dw7" style="border: none;">
                                             <i class="bi bi-geo-alt-fill"></i><span class="header_address">123 Nguyễn
                                                 Trãi,
                                                 Thanh Xuân, Hà Nội</span>
-                                        </a></li>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -53,8 +60,9 @@
                                     <!-- language-select -->
                                     <li>
                                         <div class="dropdown lang-dropdown">
-                                            <a class=" btn p-0 dropdown-toggle align-items-center" id="lang-dropdown"
-                                                type="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                                            <a class=" btn p-0 dropdown-toggle d-flex align-items-center"
+                                                id="lang-dropdown" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false"></a>
                                             <ul class="dropdown-menu lang-menu" aria-labelledby="lang-dropdown">
                                                 <li value="el">
                                                     <a class="dropdown-item">
@@ -88,19 +96,19 @@
             <div class="main-menu ">
                 <div class="container">
                     <div class="row">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand order-2 order-lg-1" href="index.html"><img
-                                    src="img/header/logo.png"></a>
-                            <button class="navbar-toggler order-1 order-lg-none" type="button" data-bs-toggle="collapse"
+                        <nav class="navbar navbar-expand-xl navbar-light">
+                            <a class="navbar-brand order-2 order-xl-1" href="index.html"><img src="img/header/logo.png"
+                                    style="height: 80px;"></a>
+                            <button class="navbar-toggler order-1 order-xl-none" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse order-4 order-lg-2 lateral-left"
+                            <div class="collapse navbar-collapse order-4 order-xl-2 lateral-left"
                                 id="navbarSupportedContent">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link"  href="index.html">Home</a>
+                                        <a class="nav-link active" href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="shop.html">Shop</a>
@@ -116,10 +124,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="" class="icon order-3 d-lg-none d-block  ms-lg-auto"><i
+                            <a href="" class="icon order-3 d-xl-none d-block  ms-xl-auto"><i
                                     class="bi bi-search"></i></a>
                         </nav>
-                        <ul class="icon-nav d-lg-flex align-items-center justify-content-end d-none">
+                        <ul class="icon-nav d-xl-flex align-items-center justify-content-end d-none">
                             <li><a href="" class="basket-icon icon"><i class="bi bi-basket"></i><span
                                         class="basket-amount">0</span></a></li>
                             <li><a href="" class="icon"><i class="bi bi-search"></i></a></li>
@@ -132,30 +140,169 @@
     </div>
     <!-- banner -->
     <div class="banner d-flex align-items-center justify-content-center">
-        <div class="page-header-content text-center">
-            <div class="page-header-title">Shop</div>
+        <div class="page-header-content text-center d-flex align-items-center justify-content-center flex-column">
+            <div class="page-header-title">Blog Post</div>
             <div class="page-header-breadcumbs">
-                <a href="index.html" class="home">Home</a>
+                <a href="index.html">Home</a>
                 <span class="devide"></span>
-                <a href="contact.html" class="current">Shop</a>
+                <a href="blog.html">Blog</a>
+                <span class="devide"></span>
+                <span class="current-blog">Vegan diet: how your body changes from day one</span>
             </div>
         </div>
     </div>
-    <!-- catalog -->
-    <div class="main-shop">
+
+    <div class="blog-single mt-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-12">
-                    <aside class="slider-content">
+                <div class="col-lg-8 col-12">
+                    <div class="blog-single-content">
+                        <h1 class="blog-single-title">
+                            Vegan diet: how your body changes from day one
+                        </h1>
+                        <div class="post-meta-wrap">
+                            <span class="post-date">January 12, 2021</span>
+                            <span class="post-author">By Elisa</span>
+                        </div>
+                        <div class="blog-single-img">
+                            <img src="img/news/detailBlog.jpg" alt="  Vegan diet: how your body changes from day one">
+                        </div>
+                        <div class="section-about">
+                            <p>
+                                Veganism, the plant-based diet which shuns meat and dairy, is having its time in the
+                                sun.
+                                Since 2008, there has been a <span class="text-emphasize">350% increase in the number
+                                    of</span>
+                                UK alone. Where this motivation stems from is
+                                varied, but includes concerns about animal welfare, <span class="text-emphasize">worries
+                                    about the environment</span> and
+                                religious reasons.<br> Many people, though, seek a healthier diet. Research suggests
+                                that <span class="text-emphasize">veganism can havehealth benefits </span>, if well
+                                planned. For those who have pursued a diet rich in meat and dairy for most of their
+                                lives, embarking on a vegan diet can lead to significant
+                                changes within the body.</p>
+                            <div class="sub-section-wrap d-flex align-items-start">
+                                <div class="share-wrap">
+                                    <ul class="social-list">
+                                        <li>
+                                            <a href="https://twitter.com/" class="social-icon" target="_blank"><i
+                                                    class="bi bi-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://facebook.com/" class="social-icon" target="_blank"><i
+                                                    class="bi bi-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://instagram.com/" class="social-icon" target="_blank"><i
+                                                    class="bi bi-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://youtube.com/" class="social-icon" target="_blank"><i
+                                                    class="bi bi-youtube"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sub-section-post">
+                                    <div class="sub-section-about">
+                                        <h2 class="sub-section-title">
+                                            The first few weeks
+                                        </h2>
+                                        <p>
+                                            The first thing that someone starting a vegan diet might notice is an energy
+                                            boost with the removal of the processed meat that is found in many omnivorous diets,
+                                            in favour of fruit, vegetables and nuts. These foods will boost your vitamin,
+                                            mineral and fibre levels and thinking ahead about your meals and snacks rather than
+                                            relying  on convenience foods can help sustain consistent energy levels.<br>As time
+                                            without animal products grows into weeks, there is likely to be a shift in bowel
+                                            function either towards a more regular, healthy pattern or an increase in bloating, wind
+                                            and  loose motions. This is due to the higher fibre content of a vegan diet and the
+                                            simultaneous increase in carbohydrates that ferment in the gut and <span  class="text-emphasize">can cause irritable bowel syndrome.</span>
+                                            <br>This may settle eventually and could lead <span class="text-emphasize">to
+                                                some positive changes</span> in the
+                                            diversity of the bacteria in the colon, depending on whether a vegan diet is
+                                            made up of processed food and refined carbohydrates or is well planned and balanced.
+                                            Although not proven yet, scientists believe that <span class="text-emphasize">a
+                                                high species diversity for gut bacteria </span> could be beneficial for the whole
+                                            system, in the same way that ecosystems are stronger as a result of lots of
+                                            different types of species thriving.
+                                        </p>
+                                        <div class="blog-single-img">
+                                            <img src="img/news/detailPost-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="sub-section-about">
+                                        <h2 class="sub-section-title">
+                                            Three to six months later
+                                        </h2>
+                                        <p>
+                                            Several months into a vegan diet and some people may find that the increase in
+                                            fruit and vegetables and reduced processed food
+                                            As time without <span class="text-emphasize">can help acne to clear up.</span>
+                                            By this point however, your stores of vitamin D might be dropping as key sources
+                                            of it in our diet come from meat, fish and dairy, and it isn’t always noticeable
+                                            until it’s too late. Vitamin D isn’t well understood but it’s </span>
+                                            This may settle eventually and could lead <span class="text-emphasize">essential
+                                                in keeping bones, teeth and muscles healthy and deficiency has been linked
+                                                with cancer, heart disease, migraines and depression.</span><br>
+                                            This is because vitamin D stores are only thought to last about two months in
+                                            the body. How long your stores last will depend on the time of year that you
+                                            decide to go vegan because the body can make vitamin D from sunlight. Making
+                                            sure you eat<span class="text-emphasize"> plenty of fortified foods </span> or
+                                            take a supplement is important, especially in the winter months.
+                                        </p>
+                                        <div class="blog-single-img">
+                                            <img src="img/news/detatilPost-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-contact">
+                                <div class="title">
+                                    <h3 class="main-title">Leave a comment</h3>
+                                </div>
+                                <form class="d-flex g-3 needs-validation contact-form" novalidate="">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="input-group has-validation">
+                                                <div class="input-group has-validation">
+                                                    <input type="text" class="form-control" id="name" placeholder="Name*" name="name" required="">
+                                                    <div class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="input-group has-validation">
+                                                <input type="text" class="form-control" id="email" placeholder="Email*" name="email" required="">
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group has-validation">
+                                                <textarea class="form-control" name="message" id="message" placeholder="Message..." cols="40" rows="5" style="width:100%"></textarea>
+                                                <div class="invalid-feedback"></div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="col-12 text-center">
+                                            <div class="btn-ef btn-bg-fill"><input type="submit" value="Submit" class="btn submitBtn "></div>
+                                        </div>
+                                    </div>
+        
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <aside class="slider-content-pl">
                         <div class="search-wrap">
                             <form role="search" class="aside-search-form d-flex">
-                                <input type="search" />
-                                <button type="submit">
+                                <input type="search" placeholder="Search..." />
+                                <button type="submit p-0">
                                     <i class="bi bi-search"></i>
                                 </button>
                             </form>
                         </div>
-
                         <div class="categories">
                             <div class="aside-title text-center text-uppercase">
                                 <img src="img/shop/leaf.png" alt="">
@@ -163,68 +310,78 @@
                             </div>
                             <ul class="categorie-list p-0">
                                 <li class="cat-item">
-                                    <a href="">Fruits<span>2</span></a>
+                                    <a href="">Organic<span>2</span></a>
                                 </li>
                                 <li class="cat-item">
-                                    <a href="">Vegetables<span>3</span></a>
+                                    <a href="">Vegan<span>3</span></a>
                                 </li>
                                 <li class="cat-item">
-                                    <a href="">Dried<span>4</span></a>
+                                    <a href="">Recipes<span>4</span></a>
                                 </li>
                                 <li class="cat-item">
-                                    <a href="">Milk, Cream<span>5</span></a>
+                                    <a href="">Farm<span>5</span></a>
                                 </li>
                             </ul>
                         </div>
-
-                        <div class="price-filter">
-                            <div class="aside-title">
+                        <div class="related-post">
+                            <div class="aside-title text-center text-uppercase">
                                 <img src="img/shop/leaf.png" alt="">
-                                <span class="title text-center d-block">Filter</span>
+                                <span class="title text-center d-block">Related post</span>
                             </div>
-                            <div id="slider-range"></div>
-                            <div class="
-                  price-label
-                  d-flex
-                  justify-content-between
-                  mt-4
-                  align-item-center
-                ">
-                                <span id="price"></span>
-                                <div class="btn-ef btn-bg-fill d-flex justify-content-center "><input type="submit"
-                                    value="Filter" class="btn submitBtn"  /></div>
+                            <div class="related-post-list">
+                                <div class="related-post-item">
+                                    <a href="detailBlog.html" class="related-post-link d-flex align-items-center">
+                                        <img src="img/news/post-title-bg-6.jpg"
+                                            alt="Recovering from COVID-19? Here’s a Healthy Food Chart You Should Keep in Mind">
+                                        <div class="related-post-content">
+                                            <h6 class="related-post-title">Healthy Food Chart help recover from COVID-19
+                                            </h6>
+                                            <span class="post-meta-wrap">
+                                                January 25, 2021
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="related-post-item">
+                                    <a href="detailBlog.html" class="related-post-link d-flex align-items-center">
+                                        <img src="img/news/post-title-bg-7.jpg"
+                                            alt="Recovering from COVID-19? Here’s a Healthy Food Chart You Should Keep in Mind">
+                                        <div class="related-post-content">
+                                            <h6 class="related-post-title">The best organic crepes recipe</h6>
+                                            <span class="post-meta-wrap">
+                                                January 25, 2021
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="related-post-item">
+                                    <a href="detailBlog.html" class="related-post-link d-flex align-items-center">
+                                        <img src="img/news/post-title-bg-9.jpg"
+                                            alt="Vegan diet: how your body changes from day one">
+                                        <div class="related-post-content">
+                                            <h6 class="related-post-title">Vegan diet: how your body changes from day
+                                                one</h6>
+                                            <span class="post-meta-wrap">
+                                                January 25, 2021
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </aside>
                 </div>
-                <div class="col-12 col-lg-9">
-                    <div class="main-content">
-                        <div class="select-field">
-                            <select class="form-select">
-                                <option selected>Default sort</option>
-                                <option value="1">Sort by price: low to high</option>
-                                <option value="2">Sort by price: high to low</option>
-                                <option value="3">Sort by latest</option>
-                            </select>
-                        </div>
-                        <div class="product-catalog">
-                            <div class="row">
-
-                            </div>
-                            <nav class="nav  justify-content-center mt-5"></nav>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
-      <!-- footer -->
-      <div class="footer mt-100">
+    <!-- footer -->
+    <div class="footer mt-100">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <img src="img/header/logo.png">
-                    <p class="section-about text-justify text-white mt-30">We connect buyers and sellers of natural, organic, environmentally sound
+                    <p class="section-about text-justify text-white">We connect buyers and sellers of natural, organic,
+                        environmentally sound
                         products..</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-2">
@@ -271,7 +428,7 @@
                         </li>
                     </ul>
 
-                    <ul class=" footer-social social-list">
+                    <ul class=" footer-social mt-30 social-list">
                         <li>
                             <a href="https://twitter.com/" class="social-icon" target="_blank"><i
                                     class="bi bi-twitter"></i></a>
@@ -314,7 +471,7 @@
                         </div>
                         <div class="col-12 ">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="emailsu" placeholder="Email" name="email"
+                                <input type="text" class="form-control" id="email" placeholder="Email" name="email"
                                     required />
                                 <div class="invalid-feedback"></div>
                             </div>
@@ -328,7 +485,7 @@
                         </div>
                         <div class="col-12">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="passwordsu" required placeholder="Password"
+                                <input type="text" class="form-control" id="password" required placeholder="Password"
                                     name="password" />
                                 <div class="invalid-feedback"></div>
                             </div>
@@ -360,7 +517,7 @@
 
                         <div class="col-12">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="passwordlg" required placeholder="Password"
+                                <input type="text" class="form-control" id="password" required placeholder="Password"
                                     name="password" />
                                 <div class="invalid-feedback"></div>
                             </div>
@@ -381,7 +538,7 @@
 
                     <form class="row g-3 needs-validation recover-pass-form" novalidate>
                         <div class="col-12 has-validation">
-                            <input type="text" class="form-control" id="emailfg" placeholder="Email" name="email"
+                            <input type="text" class="form-control" id="email" placeholder="Email" name="email"
                                 required />
                             <div class="invalid-feedback"></div>
                         </div>
@@ -401,15 +558,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="scripts/shopajax.js" type="module"></script>
     <script src="scripts/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="scripts/validate.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-
 </body>
 
 </html>

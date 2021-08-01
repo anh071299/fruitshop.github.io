@@ -1,29 +1,10 @@
 .blog-list .blog-post{
     margin-bottom: 50px;
 }
-a.more-btn:hover{
-    color: var(--primary-color);
-}
 .pagination-container{
     display: flex;
     align-items: center;
 }
 .pagination-container  span {
 	padding: 6px 12px;
-}
-.blog-list-content .slider-content{
-    padding-left: 30px;
-}
-.related-post-title{
-    font: 600 16px/24px var(--title-font-family);
-    color: #232323;;
-}
-.related-post-title:hover{
-    color: var(--primary-color);
-}
-.related-post-item{
-    margin-bottom: 30px;
-}
-.related-post-item img{
-    margin-right: 25px;
 }
