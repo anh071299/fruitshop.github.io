@@ -1,6 +1,9 @@
 .mb-40{
     margin-bottom: 40px;
 }
+.blog-single .row{
+    --bs-gutter-y: 40px;
+}
 h1.blog-single-title{
     font: 700 35px/50px var(--title-font-family);
 }
@@ -33,14 +36,15 @@ h2.sub-section-title{
     padding: 35px 0 30px 0px;
     border-bottom: 1px solid #e4dfdf;
 }
+.comment-item .btn-bg-fill{
+    height: 50px;
+}
 .comment-item:last-child{
     border: none;
 }
 .comment-item-img img{
-    width: 70px;
-    height: 70px;
     border-radius: 50%;
 }
 .comment-item-info{
-    margin-left: 30px;
+    padding: 0px 30px;
 }

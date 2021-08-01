@@ -75,10 +75,6 @@
     color: #ffffff;
     transition: 0.4s;
   }
-  
-  h4.h4-title {
-    font: 700 24px/36px  var(--title-font-family);
-  }
   .blog-post-content .blog-title:hover {
     color: #96b416;
   }

@@ -31,6 +31,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+ h4.h4-title {
+    font: 700 24px/36px  var(--title-font-family);
+  }
 .container-fluid {
   padding: 0 !important;
 }
@@ -142,45 +145,57 @@ span[class="current"] {
   color: black;
   border-bottom: 3px solid var(--primary-color);
 }
-.btn-bg-fill {
+.corner-add{
   display: inline-block;
-  border-radius: 3px;
-  font-weight: 700;
-  overflow: hidden;
-  transition: 1s cubic-bezier(0.65, 0.05, 0.36, 1);
-  transition-delay: 0.2s;
   position: relative;
-  border: unset;
+  transition: 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition-delay: 0.05s;
+  overflow: hidden;
+  border-radius: 3px;
   background-color: var(--primary-color);
-  margin-left: 10px;
+  vertical-align: baseline;
 }
-.btn-ef::before {
-  content: "";
+div.corner-add:hover input, div.corner-add:hover a{
+  color: #fff;
+}
+.morph-element{
+  background-color: #D97319;
+  content: '';
   position: absolute;
-  left: 100%;
-  top: 0;
   width: 150%;
   height: 100%;
-  transition: 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
-  transform: translateX(-17px) skewX(-45deg);
+  left: 100%;
+  top: 0;
+  transition: 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transform: translateX(-17px) skewX(
+-45deg
+);
   transform-origin: bottom;
-  background-color: #d97319;
 }
-.btn-ef:hover::before {
-  animation-play-state: running;
-  transform: translateX(calc(-100% - 17px)) skewX(-45deg);
-  color: white;
+.corner-add:hover .morph-element{
+  transform: translateX(calc(-100% - 17px)) skewX(
+-45deg
+);
+color: white;
 }
-input.submitBtn {
-  position: relative;
-  display: inline-block;
-  border-radius: 3px;
-  outline: none;
-  padding: 10px 26px;
-  font: 700 16px/30px var(--title-font-family);
-  transition: 0.1s;
-  color: #ffffff !important;
+div.corner-add-noBg{
+  background-color: unset;
+  border: 2px solid var(--primary-color);
 }
+ .submitBtn, input.submitBtn {
+    position: relative;
+    display: block;
+    height: auto;
+    border-radius: 3px;
+    padding: 13px 30px;
+    font: 700 16px/30px var(--title-font-family);
+    color: #fff;
+    background: transparent !important;
+    z-index: 1;
+    overflow: visible;
+    float: left;
+    transition: 0.3s;
+} 
 .more-btn {
   z-index: 1;
   font: 700 16px/30px var(--title-font-family); 
