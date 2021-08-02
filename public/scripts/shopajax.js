@@ -1,4 +1,5 @@
 // pagination
+import renderProduct from "../scripts/renderProduct.js"
 let toPrevPage = (link, current) => {
   return `
       <li class="page-item ${current == 1 ? "disabled" : ""}">
@@ -92,29 +93,12 @@ let xhr = $.ajax({
   .done(
     function (json) {
       let delay = 0;
-
       json = json.
         map((p) => {
-
           delay += 0.05;
           return `
       <div class="col-12 col-md-6 col-xl-4" style="animation-delay:${delay}s">
-    <div class="product-item"  >
-     
-        <div class="product-container">
-          <div class="product-img">
-          <a href="product.html?productId=${p.id}">
-            <img src="${p.image}" alt="quả bơ" />
-            </a>
-          </div>
-                <div class="product-content">
-                <h2 class="product-title"><a href="product.html?productId=${p.id}">${p.title}</a></h2>
-           ${p.salePrice == "" ? `<span class ="original-price real-price">${p.originalPrice}</span>` : `<span class ="original-price"><strike>${p.originalPrice}</strike></span>`}
-          <span  ${p.salePrice == "" ? `style ="display:none"` : `style = "display:inline" class="sale-price real-price"`}  >${p.salePrice}</span>
-                </div>
-                <a href="" class="basket-icon icon"><i class="bi bi-basket"></i></span></a>
-        </div>
-    </div>
+   ${renderProduct(p)}
   </div>`}
         ).join("");
 
