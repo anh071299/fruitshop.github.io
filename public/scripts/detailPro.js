@@ -7,7 +7,6 @@ let xhr = $.ajax({
 }).done(
     function(json){
         let p = json;
-        
         let productInfo = ` 
         <h1 class="product-title">${p.title}</h1>
         <div class="price">
@@ -15,7 +14,6 @@ let xhr = $.ajax({
         <span  ${p.salePrice == "" ? `style ="display:none"` : `style = "display:inline" class="sale-price real-price"`}  >${p.salePrice}</span>
         
         </div>
-       
         <div class="product-des">
            ${p.summary}
         </div>

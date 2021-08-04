@@ -49,9 +49,7 @@ $("#cancel-recover-pass").click(function () {
 });
 // header-fixed
 $('.header .navbar-nav a[href^="' + location.pathname.split("/")[1] + '"]').addClass('active');
-// $('.quanity input').off('change').on('change', function () {
-//     console.log($(this).val());
-// });
+
 
 
 

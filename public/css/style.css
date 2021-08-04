@@ -25,7 +25,6 @@ body {
 body,
 html {
   width: 100%;
-  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -34,7 +33,7 @@ img {
  h4.h4-title {
     font: 700 24px/36px  var(--title-font-family);
   }
-.container-fluid {
+ .header .container-fluid {
   padding: 0 !important;
 }
 ul {
@@ -240,8 +239,8 @@ a.more-btn:hover {
   background: url("../img/banner/title-11.jpg")  center center  scroll;
   background-size: cover;
   min-height: 400px;
-  margin: 147px 0px 40px 0px;
-  padding: 31px 0px 40px 0px;
+  margin-bottom: 40px;
+  padding: 40px 0px 40px 0px;
 }
 .devide {
   margin: 0px 10px;
@@ -342,8 +341,24 @@ a.more-btn:hover {
   color: rgb(233, 232, 232);
 }
 /* main-menu */
+.navbar-light button.navbar-toggler{
+  border: none;
+  max-width: 25%;
+}
+.navbar .navbar-brand{
+  max-width: 50%;
+}
+.navbar .navbar-brand img{
+  height: 67px;
+}
+.navbar a.icon{
+  max-width: 25%;
+}
+button.navbar-toggler:focus{
+ box-shadow: none;
+}
 .header {
-  position: fixed;
+  position: sticky;
   top: 0px;
   left: 0;
   width: 100%;
@@ -353,6 +368,10 @@ a.more-btn:hover {
   box-shadow: 0px 23px 38px 0px rgb(0 0 0 / 10%);
   z-index: 99;
 }
+.main-menu .navbar{
+  width: 100%;
+}
+
 .main-menu a.nav-link.active {
   color: var(--primary-color) !important;
 }
@@ -398,16 +417,17 @@ a.more-btn:hover {
 .footer ul li {
   margin-bottom: 8px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .main-menu .navbar {
-    width: 80%;
+    max-width: 83.33%;
   }
   .main-menu .icon-nav {
-    width: 20%;
+    max-width: 16.67%;
   }
-  .banner-slide {
-    padding-top: 136px;
+  .navbar a.navbar-brand img{
+    height: 80px;
   }
+  
 }
 @media (min-width: 1200px) {
   div.content-left > .row > div:nth-child(2) > .content-item {
@@ -417,4 +437,3 @@ a.more-btn:hover {
     margin-left: 40px;
   }
 }
-

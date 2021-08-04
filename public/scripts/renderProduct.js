@@ -11,7 +11,7 @@ export default (p) =>
    ${p.salePrice == "" ? `<span class ="original-price real-price">${p.originalPrice}</span>` : `<span class ="original-price"><strike>${p.originalPrice}</strike></span>`}
   <span  ${p.salePrice == "" ? `style ="display:none"` : `style = "display:inline" class="sale-price real-price"`}  >${p.salePrice}</span>
         </div>
-        <a class="basket-icon icon add-cart"><i class="bi bi-basket"></i></span></a>
+        <a class="basket-icon icon" onclick="addCart(${p.id})"><i class="bi bi-basket"></i></span></a>
 </div>
 </div>`
     
