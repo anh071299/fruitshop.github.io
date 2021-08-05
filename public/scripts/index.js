@@ -2,7 +2,7 @@ import renderProduct from "../scripts/renderProduct.js";
 $('.banner-slide').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
   infinite: true,
   fade: true,
@@ -79,22 +79,3 @@ let xhr = $.ajax({
       });
     })
 
-// resize
-// function resize_text() {
-//   var fSizeH2 = Math.ceil($(window).width() * (36 / 1200));
-//   var fSizeH1 = Math.ceil($(window).width() * (72 / 1200))
-//   if ($(window).width() < 1200) {
-//       $('.slide-content h2').css('font-size', fSizeH2 + 'px');
-//       $('.slide-content h2').css('line-height', fSizeH2*2 + 'px');
-//       $('.slide-content h2').css('font-size', fSizeH2 + 'px');
-//       $('.slide-content h2').css('line-height', fSizeH2*2 + 'px');
-//     }
-//    else {
-//     $('.slide-content h2').css('font-size', 36 + 'px');
-//     $('.slide-content h2').css('line-height', 72 +'px');
-//   }
-// }
-// $(window).resize(function () {
-//   resize_text();
-// })
-// resize_text();
