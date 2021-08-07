@@ -7,6 +7,12 @@
     padding: 20px 10px 25px 25px;
     border-radius: 0px 0px 5px 5px;
   }
+  .product-title{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .product-title a {
     font-size: 22px;
     color: var(--text-color);
