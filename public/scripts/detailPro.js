@@ -10,8 +10,8 @@ let xhr = $.ajax({
         let productInfo = ` 
         <h1 class="product-title">${p.title}</h1>
         <div class="price">
-        ${p.salePrice == "" ? `<span class ="original-price real-price">${p.originalPrice}</span>` : `<span class ="original-price"><strike>${p.originalPrice}</strike></span>`}
-        <span  ${p.salePrice == "" ? `style ="display:none"` : `style = "display:inline" class="sale-price real-price"`}  >${p.salePrice}</span>
+        ${p.salePrice == "" ? `<span class ="original-price real-price">${p.originalPrice}.0</span>` : `<span class ="original-price"><strike>${p.originalPrice}.0</strike></span>`}
+        <span  ${p.salePrice == "" ? `style ="display:none"` : `style = "display:inline" class="sale-price real-price"`}  >${p.salePrice}.0</span>
         
         </div>
         <div class="product-des">
@@ -40,6 +40,11 @@ let xhr = $.ajax({
     $('#des-tab-content').html(`${p.description}`);
     $(".nutrition-table tbody").html(`${nutrition}`);
     $("title").html(`${p.title} - Fresh Farm`);
+    $('.corner-add').html(`
+        <input type="button" value="Shop now" class="btn submitBtn" onclick="addCart(${p.id})" />
+        <span class="morph-element">
+        </span>
+    `)
     }
 )
 // product added info

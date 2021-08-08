@@ -1,0 +1,26 @@
+.cart-table thead{
+    color: white;
+    background: var(--primary-color);
+}
+table.cart-table>:not(caption)>*>*{
+    padding: 15px;
+}
+.cart-table tr th:first-child{
+    padding-left: 120px;
+}
+td{
+    vertical-align: middle;
+}
+td.product img{
+    height: 75px;
+}
+td{
+    font: 500 18px/27px var(--title-font-family);
+}
+td.product a, .total-title{
+   font: 600 20px/30px var(--title-font-family);
+   color: #5c5c5c;
+}
+.total-title{
+    color: var(--primary-color);
+}

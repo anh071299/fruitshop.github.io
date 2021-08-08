@@ -29,7 +29,7 @@ $("#back-to-login").click(function () {
     $('input').removeClass('is-invalid')
     $(".login-form").show();
     $(".sign-up-form").hide();
-    $(".modal-header .modal-title").html(`<img src="img/header/logo.jpg" alt="">`);
+    $(".modal-header .modal-title").html(`<img src="img/header/logo.png" alt="">`);
     return false;
 });
 
@@ -44,7 +44,7 @@ $("#cancel-recover-pass").click(function () {
     $('input').removeClass('is-invalid');
     $(".login-form").show();
     $(".recover-pass-form").hide();
-    $(".modal-header .modal-title").html(`<img src="img/header/logo.jpg" alt="">`);
+    $(".modal-header .modal-title").html(`<img src="img/header/logo.png" alt="">`);
     return false;
 });
 // header-fixed

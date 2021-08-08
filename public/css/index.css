@@ -199,6 +199,9 @@
   .subcribe {
     background: url("../img/getintouch/our-team_form-bg.png") center;
   }
+  .subcribe input{
+    height: 50px;
+  }
   .subcribe .social-list {
     font-size: 25px;
   }

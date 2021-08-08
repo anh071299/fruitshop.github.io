@@ -8,3 +8,6 @@
 .pagination-container  span {
 	padding: 6px 12px;
 }
+.blog-list-content .row{
+    --bs-gutter-y: 30px;
+}

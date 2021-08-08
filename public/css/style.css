@@ -80,7 +80,7 @@ a:hover {
   position: relative;
   margin-right: 21px;
 }
-.icon-nav .basket-icon .basket-amount {
+ .basket-icon .basket-amount {
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -211,7 +211,7 @@ a.more-btn:hover {
   margin-bottom: 20px;
 }
 .sub-title {
-  font: 600 28px/40px var(--content-font-family);
+  font: 600 26px/38px var(--content-font-family);
   color: var(--accent-color);
   margin-bottom: 8px;
 }
@@ -241,7 +241,6 @@ a.more-btn:hover {
 .banner {
   background: url("../img/banner/title-11.jpg")  center center  scroll;
   background-size: cover;
-  min-height: 400px;
   margin-bottom: 40px;
   padding: 40px 0px 40px 0px;
 }
@@ -258,12 +257,12 @@ a.more-btn:hover {
 }
 .page-header-title {
   color: #ffffff;
-  font: 700 48px/60px  var(--title-font-family);
+  font: 700 30px/42px  var(--title-font-family);
   margin-bottom: 25px;
 }
 .page-header-breadcumbs a,
 .page-header-breadcumbs span {
-  font: 700 16px/24px var(--content-font-family);
+  font: 700 14px/22px var(--content-font-family);
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -374,7 +373,6 @@ button.navbar-toggler:focus{
 .main-menu .navbar{
   width: 100%;
 }
-
 .main-menu a.nav-link.active {
   color: var(--primary-color) !important;
 }
@@ -388,6 +386,22 @@ button.navbar-toggler:focus{
   padding: 0px 20px;
   font:var(--title-font-weight) 16px/20px var(--title-font-family);
   color: #5c5c5c;
+}
+.aside-search-form{
+  padding: 0px 20px;
+}
+.aside-search-form input {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  height: 40px;
+  padding: 8px 8px 8px 25px;
+}
+.aside-search-form button {
+  width: 58px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
 }
 .icon {
   font-size: 25px;
@@ -444,6 +458,17 @@ h3 a{
   
 }
 @media (min-width: 1200px) {
+  .banner{
+    min-height: 400px;
+  }
+  .page-header-breadcumbs a, .page-header-breadcumbs span{
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .page-header-title{
+    font-size: 48px;
+    line-height: 60px;
+  }
   div.content-left > .row > div:nth-child(2) > .content-item {
     margin-right: 40px;
   }

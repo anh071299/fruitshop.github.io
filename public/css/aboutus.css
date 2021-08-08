@@ -46,12 +46,15 @@
   margin-left: 10px;
 }
 .exp-info .exp-num {
-  font: 700 45px/60px var(--title-font-family);
+  font: 700 30px/45px var(--title-font-family);
 }
 .exp-info .exp-name {
   font: 700 25px/30px var(--content-font-family);
 }
 /* feedback */
+.feedback .row{
+  --bs-gutter-y: 30px;
+}
 .feedback-slide {
   position: relative;
   background-color: #fef7ef;
@@ -94,6 +97,12 @@
   font: 400 14px/20px var(--title-font-family);
   color: #c4c4c4;
   text-transform: uppercase;
+}
+@media (min-width: 992px){
+  .exp-info .exp-num{
+    font-size: 45px;
+    line-height: 60px;
+  }
 }
 @media (max-width: 768px) {
   .history-wrap .history-dots,  .history-wrap .slick-dots li a {

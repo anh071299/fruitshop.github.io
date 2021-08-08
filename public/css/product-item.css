@@ -50,7 +50,7 @@
     display: inline-block;
   }
   .product-item {
-    overflow: visible;
+    /* overflow: visible; */
     z-index: 2;
   }
   .product-item .basket-icon {

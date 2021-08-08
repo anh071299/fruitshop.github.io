@@ -157,7 +157,7 @@
   .original-price {
     color: var(--text-color);
   }
-  .real-price {
+  .total, .real-price {
     color: var(--secondary-color);
     font-weight: 500;
   }  
