@@ -3,6 +3,7 @@ $('.banner-slide').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
+  arrows: false,
   autoplaySpeed: 3000,
   infinite: true,
   fade: true,
@@ -13,7 +14,9 @@ $('.banner-slide').slick({
 $('.partner-slick').slick({
   infinite: true,
   slidesToShow: 6,
+  centerPadding: '20px', 
   slidesToScroll: 1,
+  arrows: false,
   autoplay: true,
   autoplaySpeed: 2000,
   responsive: [
@@ -51,6 +54,7 @@ let xhr = $.ajax({
       $('.product-slider').slick({
         infinite: false,
         slidesToShow: 4,
+        arrows: false,
         slidesToScroll: 4,
         responsive: [
           {
@@ -71,7 +75,8 @@ let xhr = $.ajax({
             breakpoint: 768,
             settings: {
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 1,
+              arrows: false,
             }
           }
         ]

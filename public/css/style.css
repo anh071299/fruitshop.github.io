@@ -71,8 +71,8 @@ a {
 a:hover {
   color: var(--primary-color);
 }
-.mt-100 {
-  margin-top: 100px;
+.mt-80 {
+  margin-top: 80px;
 }
 .mt-30 {
   margin-top: 30px;
@@ -252,7 +252,6 @@ a.more-btn:hover {
 .banner {
   background: url("../img/banner/title-11.jpg")  center center  scroll;
   background-size: cover;
-  margin-bottom: 40px;
   padding: 40px 0px 40px 0px;
 }
 .devide {
@@ -383,6 +382,9 @@ button.navbar-toggler:focus{
 }
 .main-menu .navbar{
   width: 100%;
+}
+.main-menu .navbar-nav li{
+  margin-bottom: 12px;
 }
 .main-menu a.nav-link.active {
   color: var(--primary-color) !important;

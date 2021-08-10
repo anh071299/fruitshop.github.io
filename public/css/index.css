@@ -1,7 +1,7 @@
 /* banner */
 .sub-banner .more-btn{
-  font-size: 9px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 18px;
 }
 .banner-slide {
     color: white;
@@ -50,7 +50,6 @@
     animation-delay: 0.9s;
   }
   .slide-content h2{
-    /* font: var(--title-font-weight) 3vw/6vw var(--add-font-family); */
     font-size: min(4.5vw, 22px);
     line-height: min(9vw, 44px);
     font-weight: var(--title-font-weight) ;
@@ -59,7 +58,6 @@
     margin-bottom: 5px;
   }
   .slide-content h1{
-    /* font: var(--title-font-weight) 6vw/7.167vw var(--title-font-family); */
     font-size: min(9vw, 44px);
     font-weight: var(--title-font-weight) ;
     font-family:var(--title-font-family) ;
@@ -67,7 +65,6 @@
     text-align: center;
   }
   .slide-content p{
-    /* font: 400 1.5vw/3vw var(--content-font-family); */
     font-size: min(2.25vw, 15px);
     line-height: min(5vw, 30px);
     margin-top: 2.5vw;
@@ -79,9 +76,8 @@
     padding: calc(100vw / 12) 0px;
   }
   .slide-content .submitBtn{
-    font-size: 2.25vw;
-    line-height: 5vw;
-    padding: calc(15vw / 12) calc(32vw / 12);
+    font-size: min(2.25vw, 14px);
+    padding: min(calc(25vw / 12), 18px) min(calc(34vw / 12), 30px);
   }
   .slide-content .morph-element{
     transform: translateX(calc(-17vw / 12)) skewX(
@@ -134,7 +130,7 @@
   .sub-banner-item .sub-item-info .sub-info-title {
     margin-bottom: 1vw;
     color: #232323;
-    font: 500 19px/29px var(--title-font-family)!important;
+    font: 500 34px/51px var(--title-font-family)!important;
     word-break: break-word;
     transition: 0.4s;
     z-index: 1;
@@ -156,17 +152,16 @@
 .partner {
     background-color: var(--secondary-color);
   }
+  .partner img{
+    max-width: 100%;
+  }
   .partner .slick-track {
     padding: 30px 0px;
     display: flex;
     align-items: center;
   }
-  .partner .slick-next,
-  .partner .slick-prev {
-    visibility: hidden;
-  }
   .partner .slick-slide {
-    display: flex;
+    display: flex!important;
     justify-content: center;
   }
   .partner .slick-slide a {
@@ -222,23 +217,70 @@
     margin-left: 10px;
   }
   @media(min-width: 576px){
-    .sub-banner .more-btn {
-      font-size: 1.6vw;
-      line-height: 3vw;
+    .slide-content h2{
+      font-size: min(4.5vw, 29px);
+      line-height: min(9vw, 51px);
     }
-    .sub-banner-item .sub-item-info .sub-info-title{
-      font-size:  3.4vw!important;
-      font-weight: 5.1vw!important;
+    .slide-content h1{
+      font-size: min(9vw, 59px);
+      line-height: min(10.6vw, 68px);
+    }
+    .slide-content p{
+      font-size: min(2.25vw, 20px);
+      line-height: min(5vw, 35px);
+    }
+    .slider-content .submitBtn{
+      font-size: min(2.25vw, 16px)
     }
   }
-  @media (min-width: 1200px) {
+  @media(min-width: 992px){
+    .slide-content h2{
+      font-size: min(4.5vw, 32px);
+      line-height: min(9vw, 54px);
+    }
+    .slide-content h1{
+      font-size: min(9vw, 62px);
+      line-height: min(10.6vw, 71px);
+    }
+    .slide-content p{
+      font-size: min(2.25vw, 23px);
+      line-height: min(5vw, 38px);
+    }
+   .sub-banner-item{
+      padding: 155px 30px 30px 40px;
+   }
+   .more-btn {
+     font: 700 16px/30px var(--title-font-family);
+   }
+  }
+  @media(min-width: 1200px){
     div.content-left > .row > div:nth-child(2) > .content-item {
       margin-right: 40px;
     }
     div.content-right > .row > div:nth-child(2) > .content-item {
       margin-left: 40px;
     }
+    .slide-content h1 {
+      font-size: 72px;
+      line-height: 86px;
+    }
+    .slide-content h2 {
+      font-size: 36px;
+      line-height: 72px;
+      font: 400 36px/72px var(--add-font-family);
+    }
+    .slide-content p {
+      font-size: 18px;
+      line-height: 36px;
+      max-width: 65vw;
+      margin-top: 30px;
+    }
+    .slide-content .submitBtn{
+      font-size: 16px;
+      padding: 18px 30px;
+    }
   }
+
   /* animation */
 @keyframes fadeInDown {
     from {
@@ -281,44 +323,5 @@
       opacity: 1;
     }
   }
-  
-  @media(min-width: 1200px){
-    .slide-content h1 {
-      font-size: 72px;
-      line-height: 86px;
-    }
-    .slide-content h2 {
-      font-size: 36px;
-      line-height: 72px;
-      font: 400 36px/72px var(--add-font-family);
-    }
-    .slide-content p {
-      font-size: 18px;
-      line-height: 36px;
-      max-width: 65vw;
-      margin-top: 30px;
-    }
-    .slide-content .submitBtn{
-      font-size: 16px;
-      line-height: 30px;
-      padding: 13px 30px;
-    }
-  }
 
-  @media(max-width: 768px){
-    .banner-slide .slick-next,  .banner-slide .slick-prev{
-      display: none!important;
-    }
-  }
- @media(min-width: 992px){
-  .sub-banner-item .sub-item-info .sub-info-title{
-     font: 500 34px/51px  var(--title-font-family)!important;
-     margin-bottom: 1vw;
-  }
-  .sub-banner-item{
-     padding: 155px 30px 30px 40px;
-  }
-  .more-btn {
-    font: 700 16px/30px var(--title-font-family);
-  }
- }
+
