@@ -41,7 +41,7 @@ let xhr = $.ajax({
     $(".nutrition-table tbody").html(`${nutrition}`);
     $("title").html(`${p.title} - Fresh Farm`);
     $('.corner-add').html(`
-        <input type="button" value="Shop now" class="btn submitBtn" onclick="addCart(${p.id})" />
+        <input type="button" value="Add to cart" class="btn submitBtn" onclick="addCart(${p.id})" />
         <span class="morph-element">
         </span>
     `)

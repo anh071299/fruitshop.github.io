@@ -27,6 +27,8 @@
   .categorie-list .cat-item a {
     color: var(--head-font-color);
     font-weight: 400;
+    display: flex;
+    align-items: center;
   }
   .categorie-list .cat-item a::before {
     content: "";

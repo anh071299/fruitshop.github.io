@@ -52,6 +52,9 @@
   font: 700 25px/30px var(--content-font-family);
 }
 /* feedback */
+.feedback{
+  overflow-x: hidden;
+}
 .feedback .row{
   --bs-gutter-y: 30px;
 }
@@ -104,7 +107,7 @@
     line-height: 60px;
   }
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .history-wrap .history-dots,  .history-wrap .slick-dots li a {
     display: block;
   }
@@ -112,4 +115,4 @@
     display: flex;
     flex-direction: column;
   }
-}
+} */

@@ -17,10 +17,27 @@ td.product img{
 td{
     font: 500 18px/27px var(--title-font-family);
 }
-td.product a, .total-title{
+table tbody tr td.product-img{
+    padding: 15px 0px;
+    width: 75px;
+}
+td.product-name a, .total-title{
    font: 600 20px/30px var(--title-font-family);
    color: #5c5c5c;
 }
 .total-title{
     color: var(--primary-color);
+}
+td span.q-icon{
+    height: calc(50% - 7.5px);
+    right: calc(30% + 7.5px);
+}
+td span.q-des{
+    bottom: 15px;
+}
+td span.q-inc{
+    top: 15px;
+}
+td.quanity input{
+    width: 70%;
 }

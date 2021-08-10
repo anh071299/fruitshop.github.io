@@ -56,6 +56,14 @@ h3 a {
   font-size: 30px !important;
   font-weight: var(--title-font-weight) !important;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
 a {
   text-decoration: none !important;
   transition: 0.4 all;
@@ -157,6 +165,9 @@ span[class="current"] {
   background-color: var(--primary-color);
   vertical-align: baseline;
 }
+div.corner-add input{
+  height: 100%;
+}
 div.corner-add:hover input, div.corner-add:hover a{
   color: #fff;
 }
@@ -190,7 +201,7 @@ div.corner-add-noBg{
     height: auto;
     border-radius: 3px;
     padding: 13px 30px;
-    font: 700 16px/30px var(--title-font-family);
+    font: 700 16px var(--title-font-family);
     color: #fff;
     background: transparent !important;
     z-index: 1;

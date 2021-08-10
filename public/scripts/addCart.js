@@ -88,24 +88,25 @@ function displayCart() {
         productTotal.innerHTML ='';
         Object.values(cartItems).map((item, index) => {
             productContainer.innerHTML +=
-                `<tr>
-            <td class="product"><img src="${item.image}" />
-                <a class="cart-product-name" href="product.html?productId=${item.id}">${item.title}</a>
-            </td>
-            ${item.salePrice == "" 
+            `<tr>
+                <td class="product-img">
+                    <img src="${item.image}" />
+                </td>
+                <td class="product-name">
+                    <a class="cart-product-name" href="product.html?productId=${item.id}">${item.title}</a>
+                </td>
+                ${item.salePrice == "" 
                 ? `<td><span class ="original-price real-price">$${item.originalPrice}.0<span></td>` 
                 : `<td><span  class="sale-price real-price">$${item.salePrice}.0 </span></td>`}
-            <td class="quantity">
-            <div class="quanity">
-                            <input type="number" step="1" min="1" value="${item.inCart}" max="9" class="product-quanity">
-                            <span class="q-inc q-icon increase"></span>
-                            <span class="q-des q-icon decrease"></span>
-                        </div>
-               
-            </td>
-            ${item.salePrice == "" ? `<td class="total">$${item.inCart * item.originalPrice}.0</td>` : `<td class="total">$${item.inCart * item.salePrice}.0</td>`}
-            
-            <td><i class="bi bi-x close-btn"></i></td>
+                <td class="quanity">
+                    <input type="number" step="1" min="1" value="${item.inCart}" max="9" class="product-quanity">
+                    <span class="q-inc q-icon increase"></span>
+                    <span class="q-des q-icon decrease"></span>
+                </td>
+                ${item.salePrice == "" ? 
+                `<td class="total">$${item.inCart * item.originalPrice}.0</td>` : 
+                `<td class="total">$${item.inCart * item.salePrice}.0</td>`}
+                <td><i class="bi bi-x close-btn"></i></td>
             <tr>`;
         });
 
