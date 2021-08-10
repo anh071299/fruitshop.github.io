@@ -51,8 +51,8 @@
   }
   .slide-content h2{
     /* font: var(--title-font-weight) 3vw/6vw var(--add-font-family); */
-    font-size: min(2.25vw, 22px);
-    line-height: min(5vw, 44px);
+    font-size: min(4.5vw, 22px);
+    line-height: min(9vw, 44px);
     font-weight: var(--title-font-weight) ;
     font-family:var(--add-font-family) ;
     text-transform: uppercase;
