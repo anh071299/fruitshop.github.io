@@ -112,7 +112,7 @@ function displayCart() {
 
         productTotal.innerHTML += `
                 <tr>
-                    <th colspan="3" class="total-title">Totals</th>
+                    <th colspan="4" class="total-title">Totals</th>
                     <td colspan="2">$${cart}.00</td>
                 </tr>
            `

@@ -6,7 +6,7 @@ table.cart-table>:not(caption)>*>*{
     padding: 15px;
 }
 .cart-table tr th:first-child{
-    padding-left: 120px;
+    padding-left: 90px;
 }
 td{
     vertical-align: middle;
@@ -40,4 +40,22 @@ td span.q-inc{
 }
 td.quanity input{
     width: 70%;
+}
+tr td i.close-btn{
+    font-size: 30px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+tr td i.close-btn:hover{
+    color: var(--primary-color);
+}
+h2.order-title{
+    font: 600 24px var(--title-font-family);
+}
+.cart-table{
+    width: 100%;
+}
+.cart-table tr{
+    display: flex;
+    justify-content: space-between;
 }
