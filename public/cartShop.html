@@ -146,6 +146,20 @@
         </div>
     </div>
 </div>
+  <!-- banner -->
+  <div class="banner d-flex align-items-center justify-content-center">
+    <div class="page-header-content text-center">
+        <div class="page-header-title">Cart</div>
+        <div class="page-header-breadcumbs">
+            <a href="index.html" class="home">Home</a>
+            <span class="devide"></span>
+            <a href="shop.html" class="current">Shop</a>
+            <span class="devide"></span>
+            <a href="cartShop.html" class="current">Cart</a>
+
+        </div>
+    </div>
+</div>
     <!-- main -->
     <div class="main ">
         <div class="container">
@@ -166,6 +180,25 @@
 
                 </tfoot>
             </table>
+            <div class="cart-action">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="coupon d-flex">
+                            <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code">
+                            <div class="corner-add">
+                                <input type="submit" value="Add coupon" class="btn submitBtn">
+                                <span class="morph-element"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <div class="corner-add continue">
+                            <input type="submit" value="Continue shopping" class="btn submitBtn">
+                            <span class="morph-element"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="order col-lg-4 ms-lg-auto">
                 <h2 class="order-title">
                     Order 
@@ -173,13 +206,19 @@
                 <table>
                     <tr>
                         <th>Sub total</td>
-                        <td></td>
+                        <td class="sub-total"></td>
                     </tr>
                     <tr>
                         <th>Total</td>
-                        <td></td>
+                        <td class="total-bill"></td>
                     </tr>
                 </table>
+                <div class="order-btn text-center">
+                    <div class="corner-add continue">
+                        <input type="submit" value="Proceed to checkout" class="btn submitBtn">
+                        <span class="morph-element"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

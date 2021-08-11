@@ -41,21 +41,49 @@ td span.q-inc{
 td.quanity input{
     width: 70%;
 }
-tr td i.close-btn{
+.order-title{
+    font: 600 24px var(--title-font-family) ;
+}
+.order table th{
+    font: 600 20px var(--title-font-family);
+}
+.close-btn{
     font-size: 30px;
-    transition: 0.3s all ease;
+}
+.close-btn:hover{
+    color: var(--primary-color);
+    transition: 0.3 ease all;
     cursor: pointer;
 }
-tr td i.close-btn:hover{
-    color: var(--primary-color);
+.coupon .input-text{
+    border-radius: 3px;
+    border: 1px solid  #eae4e4;
+    padding: 14px 20px;
+    margin-right: 20px;
 }
-h2.order-title{
-    font: 600 24px var(--title-font-family);
+.cart-action .continue{
+    height: 100%;
 }
-.cart-table{
+.total-price{
+    color: var(--secondary-color);
+}
+.order{
+    border-radius: 5px;
+    box-shadow: 0 8px 30px 0 rgb(0 0 0 / 12%);
+    padding: 40px 30px;
+    margin-top: 40px;
+}
+.order table{
     width: 100%;
 }
-.cart-table tr{
+.order table tr{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 12px;
+}
+.order table tr td{
+    color: var(--secondary-color);
+}
+.order-btn{
+    margin-top: 6px;
 }

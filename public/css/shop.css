@@ -1,4 +1,6 @@
-
+.main-shop{
+  overflow-x: hidden;
+}
 .main-shop .row {
   --bs-gutter-y: 30px;
 }

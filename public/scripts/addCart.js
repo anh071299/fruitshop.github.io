@@ -113,10 +113,11 @@ function displayCart() {
         productTotal.innerHTML += `
                 <tr>
                     <th colspan="4" class="total-title">Totals</th>
-                    <td colspan="2">$${cart}.00</td>
+                    <td colspan="2" class="total-price">$${cart}.00</td>
                 </tr>
            `
-
+        $('.sub-total')[0].innerHTML = `$${cart}`
+        $('.total-bill')[0].innerHTML = `$${cart}`
         deleteButtons();
         manageQuantity();
     }
