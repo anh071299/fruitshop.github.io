@@ -160,7 +160,7 @@
     color: var(--secondary-color);
     font-weight: 500;
   }  
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     ul.product-tabs {
       display: block;
       width: 100%;
@@ -176,4 +176,4 @@
     .nutrition-table tr {
       width: 100%;
     }
-  }
+  } */
