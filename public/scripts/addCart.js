@@ -1,9 +1,10 @@
+
 function addCart(id) {
     $.get('/products').done(function (json) {
         json.forEach(function (val) {
             if (val.id == id) {
-                cartNumbers(val);
                 totalCost(val);
+                cartNumbers(val);
             }
         }
         )
@@ -58,12 +59,12 @@ function setItems(product) {
 function totalCost(product, action) {
     let cart = sessionStorage.getItem("totalCost");
     let price;
-    if(product.salePrice==""){
+    if (product.salePrice == "") {
         price = product.originalPrice;
-     }
-     else{
-         price = product.salePrice;
-     }
+    }
+    else {
+        price = product.salePrice;
+    }
     if (action) {
         cart = parseInt(cart);
         sessionStorage.setItem("totalCost", cart - price);
@@ -80,36 +81,43 @@ function displayCart() {
     cartItems = JSON.parse(cartItems);
     let cart = sessionStorage.getItem("totalCost");
     cart = parseInt(cart);
-
     let productContainer = $('.cart-table-content')[0];
     let productTotal = $('.cart-table-footer')[0];
     if (cartItems && productContainer) {
         productContainer.innerHTML = '';
-        productTotal.innerHTML ='';
+        productTotal.innerHTML = '';
         Object.values(cartItems).map((item, index) => {
-            productContainer.innerHTML +=
-            `<tr>
-                <td class="product-img">
-                    <img src="${item.image}" />
-                </td>
-                <td class="product-name">
-                    <a class="cart-product-name" href="product.html?productId=${item.id}">${item.title}</a>
-                </td>
-                ${item.salePrice == "" 
-                ? `<td><span class ="original-price real-price">$${item.originalPrice}.0<span></td>` 
-                : `<td><span  class="sale-price real-price">$${item.salePrice}.0 </span></td>`}
-                <td class="quanity">
-                    <input type="number" step="1" min="1" value="${item.inCart}" max="9" class="product-quanity">
-                    <span class="q-inc q-icon increase"></span>
-                    <span class="q-des q-icon decrease"></span>
-                </td>
-                ${item.salePrice == "" ? 
-                `<td class="total">$${item.inCart * item.originalPrice}.0</td>` : 
-                `<td class="total">$${item.inCart * item.salePrice}.0</td>`}
-                <td><i class="bi bi-x close-btn"></i></td>
-            <tr>`;
-        });
+            html =
+        ` 
+        <td class="product-img">
+            <img src="${item.image}" />
+        </td>
+        <td class="product-name" data-title="Product">
+            <a class="cart-product-name" href="product.html?productId=${item.id}">${item.title}</a>
+        </td>
+        ${item.salePrice == ""
+                    ? `<td data-title="Price"><span class ="original-price real-price">$${item.originalPrice}.0<span></td>`
+                    : `<td data-title="Price"><span  class="sale-price real-price">$${item.salePrice}.0 </span></td>`}
+        <td class="cart-quanity" data-title="Quanity">
+            <div>
+                <input type="number" step="1" min="1" value="${item.inCart}" max="9" class="product-quanity">
+                <span class="q-inc q-icon increase"></span>
+                <span class="q-des q-icon decrease"></span>
+            </div>
+        </td>
+        ${item.salePrice == "" ?
+                    `<td class="total"  data-title="Total">$${item.inCart * item.originalPrice}.0</td>` :
+                    `<td class="total" data-title="Total">$${item.inCart * item.salePrice}.0</td>`}
+        <td class="close"><i class="bi bi-x close-btn"></i></td>
+        
+        `
+            if (html != '') {
+                productContainer.innerHTML +=
+                    `<tr>${html}</tr>`;
+            }
 
+        });
+       
         productTotal.innerHTML += `
                 <tr>
                     <th colspan="4" class="total-title">Totals</th>
@@ -166,12 +174,12 @@ function deleteButtons() {
         deleteButtons[i].addEventListener('click', () => {
             productName = $('table .cart-product-name')[i].innerHTML;
             sessionStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
-            if(cartItems[productName].salePrice==""){
+            if (cartItems[productName].salePrice == "") {
                 sessionStorage.setItem('totalCost', cartCost - (cartItems[productName].originalPrice * cartItems[productName].inCart));
-             }
-             else{
+            }
+            else {
                 sessionStorage.setItem('totalCost', cartCost - (cartItems[productName].salePrice * cartItems[productName].inCart));
-             }
+            }
             delete cartItems[productName];
             sessionStorage.setItem('productsInCart', JSON.stringify(cartItems));
             displayCart();
@@ -179,7 +187,7 @@ function deleteButtons() {
         })
     }
 }
-
+$(document).ready(function () { $('tr:empty').remove(); });
 onLoadCartNumbers();
 displayCart();
 

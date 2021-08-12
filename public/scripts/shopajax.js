@@ -26,9 +26,9 @@ let currentPage = (current) => {
 
 let prevPage = (current) => {
   let rt = "";
-  for(let page = 1; page < current; page++){
+  for (let page = 1; page < current; page++) {
 
-      rt += `
+    rt += `
       <li class="page-item">
           <a class="page-link" href="?_page=${page}&_limit=6>">${page}</a>
       </li>
@@ -39,9 +39,9 @@ let prevPage = (current) => {
 
 let nextPage = (current, totalPage) => {
   let rt = "";
-  for(let page = current + 1; page <= totalPage; page++){
+  for (let page = current + 1; page <= totalPage; page++) {
 
-      rt += `
+    rt += `
       <li class="page-item">
           <a class="page-link" href="?_page=${page}&_limit=6>">${page}</a>
       </li>
@@ -50,7 +50,7 @@ let nextPage = (current, totalPage) => {
   return rt;
 };
 
-function pagination ({ prev, next }, current, totalPage) {
+function pagination({ prev, next }, current, totalPage) {
   return `
       <ul class="pagination">
           ${toPrevPage(prev, current)}
@@ -67,7 +67,7 @@ $("#slider-range").slider({
   min: 0,
   max: 500,
   values: [0, 500],
-  slide: function(event, ui) {$("#price").html("$" + ui.values[0] + " - $" + ui.values[1]);}
+  slide: function (event, ui) { $("#price").html("$" + ui.values[0] + " - $" + ui.values[1]); }
 });
 $("#price").html("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
 // parselink
@@ -85,6 +85,38 @@ let parseLink = (link) => {
   return { [rel]: href };
 };
 // ajax
+
+$.get("/products")
+  .done(function (json) {
+    let fruit = 0, vegetables = 0, milk = 0, dried = 0;
+    $.each(json, function (c) {
+      if (json[c].category == 'fruit') {
+        fruit += 1;
+      }
+      else if ((json[c].category == 'vegetables')) {
+        vegetables += 1;
+      }
+      else if ((json[c].category == 'milk')) {
+        milk += 1;
+      }
+      else dried += 1;
+    })
+    $('.categorie-list')[0].innerHTML = `
+    <li class="cat-item">
+        <a>Fruits<span/>${fruit}</span></a>
+    </li>
+    <li class="cat-item">
+        <a href="">Vegetables<span>${vegetables}</span></a>
+    </li>
+    <li class="cat-item" >
+        <a href="">Dried<span>${dried}</span></a>
+    </li>
+    <li class="cat-item ">
+        <a href="">Milk, Cream<span>${milk}</span></a>
+    </li>
+`
+  })
+
 let xhr = $.ajax({
   url: `/products?_page=${page}&_limit=${productPerPage}`,
   type: "GET",

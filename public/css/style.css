@@ -141,7 +141,8 @@ a.social-icon:hover {
   --bs-gutter-y: 30px;
 }
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus{
   outline: none !important;
   box-shadow: none !important;
 }

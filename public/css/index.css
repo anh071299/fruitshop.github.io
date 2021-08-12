@@ -144,10 +144,6 @@
     align-items: center;
     flex-direction: column;
   }
-  .suggestion-header .section-about {
-    width: 60%;
-    text-align: center;
-  }
   /* partner */
 .partner {
     background-color: var(--secondary-color);
@@ -252,6 +248,10 @@
    .more-btn {
      font: 700 16px/30px var(--title-font-family);
    }
+   .suggestion-header .section-about {
+    width: 60%;
+    text-align: center;
+  }
   }
   @media(min-width: 1200px){
     div.content-left > .row > div:nth-child(2) > .content-item {
