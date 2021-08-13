@@ -36,6 +36,10 @@
   background:var(--primary-color) url(../img/banner/bg_leaf.png) no-repeat;
   background-size: cover;
 }
+.exp-item{
+  justify-content: center;
+  flex-direction: column;
+}
 .experience .row {
   --bs-gutter-y: 30px;
 }
@@ -44,6 +48,7 @@
 }
 .exp-item .exp-info {
   margin-left: 10px;
+  text-align: center;
 }
 .exp-info .exp-num {
   font: 700 30px/45px var(--title-font-family);
@@ -107,12 +112,8 @@
     line-height: 60px;
   }
 }
-/* @media (max-width: 768px) {
-  .history-wrap .history-dots,  .history-wrap .slick-dots li a {
-    display: block;
-  }
-  .history-wrap .history-dots ul.slick-dots {
-    display: flex;
-    flex-direction: column;
-  }
-} */
+@media (min-width: 768px) {
+ .exp-item{
+   justify-content: flex-start;
+ }
+}
