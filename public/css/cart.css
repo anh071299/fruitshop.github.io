@@ -15,6 +15,10 @@ table.cart-table thead,   table.cart-table td::before  {
 table.cart-table tbody {
   display: block;
 }
+.coupon{
+  flex-grow: wrap;
+  gap: 30px;
+}
 table.cart-table tfoot{
     display: none;
 }
