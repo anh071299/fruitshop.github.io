@@ -10,6 +10,9 @@
   --content-font-weight: 400;
   --add-font-family: "Zen Loop", cursive;
 }
+.user-account a{
+  background-color: transparent;
+}
 * {
   margin: 0;
   padding: 0;
