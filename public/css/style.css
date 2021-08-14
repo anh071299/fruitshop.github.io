@@ -328,7 +328,7 @@ a.more-btn:hover {
   background: none;
 }
 .user-modal .user-modal-content {
-  padding: 50px;
+  padding: 20px;
 }
 .user-modal-content .model-title {
   text-transform: uppercase;
@@ -390,7 +390,7 @@ button.navbar-toggler:focus{
   top: 0px;
   left: 0;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   transition: 0.3s;
   background-color: #fff;
   box-shadow: 0px 23px 38px 0px rgb(0 0 0 / 10%);
@@ -490,6 +490,9 @@ h3 a{
 @media (min-width: 992px) {
   .main-menu .navbar {
     max-width: 83.33%;
+  }
+  .user-modal .user-modal-content {
+    padding: 50px;
   }
   .main-menu .icon-nav {
     max-width: 16.67%;

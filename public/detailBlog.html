@@ -29,8 +29,8 @@
 </head>
 
 <body>
-     <!-- header -->
-     <div class="header">
+    <!-- header -->
+    <div class="header">
         <div class="container-fluid">
             <div class="top-header d-none d-lg-block">
                 <div class="container">
@@ -60,10 +60,10 @@
                                     <!-- language-select -->
                                     <li>
                                         <div class="dropdown lang-dropdown">
-                                            <a class=" btn p-0 dropdown-toggle d-flex align-items-center"
-                                                id="lang-dropdown" type="button" data-bs-toggle="dropdown"
-                                                aria-expanded="false"></a>
-                                            <ul class="dropdown-menu lang-menu" aria-labelledby="lang-dropdown">
+                                            <a class=" btn p-0 dropdown-toggle dropdown-btn d-flex align-items-center"
+                                                id="lang-dropdown " data-bs-toggle="dropdown" aria-expanded="false">
+                                            </a>
+                                            <ul class="dropdown-menu  lang-menu" aria-labelledby="lang-dropdown">
                                                 <li value="el">
                                                     <a class="dropdown-item">
                                                         <img src="img/header/en.jpg" alt="" class="lang-icon" />EN
@@ -91,14 +91,16 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <!-- nav header-menu -->
             <div class="main-menu ">
                 <div class="container">
                     <div class="row">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand order-2 order-lg-1" href="index.html"><img src="img/header/logo.png"
-                                    ></a>
+                            <a class="navbar-brand order-2 order-lg-1" href="index.html">
+                                <img src="img/header/logo.png">
+                            </a>
                             <button class="navbar-toggler order-1 order-lg-none" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -123,6 +125,38 @@
                                         <a class="nav-link" href="contact.html">Contact</a>
                                     </li>
                                 </ul>
+                                <ul class="bottom-extra d-lg-none">
+                                    <li>
+                                        <span>Language: </span>
+
+                                        <div class="dropdown lang-dropdown">
+                                            <a class=" btn p-0 dropdown-toggle dropdown-btn d-flex align-items-center"
+                                                id="lang-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                            </a>
+                                            <ul class="dropdown-menu  lang-menu" aria-labelledby="lang-dropdown">
+                                                <li value="el">
+                                                    <a class="dropdown-item">
+                                                        <img src="img/header/en.jpg" alt="" class="lang-icon" />EN
+                                                    </a>
+                                                </li>
+                                                <li value="vn">
+                                                    <a class="dropdown-item">
+                                                        <img src="img/header/vn-flag.jpg" alt="" class="lang-icon" />VN
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>Account: </span>
+                                        <div class="user-account">
+                                            <a type="button" class="btn p-0" data-bs-toggle="modal"
+                                                data-bs-target="#userModal">
+                                                <i class="bi bi-person-fill"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <form role="search" class="aside-search-form d-flex d-lg-none">
                                     <input type="search">
                                     <button type="submit">
@@ -130,16 +164,26 @@
                                     </button>
                                 </form>
                             </div>
+
                             <a href="cartShop.html" class="basket-icon icon order-3 d-lg-none d-block  ms-xl-auto">
                                 <i class="bi bi-basket"></i>
                                 <span class="basket-amount">0</span>
                             </a>
+
                         </nav>
                         <ul class="icon-nav d-lg-flex align-items-center justify-content-end d-none">
-                            <li><a href="cartShop.html" class="basket-icon icon"><i class="bi bi-basket"></i><span
-                                        class="basket-amount">0</span></a></li>
-                            <li><a href="" class="icon"><i class="bi bi-search"></i></a></li>
-                            <li></li>
+                            <li>
+                                <a href="cartShop.html" class="basket-icon icon">
+                                    <i class="bi bi-basket"></i>
+                                    <span class="basket-amount">0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a type="button" class=" p-0 icon" data-bs-toggle="modal" data-bs-target="#searchModal">
+                                    <i class="bi bi-search"></i>
+                                </a>
+
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -159,7 +203,7 @@
             </div>
         </div>
     </div>
-<!-- blog single -->
+    <!-- blog single -->
     <div class="blog-single mt-80">
         <div class="container">
             <div class="row">
@@ -296,7 +340,7 @@
                                             <span class="comment-date text-uppercase">January 12, 2021</span>
                                             <div class="comment-item-content">This blog is so useful. I have searched
                                                 this content many times. Today I find it</div>
-                                                <a href="#" class="more-btn">Reply</a>
+                                            <a href="#" class="more-btn">Reply</a>
                                         </div>
                                     </div>
                                     <div class="comment-item d-flex">
@@ -310,10 +354,10 @@
                                             <div class="comment-item-content">So many thanks for sharing advisable post,
                                                 this is really very interesting in read guest post pitches</div>
                                             <a href="#" class="more-btn">Reply</a>
-                                        </div>        
+                                        </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-contact">
                                     <div class="title">
                                         <h3 class="main-title">Leave a comment</h3>
@@ -619,6 +663,22 @@
             </div>
         </div>
     </div>
+    <!-- search modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="userModalLabel" style="display: none;"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form role="search" class="aside-search-form d-flex">
+                        <input type="search" placeholder="Search">
+                        <button type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -627,7 +687,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <script src="scripts/addCart.js"></script>
+    <script src="scripts/addCart.js"></script>
     <script src="scripts/validate.js"></script>
 </body>
 
