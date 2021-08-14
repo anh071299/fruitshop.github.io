@@ -13,6 +13,10 @@
 .main-menu .user-account a{
   background-color: transparent;
 }
+input {
+     -webkit-appearance: none;
+     border-radius: 0;
+}
 * {
   margin: 0;
   padding: 0;
