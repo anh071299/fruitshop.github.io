@@ -13,7 +13,7 @@
 .main-menu .user-account a{
   background-color: transparent;
 }
-input{
+input, a {
   -webkit-appearance: none!important;
    -moz-appearance:    none!important;
    appearance:         none!important;   
