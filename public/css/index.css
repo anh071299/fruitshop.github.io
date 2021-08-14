@@ -50,23 +50,23 @@
     animation-delay: 0.9s;
   }
   .slide-content h2{
-    font-size: min(4.5vw, 22px);
-    line-height: min(9vw, 44px);
+    font-size: max(20px , min(4.5vw, 22px));
+    line-height:max(30px,  min(9vw, 44px));
     font-weight: var(--title-font-weight) ;
     font-family:var(--add-font-family) ;
     text-transform: uppercase;
     margin-bottom: 5px;
   }
   .slide-content h1{
-    font-size: min(9vw, 44px);
+    font-size: max(25px, min(9vw, 44px));
     font-weight: var(--title-font-weight) ;
     font-family:var(--title-font-family) ;
-    line-height: min(10.6vw, 53px);
+    line-height: max(29px,  min(10.6vw, 53px));
     text-align: center;
   }
   .slide-content p{
-    font-size: min(2.25vw, 15px);
-    line-height: min(5vw, 30px);
+    font-size: 16px;
+    line-height: 30px;
     margin-top: 2.5vw;
     margin-bottom: calc(16vw / 12);
     text-align: center;
@@ -76,11 +76,12 @@
     padding: calc(100vw / 12) 0px;
   }
   .slide-content .submitBtn{
-    font-size: min(2.25vw, 14px);
+    font-size: 16px;
+    padding: 18px 30px;
     padding: min(calc(25vw / 12), 18px) min(calc(34vw / 12), 30px);
   }
   .slide-content .morph-element{
-    transform: translateX(calc(-17vw / 12)) skewX(
+    transform: translateX(min(-1.42vw,-10px)) skewX(
       -45deg
       );
   }
@@ -221,13 +222,13 @@
       font-size: min(9vw, 59px);
       line-height: min(10.6vw, 68px);
     }
-    .slide-content p{
+    /* .slide-content p{
       font-size: min(2.25vw, 20px);
       line-height: min(5vw, 35px);
     }
     .slider-content .submitBtn{
       font-size: min(2.25vw, 16px)
-    }
+    } */
   }
   @media(min-width: 992px){
     .slide-content h2{
@@ -238,10 +239,10 @@
       font-size: min(9vw, 62px);
       line-height: min(10.6vw, 71px);
     }
-    .slide-content p{
+    /* .slide-content p{
       font-size: min(2.25vw, 23px);
       line-height: min(5vw, 38px);
-    }
+    } */
    .sub-banner-item{
       padding: 155px 30px 30px 40px;
    }
@@ -272,13 +273,18 @@
     .slide-content p {
       font-size: 18px;
       line-height: 36px;
-      max-width: 65vw;
+      max-width: 850px;
       margin-top: 30px;
     }
     .slide-content .submitBtn{
       font-size: 16px;
       padding: 18px 30px;
     }
+    .slide-content .morph-element {
+      transform: translateX(-17px) skewX( 
+  -45deg
+   );
+  }
   }
 
   /* animation */
