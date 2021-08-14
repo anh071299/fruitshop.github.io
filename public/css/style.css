@@ -15,7 +15,7 @@
 }
 input {
      -webkit-appearance: none;
-     border-radius: 0;
+     border: 1px solid #ced4da;
 }
 * {
   margin: 0;
