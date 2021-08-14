@@ -142,7 +142,7 @@ a.social-icon:hover {
 }
 input:focus,
 textarea:focus,
-select:focus{
+select:focus, button:focus{
   outline: none !important;
   box-shadow: none !important;
 }
@@ -331,8 +331,11 @@ a.more-btn:hover {
 }
 .user-modal button {
   position: absolute;
-  right: 0;
-  top: -30px;
+  right: 30px;
+  top: 30px;
+}
+.user-modal button:hover{
+  color: var(--primary-color);
 }
 .modal-body form a {
   color: #4f555a;
@@ -384,10 +387,13 @@ button.navbar-toggler:focus{
   box-shadow: 0px 23px 38px 0px rgb(0 0 0 / 10%);
   z-index: 99;
 }
+.main-menu .navbar-nav{
+  text-align: center;
+}
 .main-menu .navbar{
   width: 100%;
 }
-.main-menu .navbar-nav li{
+.navbar-collapse  li{
   margin-bottom: 12px;
 }
 .main-menu a.nav-link.active {
@@ -399,10 +405,15 @@ button.navbar-toggler:focus{
 .main-menu a:hover {
   color: var(--primary-color) !important;
 }
-.main-menu .navbar-collapse .navbar-nav .nav-link {
+.bottom-extra span , .main-menu .navbar-collapse .navbar-nav .nav-link {
   padding: 0px 20px;
   font:var(--title-font-weight) 16px/20px var(--title-font-family);
-  color: #5c5c5c;
+  color: #5c5c5c; 
+}
+.bottom-extra li{
+  display: flex;
+  padding-right: 20px;
+  justify-content: space-between;
 }
 .aside-search-form{
   padding: 0px 20px;
@@ -438,6 +449,7 @@ button.navbar-toggler:focus{
 }
 .footer a {
   color: white;
+  font-family: var(--content-font-family);
 }
 .footer a:hover {
   color: var(--primary-color);
@@ -471,6 +483,9 @@ h3 a{
   }
   .navbar a.navbar-brand img{
     height: 80px;
+  }
+  .navbar-collapse  li{
+    margin-bottom: 0px;
   }
   
 }

@@ -4,58 +4,65 @@ table.cart-table thead {
   display: none;
 }
 .cart-table tbody,
-  .cart-table td,
-  .cart-table tr {
+.cart-table td,
+.cart-table tr {
   border: none;
 }
-table.cart-table thead,   table.cart-table td::before  {
-  font-family:  var(--title-font-family);
+table.cart-table thead,
+table.cart-table td::before {
+  font-family: var(--title-font-family);
   font-weight: 700;
 }
 table.cart-table tbody {
   display: block;
 }
-.coupon{
-  flex-grow: wrap;
-  gap: 30px;
+.coupon {
+  flex-wrap: wrap;
+  gap: 15px;
 }
-table.cart-table tfoot{
-    display: none;
+.cart-action .corner-add a{
+  text-align: center;
 }
-.cart-table.table>:not(:last-child)>:last-child>*{
-    border-bottom-color: inherit;
+.cart-action .corner-add,.cart-action .corner-add a {
+  width: 100%;
+}
+table.cart-table tfoot {
+  display: none;
+}
+.cart-table.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: inherit;
 }
 table.cart-table tbody tr {
   display: block;
   width: 100%;
   position: relative;
   box-shadow: 11px 10px 38px 0 rgb(46 63 99 / 15%);
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   padding: 10px 30px 10px;
   border-radius: 10px;
 }
 table.cart-table tbody tr td {
   display: flex;
   justify-content: space-between;
-  height: 100px;
   align-items: center;
 }
-table.cart-table tbody tr td.close{
-    position: absolute;
-    top: 0px;
-    right: 0px;
+table.cart-table tbody tr td.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
+
 table.cart-table > :not(caption) > * > * {
-  padding: 15px;
+  padding: 5px;
 }
 .cart-table tr th:first-child {
-    padding-left: 0px;
-  }
+  padding-left: 0px;
+}
 .cart-table tbody tr td:not(:first-child):before {
   content: attr(data-title) ": ";
 }
-.cart-table tbody tr td:last-child::before{
-    content: '';
+.cart-table tbody tr td:last-child::before {
+  content: "";
 }
 td {
   font: 500 18px/27px var(--title-font-family);
@@ -93,11 +100,14 @@ td.cart-quanity div {
   transition: 0.3 ease all;
   cursor: pointer;
 }
+.coupon *{
+  width: 100%;
+}
 .coupon .input-text {
   border-radius: 3px;
   border: 1px solid #eae4e4;
   padding: 14px 20px;
-  margin-right: 20px;
+  margin-right: 0px;
 }
 .cart-action .continue {
   height: 100%;
@@ -128,21 +138,27 @@ td.cart-quanity div {
   margin-top: 6px;
 }
 .cart-action .row {
-  --bs-gutter-y: 30px;
+  --bs-gutter-y: 15px;
 }
-.coupon{
-    justify-content: space-between;
+.coupon {
+  justify-content: space-between;
+}
+.cart-table input.product-quanity{
+  height: 50px;
 }
 @media (min-width: 768px) {
+  table.cart-table > :not(caption) > * > * {
+    padding: 15px;
+  }
   table.cart-table thead {
     display: table-header-group;
   }
   table.cart-table tbody {
     display: table-row-group;
   }
-  table.cart-table tfoot{
+  table.cart-table tfoot {
     display: table-footer-group;
-}
+  }
   table.cart-table td::before {
     display: none;
   }
@@ -167,10 +183,25 @@ td.cart-quanity div {
   .cart-table tr th:first-child {
     padding-left: 120px;
   }
-  table.cart-table tbody tr td.close{
+  table.cart-table tbody tr td.close {
     position: relative;
-}
-.coupon{
+  }
+  .coupon {
     justify-content: normal;
-}
+  }
+  .cart-table input.product-quanity{
+    height: 70px;
+  }
+  table.cart-table tbody tr {
+    margin-bottom: 35px;
+  }
+  .coupon *{
+    width: unset;
+  }
+  .coupon .input-text{
+    margin-right: 20px;
+  }
+  .cart-action .corner-add,.cart-action .corner-add a {
+    width: unset;
+  }
 }

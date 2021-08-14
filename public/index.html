@@ -20,7 +20,7 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    
+
     <!-- font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,8 +32,8 @@
 </head>
 
 <body>
-     <!-- header -->
-     <div class="header">
+    <!-- header -->
+    <div class="header">
         <div class="container-fluid">
             <div class="top-header d-none d-lg-block">
                 <div class="container">
@@ -63,10 +63,10 @@
                                     <!-- language-select -->
                                     <li>
                                         <div class="dropdown lang-dropdown">
-                                            <a class=" btn p-0 dropdown-toggle d-flex align-items-center"
-                                                id="lang-dropdown" type="button" data-bs-toggle="dropdown"
-                                                aria-expanded="false"></a>
-                                            <ul class="dropdown-menu lang-menu" aria-labelledby="lang-dropdown">
+                                            <a class=" btn p-0 dropdown-toggle dropdown-btn d-flex align-items-center"
+                                                id="lang-dropdown " data-bs-toggle="dropdown" aria-expanded="false">
+                                            </a>
+                                            <ul class="dropdown-menu  lang-menu" aria-labelledby="lang-dropdown">
                                                 <li value="el">
                                                     <a class="dropdown-item">
                                                         <img src="img/header/en.jpg" alt="" class="lang-icon" />EN
@@ -94,15 +94,15 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
             <!-- nav header-menu -->
             <div class="main-menu ">
                 <div class="container">
                     <div class="row">
                         <nav class="navbar navbar-expand-lg navbar-light">
-                            <a class="navbar-brand order-2 order-lg-1" href="index.html"><img src="img/header/logo.png"
-                                    ></a>
+                            <a class="navbar-brand order-2 order-lg-1" href="index.html"><img
+                                    src="img/header/logo.png"></a>
                             <button class="navbar-toggler order-1 order-lg-none" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -127,6 +127,38 @@
                                         <a class="nav-link" href="contact.html">Contact</a>
                                     </li>
                                 </ul>
+                                <ul class="bottom-extra d-lg-none">
+                                    <li>
+                                        <span>Language: </span>
+
+                                        <div class="dropdown lang-dropdown">
+                                            <a class=" btn p-0 dropdown-toggle dropdown-btn d-flex align-items-center"
+                                                id="lang-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                            </a>
+                                            <ul class="dropdown-menu  lang-menu" aria-labelledby="lang-dropdown">
+                                                <li value="el">
+                                                    <a class="dropdown-item">
+                                                        <img src="img/header/en.jpg" alt="" class="lang-icon" />EN
+                                                    </a>
+                                                </li>
+                                                <li value="vn">
+                                                    <a class="dropdown-item">
+                                                        <img src="img/header/vn-flag.jpg" alt="" class="lang-icon" />VN
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span>Account: </span>
+                                        <div class="user-account">
+                                            <a type="button" class="btn p-0" data-bs-toggle="modal"
+                                                data-bs-target="#userModal">
+                                                <i class="bi bi-person-fill"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <form role="search" class="aside-search-form d-flex d-lg-none">
                                     <input type="search">
                                     <button type="submit">
@@ -134,24 +166,36 @@
                                     </button>
                                 </form>
                             </div>
+
                             <a href="cartShop.html" class="basket-icon icon order-3 d-lg-none d-block  ms-xl-auto">
                                 <i class="bi bi-basket"></i>
                                 <span class="basket-amount">0</span>
                             </a>
+
                         </nav>
                         <ul class="icon-nav d-lg-flex align-items-center justify-content-end d-none">
-                            <li><a href="cartShop.html" class="basket-icon icon"><i class="bi bi-basket"></i><span
-                                        class="basket-amount">0</span></a></li>
-                            <li><a href="" class="icon"><i class="bi bi-search"></i></a></li>
-                            <li></li>
+                            <li>
+                                <a href="cartShop.html" class="basket-icon icon">
+                                    <i class="bi bi-basket"></i>
+                                    <span class="basket-amount">0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a type="button" class=" p-0 icon" data-bs-toggle="modal" data-bs-target="#searchModal">
+                                    <i class="bi bi-search"></i>
+                                </a>
+
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- banner -->
     <div class="banner-slide">
+
         <div class="slide1">
             <div class="slide-content">
                 <h2>Dont panic go oganic</h2>
@@ -200,6 +244,7 @@
     <!-- sub-banner -->
     <div class="sub-banner mt-30">
         <div class="container-fluid">
+
             <div class="row">
                 <div class="col-12 col-lg-4">
                     <div class="sub-banner-item sub-banner-item-1">
@@ -244,7 +289,8 @@
                             <span class="sub-title">Small Story</span>
                             <h3 class="main-title">Organic since 1995</h3>
                         </div>
-                        <p class="small-story-about section-about text-justify">A one-stop shop full of all the right choices,
+                        <p class="small-story-about section-about text-justify">A one-stop shop full of all the right
+                            choices,
                             NativeFarm is a
                             health food haven with organic fruit & vegetables, organic bread from bakeries, only
                             organic meat and sustainable fish from British waters. Our over-flowing groceries range
@@ -298,7 +344,8 @@
                     <h3 class="main-title">Introduce New Products
                 </div>
                 </h3>
-                <p class="section-about text-center">We connect buyers and sellers of natural, organic, environmentally sound
+                <p class="section-about text-center">We connect buyers and sellers of natural, organic, environmentally
+                    sound
                     products. We find the best suppliers and makers of natural and organic products.</p>
             </div>
 
@@ -329,7 +376,8 @@
                                             <a href="">
                                                 <h4 class="h4-title">Heathy food</h4>
                                             </a>
-                                            <p class="section-about text-justify">We advocate that food be authentic and ethical,
+                                            <p class="section-about text-justify">We advocate that food be authentic and
+                                                ethical,
                                                 freshly
                                                 prepared and tasty</p>
                                         </div>
@@ -341,10 +389,11 @@
                                     <div class="content-item d-flex ms-auto text-end">
                                         <div class="content-item-info">
                                             <a href="">
-                                                <h4  class="h4-title">
+                                                <h4 class="h4-title">
                                                     Fresh Products</h4>
                                             </a>
-                                            <p class="section-about text-justify">We advocate that food be authentic and ethical,
+                                            <p class="section-about text-justify">We advocate that food be authentic and
+                                                ethical,
                                                 freshly prepared and tasty.
                                             </p>
                                         </div>
@@ -359,7 +408,8 @@
                                                 <h4 class="h4-title">
                                                     Free Shipping</h4>
                                             </a>
-                                            <p class="section-about text-justify">We advocate that food be authentic and ethical,
+                                            <p class="section-about text-justify">We advocate that food be authentic and
+                                                ethical,
                                                 freshly prepared and tasty.</p>
                                         </div>
                                         <div class="content-item-img"><img src="img/about-farm/strawberry (2).png"
@@ -385,7 +435,8 @@
                                             <a href="">
                                                 <h4 class="h4-title">100% Organic</h4>
                                             </a>
-                                            <p class="section-about text-justify">We advocate that food be authentic and ethical,
+                                            <p class="section-about text-justify">We advocate that food be authentic and
+                                                ethical,
                                                 freshly
                                                 prepared and tasty</p>
                                         </div>
@@ -400,7 +451,8 @@
                                             <a href="">
                                                 <h4 class="h4-title">100% Organic</h4>
                                             </a>
-                                            <p class="section-about text-justify">We advocate that food be authentic and ethical,
+                                            <p class="section-about text-justify">We advocate that food be authentic and
+                                                ethical,
                                                 freshly
                                                 prepared and tasty</p>
                                         </div>
@@ -415,7 +467,8 @@
                                             <a href="">
                                                 <h4 class="h4-title">100% Organic</h4>
                                             </a>
-                                            <p class="section-about text-justify">We advocate that food be authentic and ethical,
+                                            <p class="section-about text-justify">We advocate that food be authentic and
+                                                ethical,
                                                 freshly
                                                 prepared and tasty</p>
                                         </div>
@@ -451,7 +504,7 @@
                                 <div class="invalid-feedback"></div>
                             </div>
                             <div class="corner-add d-flex align-items-center justify-content-center">
-                                <input type="submit" value="Subcribe" class="btn submitBtn"  />
+                                <input type="submit" value="Subcribe" class="btn submitBtn" />
                                 <span class="morph-element"></span>
                             </div>
                         </form>
@@ -473,7 +526,8 @@
                 <div class="row">
                     <div class="col-12 col-lg-4">
                         <div class="blog-post">
-                            <div class="blog-post-img"><a href="detailBlog.html"><img src="img/news/post-title-bg.jpg" alt=""></a>
+                            <div class="blog-post-img"><a href="detailBlog.html"><img src="img/news/post-title-bg.jpg"
+                                        alt=""></a>
                             </div>
                             <div class="blog-post-content">
                                 <span class="blog-category"><a href="">Organic</a></span>
@@ -483,14 +537,15 @@
                                 </div>
                                 <h4 class="h4-title">
                                     <a href="detailBlog.html">How to Choose a Right & Healthy Honey</a>
-                                </h4 >
+                                </h4>
                                 <a href="detailBlog.html" class="more-btn">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4">
                         <div class="blog-post">
-                            <div class="blog-post-img"><a href="detailBlog.html"><img src="img/news/post-title-bg-2.jpg" alt=""></a>
+                            <div class="blog-post-img"><a href="detailBlog.html"><img src="img/news/post-title-bg-2.jpg"
+                                        alt=""></a>
                             </div>
                             <div class="blog-post-content">
                                 <span class="blog-category"><a href="">Vegan</a></span>
@@ -507,7 +562,8 @@
                     </div>
                     <div class="col-12 div col-lg-4">
                         <div class="blog-post">
-                            <div class="blog-post-img"><a href="detailBlog.html"><img src="img/news/post-title-bg-3.jpg" alt=""></a>
+                            <div class="blog-post-img"><a href="detailBlog.html"><img src="img/news/post-title-bg-3.jpg"
+                                        alt=""></a>
                             </div>
                             <div class="blog-post-content">
                                 <span class="blog-category"><a href="">Recipes</a></span>
@@ -532,8 +588,10 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <img src="img/header/logo.png">
-                    <p class="section-about text-justify text-white">We connect buyers and sellers of natural, organic, environmentally sound
-                        products..</p>
+                    <p class="section-about text-justify text-white">We connect buyers and sellers of natural, organic,
+                        environmentally sound
+                        products</p>
+
                 </div>
                 <div class="col-12 col-md-6 col-lg-2">
                     <h4 class="h4-title">Menu</h4>
@@ -596,6 +654,7 @@
                             <a href="https://youtube.com/" class="social-icon" target="_blank"><i
                                     class="bi bi-youtube"></i></a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -604,11 +663,13 @@
     <!-- user-modal -->
     <div class="modal user-modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
             <div class="modal-content user-modal-content">
 
                 <div class="modal-header justify-content-center">
+
                     <h5 class="modal-title" id="userModalLabel"><img src="img/header/logo.png" alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <!-- form sign up -->
@@ -705,12 +766,28 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="userModalLabel" style="display: none;"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form role="search" class="aside-search-form d-flex">
+                        <input type="search" placeholder="Search">
+                        <button type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/Flowtype.js/1.1.0/flowtype.min.js"></script>
     <script src="scripts/index.js" type="module"></script>
     <script src="scripts/addCart.js"></script>
     <script src="scripts/scripts.js"></script>
@@ -719,5 +796,5 @@
         crossorigin="anonymous"></script>
     <script src="scripts/validate.js"></script>
 </body>
-</html>
 
+</html>

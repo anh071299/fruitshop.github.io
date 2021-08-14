@@ -1,21 +1,18 @@
-// language dropdown
+// // language dropdown
 let langList = $(".lang-menu");
 let langElements = $(".lang-menu li")
-let langDropdownBtn = $("#lang-dropdown")
+let langDropdownBtn = $(".dropdown-btn")
 langElements.each(function () {
     $(this).click(function () {
-        langList.hide();
+      
         langDropdownBtn.attr('value', $(this).attr('value'));
         langDropdownBtn.html($(this).children("a").html());
+
     })
 
 });
 langDropdownBtn.html($(langElements[0].children).html());
 langDropdownBtn.attr('value', $(langElements[0]).attr('value'));
-
-langDropdownBtn.click(function () {
-    langList.show();
-});
 // user-account
 $("#register").click(function () {
     $(".login-form").hide();
