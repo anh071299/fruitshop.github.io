@@ -222,13 +222,7 @@
       font-size: min(9vw, 59px);
       line-height: min(10.6vw, 68px);
     }
-    /* .slide-content p{
-      font-size: min(2.25vw, 20px);
-      line-height: min(5vw, 35px);
-    }
-    .slider-content .submitBtn{
-      font-size: min(2.25vw, 16px)
-    } */
+  
   }
   @media(min-width: 992px){
     .slide-content h2{
@@ -239,10 +233,7 @@
       font-size: min(9vw, 62px);
       line-height: min(10.6vw, 71px);
     }
-    /* .slide-content p{
-      font-size: min(2.25vw, 23px);
-      line-height: min(5vw, 38px);
-    } */
+  
    .sub-banner-item{
       padding: 155px 30px 30px 40px;
    }
