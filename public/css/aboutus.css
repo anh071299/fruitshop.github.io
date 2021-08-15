@@ -70,10 +70,6 @@
   border-radius: 10px;
   margin-top: 40px;
 }
-.feedback-slides .slick-dots li button::before {
-  color: var(--primary-color);
-  font-size: 12px;
-}
 .feedback-slide::before {
   position: absolute;
   top: -30px;

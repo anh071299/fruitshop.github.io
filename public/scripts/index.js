@@ -2,8 +2,9 @@ import renderProduct from "../scripts/renderProduct.js";
 $('.banner-slide').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: false,
+  autoplay: true,
   arrows: false,
+  dots: true, 
   autoplaySpeed: 3000,
   infinite: true,
   fade: true,
