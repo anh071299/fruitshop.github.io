@@ -57,19 +57,22 @@ let xhr = $.ajax({
         slidesToShow: 4,
         arrows: false,
         slidesToScroll: 4,
+        dots: true,
         responsive: [
           {
             breakpoint: 1200,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
+              dots: true,
             }
           },
           {
             breakpoint: 992,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2
+              slidesToScroll: 2,
+              dots: true,
             }
           },
           {
@@ -78,6 +81,7 @@ let xhr = $.ajax({
               slidesToShow: 1,
               slidesToScroll: 1,
               arrows: false,
+              dots: true,
             }
           }
         ]
