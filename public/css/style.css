@@ -102,7 +102,7 @@ a:hover {
   line-height: 50px;
   text-align: center;
   position: relative;
-  margin-right: 21px;
+  margin-right: 0px;
 }
  .basket-icon .basket-amount {
   display: inline-block;
@@ -289,7 +289,7 @@ a.more-btn:hover {
 .page-header-title {
   color: #ffffff;
   font: 700 30px/42px  var(--title-font-family);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .page-header-breadcumbs a,
 .page-header-breadcumbs span {
@@ -380,6 +380,7 @@ a.more-btn:hover {
 .navbar-light button.navbar-toggler{
   border: none;
   max-width: 25%;
+  padding: 0px;
 }
 .navbar .navbar-brand{
   max-width: 50%;
@@ -518,6 +519,12 @@ h3 a{
   .main-menu .bottom-extra .dropdown-menu{
     left: 0%;
     min-width: 10rem;
+  }
+  .basket-icon{
+    margin-right: 25px;
+  }
+  .page-header-title{
+    margin-bottom: 25px;
   }
 }
 @media (min-width: 1200px) {
