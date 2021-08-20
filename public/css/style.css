@@ -239,7 +239,8 @@ a.more-btn:hover {
   margin-bottom: 20px;
 }
 .sub-title {
-  font: 600 26px/38px var(--content-font-family);
+  font: 600 26px/38px var(--add-font-family);
+  letter-spacing: 0.78px;
   color: var(--accent-color);
   margin-bottom: 8px;
 }
