@@ -201,6 +201,7 @@
 /* subcribe */
 .subcribe {
   background: url("../img/getintouch/our-team_form-bg.png") center;
+  background-color: #fef7ef;
 }
 .subcribe input {
   height: 50px;
