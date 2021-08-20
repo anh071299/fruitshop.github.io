@@ -83,6 +83,9 @@
   text-align: center;
   background-color: var(--primary-color);
 }
+.feedback-content{
+  margin-bottom: 20px;
+}
 .feedback-user .user-img {
   height: 80px;
   width: 80px;
