@@ -77,15 +77,15 @@ function totalCost(product, action) {
     }
 }
 function displayCart() {
+    $('.cart-action').hide();
     let cartItems = sessionStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
     let cart = sessionStorage.getItem("totalCost");
     cart = parseInt(cart);
-    let productContainer = $('.cart-table-content')[0];
-    let productTotal = $('.cart-table-footer')[0];
-    if (cartItems && productContainer) {
-        productContainer.innerHTML = '';
-        productTotal.innerHTML = '';
+    let cartContent = $('.cart-form')[0];
+    if (cartItems && cartContent) {
+        cartContent.innerHTML ='';
+        let  productContainer= '';
         Object.values(cartItems).map((item, index) => {
             html =
         ` 
@@ -112,23 +112,76 @@ function displayCart() {
         
         `
             if (html != '') {
-                productContainer.innerHTML +=
+                productContainer +=
                     `<tr>${html}</tr>`;
             }
 
         });
-       
-        productTotal.innerHTML += `
-                <tr>
-                    <th colspan="4" class="total-title">Totals</th>
-                    <td colspan="2" class="total-price">$${cart}.00</td>
-                </tr>
-           `
-        $('.sub-total')[0].innerHTML = `$${cart}`
-        $('.total-bill')[0].innerHTML = `$${cart}`
-        deleteButtons();
-        manageQuantity();
+   if(productContainer){
+    cartContent.innerHTML = `
+    <table class="cart-table table mt-80 d-block d-lg-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Product</th>
+                        <th class="col-2">Price</th>
+                        <th class="col-2">Quanity</th>
+                        <th class="col-2">Total</th>
+                        <th class="col-1"></th>
+                    </tr>
+                </thead>
+                <tbody class="cart-table-content">
+                    ${productContainer}
+                </tbody>
+                <tfoot class="cart-table-footer">
+                    <tr>
+                        <th colspan="4" class="total-title">Totals</th>
+                        <td colspan="2" class="total-price">$${cart}.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+       `
+    // $('.sub-total')[0].innerHTML = `$${cart}`
+    // $('.total-bill')[0].innerHTML = `$${cart}`
+    deleteButtons();
+    manageQuantity();
+    $('.cart-message').hide(); cartContent.innerHTML = `
+    <table class="cart-table table mt-80 d-block d-lg-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Product</th>
+                        <th class="col-2">Price</th>
+                        <th class="col-2">Quanity</th>
+                        <th class="col-2">Total</th>
+                        <th class="col-1"></th>
+                    </tr>
+                </thead>
+                <tbody class="cart-table-content">
+                    ${productContainer}
+                </tbody>
+                <tfoot class="cart-table-footer">
+                    <tr>
+                        <th colspan="4" class="total-title">Totals</th>
+                        <td colspan="2" class="total-price">$${cart}.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+       `
+    // $('.sub-total')[0].innerHTML = `$${cart}`
+    // $('.total-bill')[0].innerHTML = `$${cart}`
+    deleteButtons();
+    manageQuantity();
+    $('.cart-action').show();
+    $('.cart-message').hide();
+   }
+       else{
+        $('.cart-message').show();
+        $('.cart-action').hide();
+       }
     }
+
+    
 }
 function manageQuantity() {
     let decreaseButtons = document.querySelectorAll('.decrease');

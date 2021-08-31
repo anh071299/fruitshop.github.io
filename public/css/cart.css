@@ -100,6 +100,9 @@ td.cart-quanity div {
   transition: 0.3 ease all;
   cursor: pointer;
 }
+.coupon{
+  display: flex;
+}
 .coupon *{
   width: 100%;
 }
@@ -188,6 +191,7 @@ td.cart-quanity div {
   }
   .coupon {
     justify-content: normal;
+    
   }
   .cart-table input.product-quanity{
     height: 70px;
@@ -196,7 +200,7 @@ td.cart-quanity div {
     margin-bottom: 35px;
   }
   .coupon *{
-    width: unset;
+    max-width: 220px;
   }
   .coupon .input-text{
     margin-right: 20px;

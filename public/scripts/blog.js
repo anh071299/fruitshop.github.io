@@ -1,5 +1,4 @@
 var items = $(".blog-list .blog-post");
-console.log(items);
     var numItems = items.length;
     var perPage = 3;
 

@@ -182,8 +182,9 @@ span[class="current"] {
   background-color: var(--primary-color);
   vertical-align: baseline;
 }
-div.corner-add input{
+div.corner-add input, div.corner-add a{
   height: 100%;
+  line-height: unset;
 }
 div.corner-add:hover input, div.corner-add:hover a{
   color: #fff;
@@ -438,7 +439,7 @@ button.navbar-toggler:focus{
   min-width: 5rem;
 }
 .aside-search-form{
-  padding: 0px 20px;
+  padding: 0px;
 }
 .aside-search-form input {
   width: 100%;
@@ -463,7 +464,7 @@ button.navbar-toggler:focus{
 .footer {
   background-image: url("../img/footer/image-bg.jpg");
   background-size: contain;
-  padding: 100px 0px;
+  padding: 80px 0px;
   color: white;
 }
 .footer .row {
@@ -498,6 +499,9 @@ h3 a{
 }
 }
 @media (min-width: 992px) {
+  .aside-search-form{
+    padding: 0px 20px;
+  }
   .main-menu .navbar {
     max-width: 83.33%;
   }

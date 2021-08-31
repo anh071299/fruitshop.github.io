@@ -1,4 +1,3 @@
-
 const name = $('input[name=name]');
 name.blur(function () {
     checkName(this);
