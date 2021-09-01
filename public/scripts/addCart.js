@@ -86,7 +86,6 @@ function displayCart() {
     if (cartItems && cartContent) {
         cartContent.innerHTML ='';
         let  productContainer= '';
-        let order = '';
         Object.values(cartItems).map((item, index) => {
             html =
         ` 
@@ -111,18 +110,8 @@ function displayCart() {
                     `<td class="total" data-title="Total">$${item.inCart * item.salePrice}.0</td>`}
         <td class="close"><i class="bi bi-x close-btn"></i></td>
         
-        `
-        // order += 
-        // `
-        //     <tr class="cart_item">
-        //         <td class="product-name">
-        //         ${item.title}<strong class="product-quantity">${item.inCart}</strong></td>
-        //         <td class="product-total">
-        //         ${item.salePrice == "" ?
-        //             `<td class="total"  data-title="Total">$${item.inCart * item.originalPrice}.0</td>` :
-        //             `<td class="total" data-title="Total">$${item.inCart * item.salePrice}.0</td>`}
-        //     </tr>
-        // `
+        `;
+      
         
             if (html != '') {
                 productContainer +=
@@ -155,13 +144,14 @@ function displayCart() {
             </table>
 
        `;
-    //    console.log(order+'ok');
-    //    $('.order-table tbody').innerHTML = order;
-    // $('.sub-total')[0].innerHTML = `$${cart}`
-    // $('.total-bill')[0].innerHTML = `$${cart}`
+
+     
+    $('.sub-total')[0].innerHTML = `$${cart}`
+    $('.total-bill')[0].innerHTML = `$${cart}`
     deleteButtons();
     manageQuantity();
-    $('.cart-message').hide(); cartContent.innerHTML = `
+    $('.cart-message').hide(); 
+    cartContent.innerHTML = `
     <table class="cart-table table mt-80 d-block d-lg-table">
                 <thead>
                     <tr>
@@ -188,14 +178,17 @@ function displayCart() {
     // $('.total-bill')[0].innerHTML = `$${cart}`
     deleteButtons();
     manageQuantity();
-    // $('.sub-total')[0].innerHTML = `$${cart}`
-    // $('.total-bill')[0].innerHTML = `$${cart}`
+    $('.sub-total')[0].innerHTML = `$${cart}`
+    $('.total-bill')[0].innerHTML = `$${cart}`
     $('.cart-action').show();
     $('.cart-message').hide();
+    $('.order').show();
    }
        else{
         $('.cart-message').show();
         $('.cart-action').hide();
+        
+        $('.order').hide();
        }
     }
 
