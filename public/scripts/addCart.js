@@ -83,17 +83,19 @@ function displayCart() {
     let cart = sessionStorage.getItem("totalCost");
     cart = parseInt(cart);
     let cartContent = $('.cart-form')[0];
+    let billContent = $('.order-items')[0];
     if (cartItems && cartContent) {
-        cartContent.innerHTML ='';
-        let  productContainer= '';
+        cartContent.innerHTML = '';
+        let productContainer = '';
+     
         Object.values(cartItems).map((item, index) => {
             html =
-        ` 
+                ` 
         <td class="product-img">
             <img src="${item.image}" />
         </td>
         <td class="product-name" data-title="Product">
-            <a class="cart-product-name" href="product.html?productId=${item.id}">${item.title}</a>
+            <a  href="product.html?productId=${item.id}">${item.title}</a>
         </td>
         ${item.salePrice == ""
                     ? `<td data-title="Price"><span class ="original-price real-price">$${item.originalPrice}.0<span></td>`
@@ -111,18 +113,14 @@ function displayCart() {
         <td class="close"><i class="bi bi-x close-btn"></i></td>
         
         `;
-      
-        
-            if (html != '') {
-                productContainer +=
-                    `<tr>${html}</tr>`;
-            }
-            
-
+        if (html != '') {
+            productContainer +=
+                 `<tr>${html}</tr>`;
+        }   
         });
-   if(productContainer){
-    cartContent.innerHTML = `
-    <table class="cart-table table mt-80 d-block d-lg-table">
+        if (productContainer) {
+            cartContent.innerHTML = `
+            <table class="cart-table table mt-80 d-block d-lg-table">
                 <thead>
                     <tr>
                         <th colspan="2">Product</th>
@@ -144,15 +142,8 @@ function displayCart() {
             </table>
 
        `;
-
-     
-    $('.sub-total')[0].innerHTML = `$${cart}`
-    $('.total-bill')[0].innerHTML = `$${cart}`
-    deleteButtons();
-    manageQuantity();
-    $('.cart-message').hide(); 
-    cartContent.innerHTML = `
-    <table class="cart-table table mt-80 d-block d-lg-table">
+        cartContent.innerHTML = `
+            <table class="cart-table table mt-80 d-block d-lg-table">
                 <thead>
                     <tr>
                         <th colspan="2">Product</th>
@@ -174,25 +165,51 @@ function displayCart() {
             </table>
 
        `
-    // $('.sub-total')[0].innerHTML = `$${cart}`
-    // $('.total-bill')[0].innerHTML = `$${cart}`
-    deleteButtons();
-    manageQuantity();
-    $('.sub-total')[0].innerHTML = `$${cart}`
-    $('.total-bill')[0].innerHTML = `$${cart}`
-    $('.cart-action').show();
-    $('.cart-message').hide();
-    $('.order').show();
-   }
-       else{
-        $('.cart-message').show();
-        $('.cart-action').hide();
+
+            deleteButtons();
+            manageQuantity();
+            $('.sub-total')[0].innerHTML = `$${cart}`
+            $('.total-bill')[0].innerHTML = `$${cart}`
+            $('.cart-action').show();
+            $('.cart-message').hide();
+            $('.order').show();
+        }
+        else {
+            $('.cart-message').show();
+            $('.cart-action').hide();
+
+            $('.order').hide();
+        }
         
-        $('.order').hide();
-       }
+    }
+    if(cartItems && billContent ){
+        billContent.innerHTML = '';
+        let billContainer = '';
+        Object.values(cartItems).map((item, index) => {
+            bill =
+            ` 
+            <td class = "product-name">
+               ${item.title}
+               <strong class="bill-item-quantity">×&nbsp;${item.inCart}</strong>
+            </td>
+            
+            ${item.salePrice == "" ?
+                `<td class="total"  data-title="Total">$${item.inCart * item.originalPrice}.0</td>` :
+                `<td class="total" data-title="Total">$${item.inCart * item.salePrice}.0</td>`}
+        
+            `;
+            if (bill != '') {
+                 billContainer +=
+                    `<tr>${bill}</tr>`;
+            }
+        });
+        if(billContainer){
+            billContent.innerHTML = `${billContainer}`;
+        }
+        $('.sub-total')[0].innerHTML = `$${cart}`
+        $('.total-bill')[0].innerHTML = `$${cart}`
     }
 
-    
 }
 function manageQuantity() {
     let decreaseButtons = document.querySelectorAll('.decrease');
@@ -254,5 +271,6 @@ function deleteButtons() {
 $(document).ready(function () { $('tr:empty').remove(); });
 onLoadCartNumbers();
 displayCart();
+
 
 

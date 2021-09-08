@@ -210,7 +210,7 @@
             <div class="cart mt-80 ">
                 <form action="" class="cart-form" id="cart-form" method="post">
                 </form>
-                
+
                 <div class="cart-message text-center">
                     <h4 class=" h4-title">Your cart is empty</h4>
                     <div class="corner-add continue">
@@ -222,10 +222,6 @@
             <div class="cart-action">
                 <div class="row">
                     <div class="col-12 col-md-8">
-                        <!-- <div class="corner-add continue">
-                            <a class="submitBtn" href="shop.html">Continue shopping</a>
-                            <span class="morph-element"></span>
-                        </div> -->
                         <div class="coupon">
                             <input type="text" name="coupon_code" class="input-text" id="coupon_code" value=""
                                 placeholder="Coupon code">
@@ -245,21 +241,24 @@
             </div>
             <div class="order col-lg-4 ms-lg-auto">
                 <h2 class="order-title">
-                    Order 
+                    Order
                 </h2>
                 <table>
-                    <tbody><tr>
-                        <th>Sub total
-                        </th><td class="sub-total"></td>
-                    </tr>
-                    <tr>
-                        <th>Total
-                        </th><td class="total-bill"></td>
-                    </tr>
-                </tbody></table>
+                    <tbody>
+                        <tr>
+                            <th>Sub total
+                            </th>
+                            <td class="sub-total"></td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <td class="total-bill"></td>
+                        </tr>
+                    </tbody>
+                </table>
                 <div class="order-btn text-center">
                     <div class="corner-add continue">
-                        <input type="submit" value="Proceed to checkout" class="btn submitBtn">
+                        <a class="submitBtn" href="checkout.html">Process to check out</a>
                         <span class="morph-element"></span>
                     </div>
                 </div>

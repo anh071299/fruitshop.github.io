@@ -184,3 +184,15 @@ $('.contact-form #submit-btn').click(function(event){
 
     }
 })
+$('.order-form #submitBtn').click(function(event){
+    let name = $('.order-form input[name=name]');
+    let phone = $('.order-form input[name=phone]');
+    checkName(name);
+    checkPhone(phone);
+    if(!checkName($(name)) || checkPhone($(phone))){
+        event.preventDefault();
+    }
+    else{
+        
+    }
+})

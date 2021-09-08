@@ -71,7 +71,7 @@ td {
 table tbody tr td.product-img {
   width: 105px;
 }
-td.product-name a,
+td.product-name a, td.product-name, 
 .total-title {
   font: 600 20px/30px var(--title-font-family);
   color: #5c5c5c;
@@ -89,8 +89,8 @@ td.cart-quanity div {
 .order-title {
   font: 600 24px var(--title-font-family);
 }
-.order table th {
-  font: 600 20px var(--title-font-family);
+ table th {
+  font: 600 22px var(--title-font-family);
 }
 .close-btn {
   font-size: 30px;
@@ -117,7 +117,7 @@ td.cart-quanity div {
   display: inline-flex;
   align-items: center;
 }
-.total-price {
+.total-price, .sub-total, .total-bill {
   color: var(--secondary-color);
 }
 .order {
@@ -133,9 +133,6 @@ td.cart-quanity div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
-}
-.order table tr td {
-  color: var(--secondary-color);
 }
 .order-btn {
   margin-top: 6px;
