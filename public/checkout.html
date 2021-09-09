@@ -10,11 +10,11 @@
         <title>Check out - Fresh Farm</title>
         <link rel="shortcut icon" href="img/header/favicon.png" type="image/x-icon">
         <!-- bootstrap -->
-        
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-            <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/cart.css">
         <link rel="stylesheet" href="css/checkout.css">
         <link rel="stylesheet" href="css/detailProduct.css">
@@ -194,8 +194,8 @@
             </div>
         </div>
     </div>
-     <!-- banner -->
-     <div class="banner d-flex align-items-center justify-content-center">
+    <!-- banner -->
+    <div class="banner d-flex align-items-center justify-content-center">
         <div class="page-header-content text-center">
             <div class="page-header-title">Check out</div>
             <div class="page-header-breadcumbs">
@@ -210,84 +210,88 @@
     </div>
     <!-- main -->
     <div class="main mt-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-7 order-2 order-lg-1">
-                    <h3>Billing Detail</h3>
-                    <form class="row g-3 needs-validation order-form " novalidate="" style="display: block;">
-                        <div class="col-12 ">
-                            <label for="billName">Name* </label>
-                            <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="billName" required=""  name="name">
-                                <div class="invalid-feedback"></div>
+        <!-- order -->
+        <div class="order-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7 order-2 order-lg-1">
+                        <h3>Billing Detail</h3>
+                        <form class="row g-3 needs-validation order-form " novalidate="" style="display: block;">
+                            <div class="col-12 ">
+                                <label for="billName">Name* </label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="billName" required="" name="name">
+                                    <div class="invalid-feedback"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <label for="billPhone">Phone* </label>
-                            <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="billPhone" required=""  name="phone">
-                                <div class="invalid-feedback"></div>
+                            <div class="col-12">
+                                <label for="billPhone">Phone* </label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="billPhone" required="" name="phone">
+                                    <div class="invalid-feedback"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 ">
-                            <label for="stressAdr">Street Address* </label>
-                            <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="streetAdr" name="streetAdr" required="">
-                                <div class="invalid-feedback"></div>
+                            <div class="col-12 ">
+                                <label for="stressAdr">Street Address* </label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="streetAdr" name="streetAdr" required="">
+                                    <div class="invalid-feedback"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <label for="province-select">Province*</label>
-                            <select  class="province-select form-select">
-                               
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <label for="district-select">District*</label>
-                            <select class="district-select form-select">
-                               
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <label for="ward-select">Ward*</label>
-                            <select class="ward-select form-select">
-                               
-                            </select>
-                        </div>
-                        <div class="col-12">
-                            <div class="corner-add">
-                                <input type="submit" value="Place Order" id="submitBtn" class="btn submitBtn">
-                                <span class="morph-element"></span>
+                            <div class="col-12">
+                                <label for="province-select">Province*</label>
+                                <select class="province-select form-select">
+                                </select>
                             </div>
+                            <div class="col-12">
+                                <label for="district-select">District*</label>
+                                <select class="district-select form-select">
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="ward-select">Ward*</label>
+                                <select class="ward-select form-select">
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="add-infor">Additional Information</label>
+                                <textarea class="form-control" name="add-infor" id="add-infor"
+                                    placeholder="Notes about your order, e.g. special notes for delivery." cols="40"
+                                    rows="5" style="width: 100%"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="corner-add">
+                                    <input type="submit" value="Place Order" id="submitBtn" class="btn submitBtn">
+                                    <span class="morph-element"></span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-lg-5 order-1 order-lg-2">
+                        <div class="bill">
+                            <h3>
+                                Your order
+                            </h3>
+                            <table class="order-table table">
+                                <tbody class="order-items">
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>Sub total
+                                        </th>
+                                        <td class="sub-total"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total</th>
+                                        <td class="total-bill"></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
                         </div>
-                        
-                    </form>
-                </div>
-                <div class="col-12 col-lg-5 order-1 order-lg-2">
-                    <div class="bill">
-                        <h3>
-                            Your order 
-                        </h3>
-                        <table class="order-table table">
-                            <tbody class="order-items">
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Sub total
-                                    </th>
-                                    <td class="sub-total"></td>
-                                </tr>
-                                <tr>
-                                    <th>Total</th>
-                                    <td class="total-bill"></td>
-                                </tr>
-                            </tfoot>
-                        </table>
-
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
     <!-- footer -->
     <div class="footer mt-80">

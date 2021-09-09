@@ -58,7 +58,7 @@ function showWard(district, province) {
         type: "GET",
     }).done(function (json) {
         let path = json[province].file_path.slice(1);
-        let d = '';
+        let d = ``;
         $.ajax({
             url: `https://cdn.jsdelivr.net/gh/thien0291/vietnam_dataset@1.0.0/${path}`,
             type: "GET",

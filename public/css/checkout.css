@@ -10,6 +10,6 @@ form label{
     box-shadow: 0 8px 30px 0 rgb(0 0 0 / 12%);
     padding: 40px 30px;
 }
-.main .row{
+.order-container .row{
     --bs-gutter-y: 30px;
 }

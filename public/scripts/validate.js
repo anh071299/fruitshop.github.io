@@ -105,6 +105,25 @@ function checkConPassword() {
         return true;
     }
 }
+// check streetAdr
+const stressAdr = $('input[name=streetAdr]');
+stressAdr.blur(function () {
+    checkStressAdr(this);
+});
+function checkStressAdr(stressAdr) {
+    let error = $(stressAdr).next();
+    let value = $(stressAdr).val().trim();
+    if (value.length == "") {
+        error.text("Street Address  is required.");
+        $(stressAdr).addClass("is-invalid");
+        return false;
+    } else {
+        $(stressAdr).removeClass("is-invalid");
+        return true;
+    }
+}
+
+
 // check register validate
 
 $('.sign-up-form #submitBtn').click(function (event) {
@@ -187,9 +206,11 @@ $('.contact-form #submit-btn').click(function(event){
 $('.order-form #submitBtn').click(function(event){
     let name = $('.order-form input[name=name]');
     let phone = $('.order-form input[name=phone]');
+    let stressAdr = $('.order-form input[name=streetAdr]');
     checkName(name);
     checkPhone(phone);
-    if(!checkName($(name)) || checkPhone($(phone))){
+    checkStressAdr(stressAdr);
+    if(!checkName($(name)) || checkPhone($(phone)) || checkStressAdr($(stressAdr))){
         event.preventDefault();
     }
     else{
