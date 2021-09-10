@@ -1,15 +1,66 @@
+@font-face {
+  font-family: 'Livvic-Bold';
+  src: url('../fonts/Livvic/Livvic-Bold.eot');
+  src: url('../fonts/Livvic/Livvic-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Livvic/Livvic-Bold.woff2') format('woff2'),
+      url('../fonts/Livvic/Livvic-Bold.woff') format('woff'),
+      url('../fonts/Livvic/Livvic-Bold.ttf') format('truetype'),
+      url('../fonts/Livvic/Livvic-Bold.svg#Livvic-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Livvic-Light';
+  src: url('../fonts/Livvic-Light.eot');
+  src: url('../fonts/Livvic-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Livvic-Light.woff2') format('woff2'),
+      url('../fonts/Livvic-Light.woff') format('woff'),
+      url('../fonts/Livvic-Light.ttf') format('truetype'),
+      url('../fonts/Livvic-Light.svg#Livvic-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Zen-Loop';
+  src: url('../fonts/ZenLoop/ZenLoop-Regular.eot');
+  src: url('../fonts/ZenLoop/ZenLoop-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ZenLoop/ZenLoop-Regular.woff2') format('woff2'),
+      url('../fonts/ZenLoop/ZenLoop-Regular.woff') format('woff'),
+      url('../fonts/ZenLoop/ZenLoop-Regular.ttf') format('truetype'),
+      url('../fonts/ZenLoop/ZenLoop-Regular.svg#ZenLoop-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito-Sans-Regular';
+  src: url('../fonts/NunitoSans/NunitoSans-Regular.eot');
+  src: url('../fonts/NunitoSans/NunitoSans-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/NunitoSans/NunitoSans-Regular.woff2') format('woff2'),
+      url('../fonts/NunitoSans/NunitoSans-Regular.woff') format('woff'),
+      url('../fonts/NunitoSans/NunitoSans-Regular.ttf') format('truetype'),
+      url('../fonts/NunitoSans/NunitoSans-Regular.svg#NunitoSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 :root {
   --primary-color: #f69946;
   --secondary-color: #96b416;
   --text-color: #4f555a;
   --accent-color: #f69946;
   --head-font-color: #232323;
-  --title-font-family: "Livvic", sans-serif;
-  --title-font-weight: 700;
-  --content-font-family: "Nunito Sans", sans-serif;
-  --content-font-weight: 400;
-  --add-font-family: "Zen Loop", cursive;
+  --title-font-family: Livvic-Bold;
+  --content-font-family: Nunito-Sans-Regular;
+  --add-font-family: Zen-Loop;
 }
+
 .main-menu .user-account a{
   background-color: transparent;
 }
@@ -126,7 +177,7 @@ a:hover {
   margin-left: 23px;
 }
 .social-contact .contact-info .info-title {
-  font: 300 18px/30px var(--title-font-family);
+  font: 300 18px/30px livvic-Light;
 }
 .social-list li {
   display: inline-block;
@@ -294,7 +345,7 @@ a.more-btn:hover {
 }
 .page-header-breadcumbs a,
 .page-header-breadcumbs span {
-  font: 700 14px/22px var(--content-font-family);
+  font: 700 14px/22px var(--title-font-family);
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -426,7 +477,7 @@ button.navbar-toggler:focus{
 }
 .bottom-extra span , .main-menu .navbar-collapse .navbar-nav .nav-link {
   padding: 0px 20px;
-  font:var(--title-font-weight) 16px/20px var(--title-font-family);
+  font:700 16px/20px var(--title-font-family);
   color: #5c5c5c; 
 }
 .bottom-extra>li{
