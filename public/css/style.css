@@ -34,7 +34,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'Nunito-Sans-Regular';
   src: url('../fonts/NunitoSans/NunitoSans-Regular.eot');
@@ -47,9 +46,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-
-
 :root {
   --primary-color: #f69946;
   --secondary-color: #96b416;
