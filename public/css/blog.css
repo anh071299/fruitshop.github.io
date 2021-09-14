@@ -1,13 +1,23 @@
-.blog-list .blog-post{
-    margin-bottom: 50px;
+.blog-list .blog-post {
+  margin-bottom: 50px;
 }
-.pagination-container{
-    display: flex;
-    align-items: center;
+.pagination-container {
+  display: flex;
+  align-items: center;
 }
-.pagination-container  span {
-	padding: 6px 12px;
+.pagination-container span {
+  padding: 6px 12px;
 }
-.blog-list-content .row{
-    --bs-gutter-y: 30px;
+.blog-list-content .row {
+  --bs-gutter-y: 30px;
+}
+a.page-link {
+  border: none;
+  color: var(--text-color);
+}
+.page-item.active a.page-link,
+span[class="current"] {
+  background-color: unset;
+  color: black;
+  border-bottom: 3px solid var(--primary-color);
 }

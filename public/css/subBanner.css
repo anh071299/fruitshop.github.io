@@ -1,0 +1,43 @@
+.banner {
+    background: url("../img/banner/title-11.jpg")  center center  scroll;
+    background-size: cover;
+    padding: 40px 0px 40px 0px;
+  }
+  .banner a:hover{
+    color: var(--primary-color);
+  }
+  .devide {
+    margin: 0px 10px;
+  }
+  .devide::before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+  }
+  .page-header-title {
+    color: #ffffff;
+    font: 700 30px/42px  var(--title-font-family);
+    margin-bottom: 15px;
+  }
+  .page-header-breadcumbs a,
+  .page-header-breadcumbs span {
+    font: 700 14px/22px var(--title-font-family);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  @media(min-width: 1200px){
+    .banner{
+      min-height: 400px;
+    }
+    .page-header-breadcumbs a, .page-header-breadcumbs span{
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .page-header-title{
+      font-size: 48px;
+      line-height: 60px;
+    }
+  }
