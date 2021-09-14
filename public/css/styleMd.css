@@ -1,12 +1,9 @@
-@media (min-width: 768px) {
-    .sub-title {
-      font-size: 30px;
-      line-height: 42px;
-    }
-    h3,
-    h3 span,
-    h3 a {
-      font-size: 36px !important;
-    }
-  }
-  
+.sub-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+h3,
+h3 span,
+h3 a {
+  font-size: 36px !important;
+}
