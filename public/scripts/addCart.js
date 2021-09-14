@@ -222,7 +222,7 @@ function manageQuantity() {
     for (let i = 0; i < increaseButtons.length; i++) {
         decreaseButtons[i].addEventListener('click', () => {
             currentQuantity = decreaseButtons[i].parentElement.querySelector('input').value;
-            currentProduct = $('table .cart-product-name')[i].innerHTML;
+            currentProduct = $('table .product-name a')[i].innerHTML;
             if (cartItems[currentProduct].inCart > 1) {
                 cartItems[currentProduct].inCart -= 1;
                 cartNumbers(cartItems[currentProduct], "decrease");
@@ -234,7 +234,7 @@ function manageQuantity() {
 
         increaseButtons[i].addEventListener('click', () => {
             currentQuantity = increaseButtons[i].parentElement.querySelector('span').textContent;
-            currentProduct = $('table .cart-product-name')[i].innerHTML;
+            currentProduct = $('table .product-name a')[i].innerHTML;
             cartItems[currentProduct].inCart += 1;
             cartNumbers(cartItems[currentProduct]);
             totalCost(cartItems[currentProduct]);
@@ -253,7 +253,7 @@ function deleteButtons() {
     let productName;
     for (let i = 0; i < deleteButtons.length; i++) {
         deleteButtons[i].addEventListener('click', () => {
-            productName = $('table .cart-product-name')[i].innerHTML;
+            productName = $('table .product-name a')[i].innerHTML;
             sessionStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
             if (cartItems[productName].salePrice == "") {
                 sessionStorage.setItem('totalCost', cartCost - (cartItems[productName].originalPrice * cartItems[productName].inCart));

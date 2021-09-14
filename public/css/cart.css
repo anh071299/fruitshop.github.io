@@ -20,10 +20,11 @@ table.cart-table tbody {
   flex-wrap: wrap;
   gap: 15px;
 }
-.cart-action .corner-add a{
+.cart-action .corner-add a {
   text-align: center;
 }
-.cart-action .corner-add,.cart-action .corner-add a {
+.cart-action .corner-add,
+.cart-action .corner-add a {
   width: 100%;
 }
 table.cart-table tfoot {
@@ -71,7 +72,8 @@ td {
 table tbody tr td.product-img {
   width: 105px;
 }
-td.product-name a, td.product-name, 
+td.product-name a,
+td.product-name,
 .total-title {
   font: 600 20px/30px var(--title-font-family);
   color: #5c5c5c;
@@ -89,7 +91,7 @@ td.cart-quanity div {
 .order-title {
   font: 600 24px var(--title-font-family);
 }
- table th {
+table th {
   font: 600 22px var(--title-font-family);
 }
 .close-btn {
@@ -100,10 +102,10 @@ td.cart-quanity div {
   transition: 0.3 ease all;
   cursor: pointer;
 }
-.coupon{
+.coupon {
   display: flex;
 }
-.coupon *{
+.coupon * {
   width: 100%;
 }
 .coupon .input-text {
@@ -117,7 +119,9 @@ td.cart-quanity div {
   display: inline-flex;
   align-items: center;
 }
-.total-price, .sub-total, .total-bill {
+.total-price,
+.sub-total,
+.total-bill {
   color: var(--secondary-color);
 }
 .order {
@@ -143,66 +147,18 @@ td.cart-quanity div {
 .coupon {
   justify-content: space-between;
 }
-.cart-table input.product-quanity{
+.cart-table input.product-quanity {
   height: 50px;
 }
-@media (min-width: 768px) {
-  table.cart-table > :not(caption) > * > * {
-    padding: 15px;
-  }
-  table.cart-table thead {
-    display: table-header-group;
-  }
-  table.cart-table tbody {
-    display: table-row-group;
-  }
-  table.cart-table tfoot {
-    display: table-footer-group;
-  }
-  table.cart-table td::before {
-    display: none;
-  }
-  table.cart-table tbody tr {
-    vertical-align: middle;
-    display: table-row;
-    box-shadow: none;
-    border-radius: unset;
-    margin: 0;
-  }
-  table.cart-table tbody tr td {
-    display: table-cell;
-    vertical-align: inherit;
-  }
-  .cart-table tbody,
-  .cart-table td,
-  .cart-table tr {
-    border-color: inherit;
-    border-style: solid;
-    border-width: 0;
-  }
-  .cart-table tr th:first-child {
-    padding-left: 120px;
-  }
-  table.cart-table tbody tr td.close {
-    position: relative;
-  }
-  .coupon {
-    justify-content: normal;
-    
-  }
-  .cart-table input.product-quanity{
-    height: 70px;
-  }
-  table.cart-table tbody tr {
-    margin-bottom: 35px;
-  }
-  .coupon *{
-    max-width: 220px;
-  }
-  .coupon .input-text{
-    margin-right: 20px;
-  }
-  .cart-action .corner-add,.cart-action .corner-add a {
-    width: unset;
-  }
+.total {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.form-contact {
+  background-color: #fef7ef;
+  padding: 34px 40px 40px 40px;
+  border-radius: 20px;
+}
+.form-contact .row {
+  --bs-gutter-y: 30px;
 }

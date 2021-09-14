@@ -1,15 +1,1 @@
-.order-table.table>:not(:last-child)>:last-child>*{
-    border-bottom-color: rgb(222, 226, 230);
-}
-form label{
-    font-weight: 700;
-    width: 100%;
-}
-.bill{
-    border-radius: 5px;
-    box-shadow: 0 8px 30px 0 rgb(0 0 0 / 12%);
-    padding: 40px 30px;
-}
-.order-container .row{
-    --bs-gutter-y: 30px;
-}
+.order-table.table>:not(:last-child)>:last-child>*{border-bottom-color:#dee2e6}form label{font-weight:700;width:100%}.bill{border-radius:5px;box-shadow:0 8px 30px 0 rgb(0 0 0 / 12%);padding:40px 30px}.order-container .row{--bs-gutter-y:30px}
