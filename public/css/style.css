@@ -1,4 +1,3 @@
-
 :root {
   --primary-color: #f69946;
   --secondary-color: #96b416;
@@ -10,14 +9,14 @@
   --add-font-family: Zen-Loop;
 }
 
-.main-menu .user-account a{
+.main-menu .user-account a {
   background-color: transparent;
 }
-input, a {
-  -webkit-appearance: none!important;
-   -moz-appearance:    none!important;
-   appearance:         none!important;   
-
+input,
+a {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
 }
 * {
   margin: 0;
@@ -39,18 +38,18 @@ img {
   max-width: 100%;
   height: auto;
 }
- h4.h4-title {
-    font: 700 24px/36px  var(--title-font-family);
-  }
- .header .container-fluid {
+h4.h4-title {
+  font: 700 24px/36px var(--title-font-family);
+}
+.header .container-fluid {
   padding: 0 !important;
 }
 ul {
   margin-bottom: 0 !important;
   padding-left: 0 !important;
 }
-h1{
-  margin-bottom: 0px!important;
+h1 {
+  margin-bottom: 0px !important;
 }
 li {
   list-style: none;
@@ -77,7 +76,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 a {
@@ -104,7 +103,7 @@ a:hover {
   position: relative;
   margin-right: 0px;
 }
- .basket-icon .basket-amount {
+.basket-icon .basket-amount {
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -138,11 +137,12 @@ a.social-icon:hover {
 }
 input:focus,
 textarea:focus,
-select:focus, button:focus{
+select:focus,
+button:focus {
   outline: none !important;
   box-shadow: none !important;
 }
-.corner-add{
+.corner-add {
   display: inline-block;
   position: relative;
   transition: 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -152,54 +152,53 @@ select:focus, button:focus{
   background-color: var(--primary-color);
   vertical-align: baseline;
 }
-div.corner-add input, div.corner-add a{
+div.corner-add input,
+div.corner-add a {
   height: 100%;
   line-height: unset;
 }
-div.corner-add:hover input, div.corner-add:hover a{
+div.corner-add:hover input,
+div.corner-add:hover a {
   color: #fff;
 }
-.morph-element{
-  background-color: #D97319;
-  content: '';
+.morph-element {
+  background-color: #d97319;
+  content: "";
   position: absolute;
   width: 150%;
   height: 100%;
   left: 100%;
   top: 0;
   transition: 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
-  transform: translateX(-17px) skewX(
--45deg
-);
+  transform: translateX(-17px) skewX(-45deg);
   transform-origin: bottom;
 }
-.corner-add:hover .morph-element{
-  transform: translateX(calc(-100% - 17px)) skewX(
--45deg
-);
-color: white;
+.corner-add:hover .morph-element {
+  transform: translateX(calc(-100% - 17px)) skewX(-45deg);
+  color: white;
 }
-div.corner-add-noBg{
+div.corner-add-noBg {
   background-color: unset;
   border: 2px solid var(--primary-color);
 }
- .submitBtn, input.submitBtn {
-    position: relative;
-    display: block;
-    height: auto;
-    border-radius: 3px;
-    padding: 13px 30px;
-    font: 700 16px var(--title-font-family);
-    color: #fff;
-    background: transparent !important;
-    z-index: 1;
-    overflow: visible;
-    float: left;
-    transition: 0.3s;
-} 
+.submitBtn,
+input.submitBtn {
+  position: relative;
+  display: block;
+  height: auto;
+  border-radius: 3px;
+  padding: 13px 30px;
+  font: 700 16px var(--title-font-family);
+  color: #fff;
+  background: transparent !important;
+  z-index: 1;
+  overflow: visible;
+  float: left;
+  transition: 0.3s;
+}
 .more-btn {
   z-index: 1;
-  font: 700 16px/30px var(--title-font-family); 
+  font: 700 16px/30px var(--title-font-family);
   color: #96b416;
   transition: 0.4s;
 }
@@ -217,7 +216,7 @@ a.more-btn:hover {
 }
 .section-about {
   color: var(--text-color);
-  font: 400 16px/30px  var(--content-font-family);
+  font: 400 16px/30px var(--content-font-family);
   text-align: justify;
 }
 .post-meta-wrap {
@@ -272,7 +271,8 @@ a.more-btn:hover {
 .lang-dropdown .lang-icon {
   margin-right: 5px;
 }
-.user-account a, .user-account a:hover {
+.user-account a,
+.user-account a:hover {
   border: none;
   background: none;
 }
@@ -292,13 +292,14 @@ a.more-btn:hover {
   right: 30px;
   top: 30px;
 }
-.user-modal button:hover{
+.user-modal button:hover {
   color: var(--primary-color);
 }
 .modal-body form a {
   color: #4f555a;
 }
-.modal-body .sign-up-form, .modal-body .recover-pass-form{
+.modal-body .sign-up-form,
+.modal-body .recover-pass-form {
   display: none;
 }
 .modal-body .back-to-login {
@@ -310,30 +311,30 @@ a.more-btn:hover {
   text-align: center;
   font-size: 16px;
 }
-.dropdown-menu li{
+.dropdown-menu li {
   display: block;
-  margin: 0!important;
+  margin: 0 !important;
 }
 .top-header a:hover {
   color: rgb(233, 232, 232);
 }
 /* main-menu */
-.navbar-light button.navbar-toggler{
+.navbar-light button.navbar-toggler {
   border: none;
   max-width: 25%;
   padding: 0px;
 }
-.navbar .navbar-brand{
+.navbar .navbar-brand {
   max-width: 50%;
 }
-.navbar .navbar-brand img{
+.navbar .navbar-brand img {
   height: 67px;
 }
-.navbar a.icon{
+.navbar a.icon {
   max-width: 25%;
 }
-button.navbar-toggler:focus{
- box-shadow: none;
+button.navbar-toggler:focus {
+  box-shadow: none;
 }
 .header {
   position: sticky;
@@ -346,13 +347,13 @@ button.navbar-toggler:focus{
   box-shadow: 0px 23px 38px 0px rgb(0 0 0 / 10%);
   z-index: 99;
 }
-.main-menu .navbar-nav{
+.main-menu .navbar-nav {
   text-align: center;
 }
-.main-menu .navbar{
+.main-menu .navbar {
   width: 100%;
 }
-.navbar-collapse  li{
+.navbar-collapse li {
   margin-bottom: 12px;
 }
 .main-menu a.nav-link.active {
@@ -364,12 +365,13 @@ button.navbar-toggler:focus{
 .main-menu a:hover {
   color: var(--primary-color) !important;
 }
-.bottom-extra span , .main-menu .navbar-collapse .navbar-nav .nav-link {
+.bottom-extra span,
+.main-menu .navbar-collapse .navbar-nav .nav-link {
   padding: 0px 20px;
-  font:700 16px/20px var(--title-font-family);
-  color: #5c5c5c; 
+  font: 700 16px/20px var(--title-font-family);
+  color: #5c5c5c;
 }
-.aside-search-form{
+.aside-search-form {
   padding: 0px;
 }
 .aside-search-form input {
@@ -418,45 +420,3 @@ button.navbar-toggler:focus{
 .footer ul li {
   margin-bottom: 8px;
 }
-@media(min-width: 768px){
-  .sub-title{
-    font-size: 30px;
-    line-height: 42px;
-  }
-  h3,
-h3 span,
-h3 a{
-  font-size: 36px!important;
-}
-}
-@media (min-width: 992px) {
-  .aside-search-form{
-    padding: 0px 20px;
-  }
-  .main-menu .navbar {
-    max-width: 83.33%;
-  }
-  .social-list li {
-    margin-right: 20px;
-  }
-  .user-modal .user-modal-content {
-    padding: 50px;
-  }
-  .main-menu .icon-nav {
-    max-width: 16.67%;
-  }
-  .navbar a.navbar-brand img{
-    height: 80px;
-  }
-  .navbar-collapse  li{
-    margin-bottom: 0px;
-  }
-  .main-menu .bottom-extra .dropdown-menu{
-    left: 0%;
-    min-width: 10rem;
-  }
-  .basket-icon{
-    margin-right: 25px;
-  }
-}
-

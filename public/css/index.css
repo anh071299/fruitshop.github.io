@@ -106,7 +106,6 @@
   transition: 0.4s;
   z-index: 1;
 }
-/* suggestion */
 .suggestion-product .product-content {
   background-color: #fef7ef;
 }
@@ -161,110 +160,6 @@
   height: 50px;
   margin-left: 10px;
 }
-@media (min-width: 576px) {
-  .banner-slide .slick-dots {
-    bottom: 5%;
-  }
-  .banner-slide .corner-add {
-    margin-bottom: 0px;
-  }
-  .slide-content h2 {
-    font-size: min(4.5vw, 29px);
-    line-height: min(9vw, 51px);
-  }
-  .slide-content h1 {
-    font-size: min(9vw, 59px);
-    line-height: min(10.6vw, 68px);
-  }
-}
-@media (min-width: 992px) {
-  .slide-content h2 {
-    font-size: min(4.5vw, 32px);
-    line-height: min(9vw, 54px);
-  }
-  .slide-content h1 {
-    font-size: min(9vw, 62px);
-    line-height: min(10.6vw, 71px);
-  }
 
-  .sub-banner-item {
-    padding: 155px 30px 30px 40px;
-  }
-  .more-btn {
-    font: 700 16px/30px var(--title-font-family);
-  }
-  .suggestion-header .section-about {
-    width: 60%;
-    text-align: center;
-  }
-}
-@media (min-width: 1200px) {
-  div.content-left > .row > div:nth-child(2) > .content-item {
-    margin-right: 40px;
-  }
-  div.content-right > .row > div:nth-child(2) > .content-item {
-    margin-left: 40px;
-  }
-  .slide-content h1 {
-    font-size: 72px;
-    line-height: 86px;
-  }
-  .slide-content h2 {
-    font-size: 36px;
-    line-height: 72px;
-    font: 400 36px/72px var(--add-font-family);
-  }
-  .slide-content p {
-    font-size: 18px;
-    line-height: 36px;
-    max-width: 850px;
-    margin-top: 30px;
-  }
-  .slide-content .submitBtn {
-    font-size: 16px;
-    padding: 18px 30px;
-  }
-  .slide-content .morph-element {
-    transform: translateX(-17px) skewX(-45deg);
-  }
-}
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -20%, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 40%, 0);
-  }
 
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translate3d(40%, 0, 0);
-  }
 
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-}

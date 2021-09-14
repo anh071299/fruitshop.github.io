@@ -25,11 +25,3 @@
   color: var(--head-font-color);
   font-family: var(--title-font-family);
 }
-@media (min-width: 1200px) {
-  div.content-left > .row > div:nth-child(2) > .content-item {
-    margin-right: 40px;
-  }
-  div.content-right > .row > div:nth-child(2) > .content-item {
-    margin-left: 40px;
-  }
-}
