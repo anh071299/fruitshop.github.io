@@ -19,10 +19,22 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleLg.css" media="screen and (min-width: 992px)">
+    <link rel="stylesheet" href="css/styleMd.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="css/sec-aboutfarm.css">
     <link rel="stylesheet" href="css/sec-smallstory.css">
     <link rel="stylesheet" href="css/subBanner.css">
+    <style>
+        @media (min-width: 1200px) {
+            div.content-left>.row>div:nth-child(2)>.content-item {
+                margin-right: 40px;
+            }
 
+            div.content-right>.row>div:nth-child(2)>.content-item {
+                margin-left: 40px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -591,8 +603,8 @@
                         </div>
                         <div class="col-12 ">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="emailSignUp" placeholder="Email" name="email"
-                                    required />
+                                <input type="text" class="form-control" id="emailSignUp" placeholder="Email"
+                                    name="email" required />
                                 <div class="invalid-feedback"></div>
                             </div>
                         </div>
@@ -605,8 +617,8 @@
                         </div>
                         <div class="col-12">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="passwordSignUp" required placeholder="Password"
-                                    name="password" />
+                                <input type="text" class="form-control" id="passwordSignUp" required
+                                    placeholder="Password" name="password" />
                                 <div class="invalid-feedback"></div>
                             </div>
                         </div>
@@ -637,8 +649,8 @@
 
                         <div class="col-12">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="passwordLogin" required placeholder="Password"
-                                    name="password" />
+                                <input type="text" class="form-control" id="passwordLogin" required
+                                    placeholder="Password" name="password" />
                                 <div class="invalid-feedback"></div>
                             </div>
                         </div>
@@ -658,8 +670,8 @@
 
                     <form class="row g-3 needs-validation recover-pass-form" novalidate>
                         <div class="col-12 has-validation">
-                            <input type="text" class="form-control" id="emailForgetPass" placeholder="Email" name="email"
-                                required />
+                            <input type="text" class="form-control" id="emailForgetPass" placeholder="Email"
+                                name="email" required />
                             <div class="invalid-feedback"></div>
                         </div>
                         <div class="col-12">
