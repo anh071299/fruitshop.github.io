@@ -65,7 +65,7 @@ table.cart-table > :not(caption) > * > * {
   content: "";
 }
 td {
-  font: 500 18px/27px var(--title-font-family);
+  font: 600 18px/27px var(--title-font-family);
   vertical-align: middle;
 }
 table tbody tr td.product-img {

@@ -14,9 +14,9 @@
   font-family: 'Livvic-Light';
   src: url('../fonts/Livvic-Light.eot');
   src: url('../fonts/Livvic-Light.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Livvic-Light.woff2') format('woff2'),
-      url('../fonts/Livvic-Light.woff') format('woff'),
-      url('../fonts/Livvic-Light.ttf') format('truetype'),
+      url('../fonts/Livvic/Livvic-Light.woff2') format('woff2'),
+      url('../fonts/Livvic/Livvic-Light.woff') format('woff'),
+      url('../fonts/Livvic/Livvic-Light.ttf') format('truetype'),
       url('../fonts/Livvic-Light.svg#Livvic-Light') format('svg');
   font-weight: 300;
   font-style: normal;
@@ -173,7 +173,7 @@ a:hover {
   margin-left: 23px;
 }
 .social-contact .contact-info .info-title {
-  font: 300 18px/30px livvic-Light;
+  font: 300 18px/30px Livvic-Light;
 }
 .social-list li {
   display: inline-block;
