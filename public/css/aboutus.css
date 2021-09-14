@@ -56,7 +56,6 @@
 .exp-info .exp-name {
   font: 700 25px/30px var(--content-font-family);
 }
-/* feedback */
 .feedback{
   overflow-x: hidden;
 }

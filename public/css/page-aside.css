@@ -56,16 +56,3 @@
     font-size: 14px;
     margin-left: 5px;
   }
-.related-post-title{
-    font: 600 16px/24px var(--title-font-family);
-    color: #232323;;
-}
-.related-post-title:hover{
-    color: var(--primary-color);
-}
-.related-post-item{
-    margin-bottom: 30px;
-}
-.related-post-item img{
-    margin-right: 25px;
-}

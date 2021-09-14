@@ -1,39 +1,4 @@
-@font-face {
-  font-family: 'Livvic-Bold';
-  src: url('../fonts/Livvic/Livvic-Bold.eot');
-  src: url('../fonts/Livvic/Livvic-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Livvic/Livvic-Bold.woff2') format('woff2'),
-      url('../fonts/Livvic/Livvic-Bold.woff') format('woff'),
-      url('../fonts/Livvic/Livvic-Bold.ttf') format('truetype'),
-      url('../fonts/Livvic/Livvic-Bold.svg#Livvic-Bold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Zen-Loop';
-  src: url('../fonts/ZenLoop/ZenLoop-Regular.eot');
-  src: url('../fonts/ZenLoop/ZenLoop-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/ZenLoop/ZenLoop-Regular.woff2') format('woff2'),
-      url('../fonts/ZenLoop/ZenLoop-Regular.woff') format('woff'),
-      url('../fonts/ZenLoop/ZenLoop-Regular.ttf') format('truetype'),
-      url('../fonts/ZenLoop/ZenLoop-Regular.svg#ZenLoop-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Nunito-Sans-Regular';
-  src: url('../fonts/NunitoSans/NunitoSans-Regular.eot');
-  src: url('../fonts/NunitoSans/NunitoSans-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/NunitoSans/NunitoSans-Regular.woff2') format('woff2'),
-      url('../fonts/NunitoSans/NunitoSans-Regular.woff') format('woff'),
-      url('../fonts/NunitoSans/NunitoSans-Regular.ttf') format('truetype'),
-      url('../fonts/NunitoSans/NunitoSans-Regular.svg#NunitoSans-Regular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
 :root {
   --primary-color: #f69946;
   --secondary-color: #96b416;
@@ -493,15 +458,5 @@ h3 a{
   .basket-icon{
     margin-right: 25px;
   }
-  .page-header-title{
-    margin-bottom: 25px;
-  }
 }
-@media (min-width: 1200px) {
-  div.content-left > .row > div:nth-child(2) > .content-item {
-    margin-right: 40px;
-  }
-  div.content-right > .row > div:nth-child(2) > .content-item {
-    margin-left: 40px;
-  }
-}
+
