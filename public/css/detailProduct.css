@@ -1,1 +1,183 @@
-.product-info{margin-bottom:30px}.product-tabs{margin-top:30px}.product-image img{width:100%;height:auto}form.quanity-form{margin-bottom:60px}.quanity{position:relative;width:100px;height:57.6px;margin-right:10px}input.product-quanity{padding:0 25px 0 20px;width:100%;height:100%;border:none;border-radius:6px;color:#9d6a32;background-color:#fef7ef;font-size:16px;font-weight:700;z-index:1;outline:0}span.q-icon{position:absolute;right:0;height:50%;width:25px;text-align:center;background-color:#f0dbc4;color:#fff}span.q-inc{top:0;border-radius:0 6px 0 0}span.q-des{bottom:0;border-radius:0 0 6px 0}span.q-inc::before{content:"\f077";font:700 15px/20px "Font Awesome 5 Free"}span.q-des::after{content:"\f078";font:700 15px/20px "Font Awesome 5 Free"}.product-info,.product-meta{margin-top:30px}.product-meta span{display:block}ul.product-tabs{display:inline-block;position:relative}.product-tabs li{display:inline-block}.product-tabs::before{content:"";display:block;position:absolute;bottom:0;left:3px;right:3px;height:3px;width:auto;border:unset;border-radius:3px;background-color:var(--primary-color)}.product-tabs li a{padding:8px 20px;display:inline-block;color:var(--text-color);font-weight:700;font-size:16px;text-align:center}.product-tabs li a::before{content:"";position:absolute;bottom:0;left:0;display:block;width:100%;height:3px;border-radius:3px;transform-origin:bottom center;transition:all .7s ease-in-out;z-index:-1;background-color:var(--primary-color)}.nutrition-table{width:100%}.nutrition-table tr{width:50%;float:left;display:flex;align-items:center}#review-tab-content .form{margin-top:40px}.product-title a{font-size:22px;color:var(--text-color);font-weight:600}h1.product-title{font-family:var(--title-font-family)}.product-title a:hover{color:var(--primary-color)}.form-contact{background-color:#fef7ef;padding:34px 40px 40px 40px;border-radius:20px}.form-contact .row{--bs-gutter-y:30px}.product-tabs li a::before{content:"";position:absolute;bottom:0;left:0;display:block;width:100%;height:3px;border-radius:3px;transform-origin:bottom center;transition:all .7s ease-in-out;z-index:-1;background-color:var(--primary-color)}.product-tabs a.active{background-color:var(--primary-color);color:#fff}
+.product-info {
+  margin-bottom: 30px;
+}
+.product-tabs {
+  margin-top: 30px;
+}
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+form.quanity-form {
+  margin-bottom: 60px;
+}
+.quanity {
+  position: relative;
+  width: 100px;
+  height: 57.6px;
+  margin-right: 10px;
+}
+input.product-quanity {
+  padding: 0 25px 0 20px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+  color: #9d6a32;
+  background-color: #fef7ef;
+  font-size: 16px;
+  font-weight: 700;
+  z-index: 1;
+  outline: 0;
+}
+span.q-icon {
+  position: absolute;
+  right: 0;
+  height: 50%;
+  width: 25px;
+  text-align: center;
+  background-color: #f0dbc4;
+  color: #fff;
+}
+span.q-inc {
+  top: 0;
+  border-radius: 0 6px 0 0;
+}
+span.q-des {
+  bottom: 0;
+  border-radius: 0 0 6px 0;
+}
+span.q-inc::before {
+  content: "\f077";
+  font: 700 15px/20px "Font Awesome 5 Free";
+}
+span.q-des::after {
+  content: "\f078";
+  font: 700 15px/20px "Font Awesome 5 Free";
+}
+.product-info,
+.product-meta {
+  margin-top: 30px;
+}
+.product-meta span {
+  display: block;
+}
+ul.product-tabs {
+  display: inline-block;
+  position: relative;
+}
+.product-tabs li {
+  display: inline-block;
+}
+.product-tabs::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+  right: 3px;
+  height: 3px;
+  width: auto;
+  border: unset;
+  border-radius: 3px;
+  background-color: var(--primary-color);
+}
+.product-tabs li a {
+  padding: 8px 20px;
+  display: inline-block;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+.product-tabs li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  transform-origin: bottom center;
+  transition: all 0.7s ease-in-out;
+  z-index: -1;
+  background-color: var(--primary-color);
+}
+.nutrition-table {
+  width: 100%;
+}
+.nutrition-table tr {
+  width: 50%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.nutrition-table th {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: baseline;
+    width: auto;
+    border: 0;
+    padding: 10px 0 10px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    background: transparent;
+}
+.nutrition-table th::after {
+    content: "";
+    flex: 1 1 auto;
+    border-top: 1px solid #e1e1e1;
+    margin-left: 30px;
+}
+#review-tab-content .form {
+  margin-top: 40px;
+}
+.product-title a {
+  font-size: 22px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+h1.product-title {
+  font:700 40px/1 var(--title-font-family);
+}
+.product-title a:hover {
+  color: var(--primary-color);
+}
+.form-contact {
+  background-color: #fef7ef;
+  padding: 34px 40px 40px 40px;
+  border-radius: 20px;
+}
+.form-contact .row {
+  --bs-gutter-y: 30px;
+}
+.product-tabs li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 3px;
+  transform-origin: bottom center;
+  transition: all 0.7s ease-in-out;
+  z-index: -1;
+  background-color: var(--primary-color);
+}
+.product-tabs a.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.product-detail .price{
+    margin-top: 10px;
+}
+.original-price , .sale-price{
+    font-family: var(--title-font-family);
+    font-weight: 500;
+    font-size: 22px;
+}
+.sale-price{
+    color: var( --secondary-color);
+}

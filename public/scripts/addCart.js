@@ -206,8 +206,8 @@ function displayCart() {
         if(billContainer){
             billContent.innerHTML = `${billContainer}`;
         }
-        $('.sub-total')[0].innerHTML = `$${cart}`
-        $('.total-bill')[0].innerHTML = `$${cart}`
+        $('.sub-total')[0].innerHTML = `$${cart}.0`
+        $('.total-bill')[0].innerHTML = `$${cart}.0`
     }
 
 }

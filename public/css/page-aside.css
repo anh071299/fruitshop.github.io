@@ -1,9 +1,8 @@
 .aside-title {
-    font: 700 16px/30px var(--primary-font-family);
+    font: 700 16px/30px var(--title-font-family);
     margin-bottom: 23px;
     font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
+    color: var(--head-font-color);
   }
   .slider-content-pl{
     padding-left: 30px;;
@@ -26,7 +25,7 @@
   }
   .categorie-list .cat-item a {
     color: var(--head-font-color);
-    font-weight: 400;
+    font-weight: 700;
     display: flex;
     align-items: center;
   }
