@@ -106,19 +106,19 @@ function checkConPassword() {
     }
 }
 // check streetAdr
-const stressAdr = $('input[name=streetAdr]');
-stressAdr.blur(function () {
-    checkStressAdr(this);
+const streetAdr = $('input[name=streetAdr]');
+streetAdr.blur(function () {
+    checkStreetAdr(this);
 });
-function checkStressAdr(stressAdr) {
-    let error = $(stressAdr).next();
-    let value = $(stressAdr).val().trim();
+function checkStreetAdr(streetAdr) {
+    let error = $(streetAdr).next();
+    let value = $(streetAdr).val().trim();
     if (value.length == "") {
         error.text("Street Address  is required.");
-        $(stressAdr).addClass("is-invalid");
+        $(streetAdr).addClass("is-invalid");
         return false;
     } else {
-        $(stressAdr).removeClass("is-invalid");
+        $(streetAdr).removeClass("is-invalid");
         return true;
     }
 }
@@ -206,14 +206,13 @@ $('.contact-form #submit-btn').click(function(event){
 $('.order-form #submitBtn').click(function(event){
     let name = $('.order-form input[name=name]');
     let phone = $('.order-form input[name=phone]');
-    let stressAdr = $('.order-form input[name=streetAdr]');
+    let streetAdr = $('.order-form input[name=streetAdr]');
     checkName(name);
     checkPhone(phone);
-    checkStressAdr(stressAdr);
-    if(!checkName($(name)) || checkPhone($(phone)) || checkStressAdr($(stressAdr))){
+    checkStreetAdr(streetAdr);
+    if(!checkName($(name)) || !checkPhone($(phone)) || !checkStreetAdr($(streetAdr))){
         event.preventDefault();
     }
     else{
-        
     }
 })

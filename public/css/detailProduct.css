@@ -4,7 +4,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 input[type=number] {
-  -moz-appearance: textfield;
+  -moz-appearance: textfield!important;
 }
 .product-info {
   margin-bottom: 30px;
