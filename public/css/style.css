@@ -54,7 +54,7 @@ a,
 input {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
-  appearance: none !important;
+  
 }
 * {
   margin: 0;
@@ -106,9 +106,6 @@ input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-input[type="number"] {
-  -moz-appearance: textfield;
 }
 a {
   text-decoration: none !important;
