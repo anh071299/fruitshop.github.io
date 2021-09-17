@@ -1,1 +1,26 @@
-div.content-left>.row>div:nth-child(2)>.content-item{margin-right:40px}div.content-right>.row>div:nth-child(2)>.content-item{margin-left:40px}.slide-content h1{font-size:72px;line-height:86px}.slide-content h2{font-size:36px;line-height:72px;font:400 36px/72px var(--add-font-family)}.slide-content p{font-size:18px;line-height:36px;max-width:850px;margin-top:30px}.slide-content .submitBtn{font-size:16px;padding:18px 30px}.slide-content .morph-element{transform:translateX(-17px) skewX(-45deg)}
+div.content-left > .row > div:nth-child(2) > .content-item {
+  margin-right: 40px;
+}
+div.content-right > .row > div:nth-child(2) > .content-item {
+  margin-left: 40px;
+}
+.slide-content h1 {
+  font-size: 72px;
+  line-height: 86px;
+}
+.slide-content h2 {
+  font: 400 36px/72px var(--add-font-family);
+}
+.slide-content p {
+  font-size: 18px;
+  line-height: 36px;
+  max-width: 850px;
+  margin-top: 30px;
+}
+.slide-content .submitBtn {
+  font-size: 16px;
+  padding: 18px 30px;
+}
+.slide-content .morph-element {
+  transform: translateX(-17px) skewX(-45deg);
+}

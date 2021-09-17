@@ -57,6 +57,22 @@
 .slide-content {
   padding: calc(100vw / 12) 0;
 }
+.slick-current .slide-content h2 {
+  animation: fadeInDown 0.3s ease-in both;
+  animation-delay: 0.9s;
+}
+.slick-current .slide-content h1 {
+  animation: fadeInDown 0.3s ease-in both;
+  animation-delay: 0.3s;
+}
+.slick-current .slide-content p {
+  animation: fadeInUp 0.3s ease-in both;
+  animation-delay: 0.6s;
+}
+.slick-current .slide-content .corner-add {
+  animation: fade 1s ease-in both;
+  animation-delay: 1.2s;
+}
 .slide-content .submitBtn {
   font-size: 16px;
   padding: 18px 30px;
