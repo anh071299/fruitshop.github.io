@@ -5,7 +5,7 @@ $('.banner-slide').slick({
   autoplay: true,
   arrows: false,
   dots: true, 
-  autoplaySpeed: 2000,
+  autoplaySpeed: 1600,
   infinite: true,
   fade: true,
   cssEase: 'linear',
