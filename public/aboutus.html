@@ -91,8 +91,8 @@
                 </div>
 
             </div>
-            <!-- nav header-menu -->
-            <div class="main-menu ">
+             <!-- nav header-menu -->
+             <div class="main-menu ">
                 <div class="container">
                     <div class="row">
                         <nav class="navbar navbar-expand-lg navbar-light">
@@ -124,7 +124,7 @@
                                     </li>
                                 </ul>
                                 <ul class="bottom-extra d-lg-none">
-                                    <li class="d-flex justify-content-between">
+                                    <li class="d-flex align-items-center">
                                         <span>Language: </span>
 
                                         <div class="dropdown lang-dropdown">
@@ -145,7 +145,7 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="d-flex justify-content-between">
+                                    <li class="d-flex align-items-center">
                                         <span>Account: </span>
                                         <div class="user-account">
                                             <a type="button" class="btn p-0" data-bs-toggle="modal"
@@ -569,8 +569,8 @@
             </div>
         </div>
     </div>
-    <!-- user-modal -->
-    <div class="modal user-modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+     <!-- user-modal -->
+     <div class="modal user-modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
         <div class="modal-dialog">
 
             <div class="modal-content user-modal-content">
@@ -585,21 +585,21 @@
                     <form class="row g-3 needs-validation sign-up-form" novalidate>
                         <div class="col-md-12 ">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="name" placeholder="Name" name="name"
+                                <input type="text" class="form-control" id="name" placeholder="Name*" name="name"
                                     required />
                                 <div class="invalid-feedback"></div>
                             </div>
                         </div>
                         <div class="col-12 ">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="emailSignUp" placeholder="Email"
+                                <input type="text" class="form-control" id="emailSignUp" placeholder="Email*"
                                     name="email" required />
                                 <div class="invalid-feedback"></div>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="phone" required placeholder="Phone"
+                                <input type="text" class="form-control" id="phone" required placeholder="Phone*"
                                     name="phone" />
                                 <div class="invalid-feedback"></div>
                             </div>
@@ -607,14 +607,14 @@
                         <div class="col-12">
                             <div class="input-group has-validation">
                                 <input type="text" class="form-control" id="passwordSignUp" required
-                                    placeholder="Password" name="password" />
+                                    placeholder="Password*" name="password" />
                                 <div class="invalid-feedback"></div>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="input-group has-validation">
                                 <input type="text" class="form-control" id="validationCustomUsername"
-                                    aria-describedby="inputGroupPrepend" required placeholder="Re-password"
+                                    aria-describedby="inputGroupPrepend" required placeholder="Re-password*"
                                     name="conPassword" />
                                 <div class="invalid-feedback"></div>
                             </div>
@@ -631,7 +631,7 @@
                     <form class="row g-3 needs-validation login-form" novalidate>
 
                         <div class="col-12 has-validation">
-                            <input type="text" class="form-control" id="emailLogin" placeholder="Email" name="email"
+                            <input type="text" class="form-control" id="emailLogin" placeholder="Email*" name="email"
                                 required />
                             <div class="invalid-feedback"></div>
                         </div>
@@ -639,7 +639,7 @@
                         <div class="col-12">
                             <div class="input-group has-validation">
                                 <input type="text" class="form-control" id="passwordLogin" required
-                                    placeholder="Password" name="password" />
+                                    placeholder="Password*" name="password" />
                                 <div class="invalid-feedback"></div>
                             </div>
                         </div>
@@ -659,7 +659,7 @@
 
                     <form class="row g-3 needs-validation recover-pass-form" novalidate>
                         <div class="col-12 has-validation">
-                            <input type="text" class="form-control" id="emailForgetPass" placeholder="Email"
+                            <input type="text" class="form-control" id="emailForgetPass" placeholder="Email*"
                                 name="email" required />
                             <div class="invalid-feedback"></div>
                         </div>
